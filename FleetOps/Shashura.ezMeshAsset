@@ -14,7 +14,7 @@ o
 			s{"FleetOps/Shashura_data/shashura.obj"}
 		}
 		Uuid %DocumentID{u4{15146058209142488988,5701069334011088019}}
-		u4 %Hash{4125127155591442832}
+		u4 %Hash{5109559104557963287}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -41,10 +41,10 @@ o
 {
 	Uuid %id{u4{12186541174012433076,5430354016376555903}}
 	s %t{"ezMeshAssetProperties"}
-	u3 %v{2}
+	u3 %v{3}
 	p
 	{
-		f %Angle{0x0000B443}
+		Angle %Angle{f{0xDB0FC940}}
 		b %Cap{1}
 		b %Cap2{1}
 		u2 %Detail{1}
@@ -120,7 +120,7 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezMeshAssetProperties"}
 		u3 %TypeSize{1248}
-		u3 %TypeVersion{2}
+		u3 %TypeVersion{3}
 	}
 }
 o

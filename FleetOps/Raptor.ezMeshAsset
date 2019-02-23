@@ -14,7 +14,7 @@ o
 			s{"FleetOps/Raptor_data/raptor.obj"}
 		}
 		Uuid %DocumentID{u4{11029746117145571255,5608980641584566929}}
-		u4 %Hash{6364720204243706791}
+		u4 %Hash{2171682377807357094}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -41,10 +41,10 @@ o
 {
 	Uuid %id{u4{13317598867614863233,5603077352873315335}}
 	s %t{"ezMeshAssetProperties"}
-	u3 %v{2}
+	u3 %v{3}
 	p
 	{
-		f %Angle{0x0000B443}
+		Angle %Angle{f{0xDB0FC940}}
 		b %Cap{1}
 		b %Cap2{1}
 		u2 %Detail{1}
@@ -120,7 +120,7 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezMeshAssetProperties"}
 		u3 %TypeSize{1248}
-		u3 %TypeVersion{2}
+		u3 %TypeVersion{3}
 	}
 }
 o
