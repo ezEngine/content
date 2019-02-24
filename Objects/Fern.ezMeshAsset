@@ -14,7 +14,7 @@ o
 			s{"Objects/Fern_data/Fern.FBX"}
 		}
 		Uuid %DocumentID{u4{9642918425809047473,5547520881020995788}}
-		u4 %Hash{3699654908998638206}
+		u4 %Hash{5795415822272386399}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -65,7 +65,7 @@ o
 		b %RecalculateNormals{0}
 		s %RightDir{"ezBasisAxis::PositiveX"}
 		s %SubmeshName{""}
-		f %UniformScaling{0x0AD7233C}
+		f %UniformScaling{0x0000803F}
 		s %UpDir{"ezBasisAxis::PositiveY"}
 		b %UseSubfolderForMaterialImport{1}
 	}

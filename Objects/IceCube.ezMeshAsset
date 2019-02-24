@@ -14,7 +14,7 @@ o
 			s{"Objects/IceCube_data/IceCube.fbx"}
 		}
 		Uuid %DocumentID{u4{7908617062709053631,5434481180408353840}}
-		u4 %Hash{10249799796775046738}
+		u4 %Hash{17586196330415829152}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -65,7 +65,7 @@ o
 		b %RecalculateNormals{0}
 		s %RightDir{"ezBasisAxis::PositiveX"}
 		s %SubmeshName{""}
-		f %UniformScaling{0x0AD7233C}
+		f %UniformScaling{0x0000803F}
 		s %UpDir{"ezBasisAxis::PositiveY"}
 		b %UseSubfolderForMaterialImport{1}
 	}

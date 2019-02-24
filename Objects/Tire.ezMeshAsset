@@ -14,7 +14,7 @@ o
 			s{"Objects/Tire_data/Tire.FBX"}
 		}
 		Uuid %DocumentID{u4{8556050135023066752,5443192748025149350}}
-		u4 %Hash{17522264822721865548}
+		u4 %Hash{17911343771153328371}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -65,7 +65,7 @@ o
 		b %RecalculateNormals{0}
 		s %RightDir{"ezBasisAxis::PositiveX"}
 		s %SubmeshName{""}
-		f %UniformScaling{0x0AD7A33C}
+		f %UniformScaling{0x0000803F}
 		s %UpDir{"ezBasisAxis::PositiveY"}
 		b %UseSubfolderForMaterialImport{1}
 	}

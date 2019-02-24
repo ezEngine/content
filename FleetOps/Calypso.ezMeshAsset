@@ -14,7 +14,7 @@ o
 			s{"FleetOps/Calypso_data/calypso.obj"}
 		}
 		Uuid %DocumentID{u4{8574195382367338661,4621612236654238203}}
-		u4 %Hash{4525475645497035214}
+		u4 %Hash{302021258310159867}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -30,10 +30,10 @@ o
 {
 	Uuid %id{u4{14380665577076991392,4844801717758383607}}
 	s %t{"ezMeshAssetProperties"}
-	u3 %v{2}
+	u3 %v{3}
 	p
 	{
-		f %Angle{0x0000B443}
+		Angle %Angle{f{0xDB0FC940}}
 		b %Cap{0}
 		b %Cap2{0}
 		u2 %Detail{0}
@@ -120,7 +120,7 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezMeshAssetProperties"}
 		u3 %TypeSize{1248}
-		u3 %TypeVersion{2}
+		u3 %TypeVersion{3}
 	}
 }
 o

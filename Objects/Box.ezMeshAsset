@@ -14,7 +14,7 @@ o
 			s{"Objects/Box_data/Box.FBX"}
 		}
 		Uuid %DocumentID{u4{9222742976553252257,5711196105140488960}}
-		u4 %Hash{5826002899635599214}
+		u4 %Hash{10294835140412520428}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -65,7 +65,7 @@ o
 		b %RecalculateNormals{0}
 		s %RightDir{"ezBasisAxis::PositiveX"}
 		s %SubmeshName{""}
-		f %UniformScaling{0x0AD7233C}
+		f %UniformScaling{0x0000803F}
 		s %UpDir{"ezBasisAxis::PositiveY"}
 		b %UseSubfolderForMaterialImport{1}
 	}

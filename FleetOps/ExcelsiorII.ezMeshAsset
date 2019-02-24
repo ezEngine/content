@@ -14,7 +14,7 @@ o
 			s{"FleetOps/ExcelsiorII_data/excelsiorII.obj"}
 		}
 		Uuid %DocumentID{u4{2605859993440062648,5175260505212127248}}
-		u4 %Hash{14644499154384987825}
+		u4 %Hash{9945368726392533509}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -30,10 +30,10 @@ o
 {
 	Uuid %id{u4{9792350047110360508,5278365906800958821}}
 	s %t{"ezMeshAssetProperties"}
-	u3 %v{2}
+	u3 %v{3}
 	p
 	{
-		f %Angle{0x0000B443}
+		Angle %Angle{f{0xDB0FC940}}
 		b %Cap{1}
 		b %Cap2{1}
 		u2 %Detail{1}
@@ -120,7 +120,7 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezMeshAssetProperties"}
 		u3 %TypeSize{1248}
-		u3 %TypeVersion{2}
+		u3 %TypeVersion{3}
 	}
 }
 o

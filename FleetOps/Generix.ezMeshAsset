@@ -14,7 +14,7 @@ o
 			s{"FleetOps/Generix_data/generix0.obj"}
 		}
 		Uuid %DocumentID{u4{15841179174245619841,5470851768852247890}}
-		u4 %Hash{886017225344114671}
+		u4 %Hash{11846488922957660111}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -30,10 +30,10 @@ o
 {
 	Uuid %id{u4{7835781871727266977,4795722510911580565}}
 	s %t{"ezMeshAssetProperties"}
-	u3 %v{2}
+	u3 %v{3}
 	p
 	{
-		f %Angle{0x0000B443}
+		Angle %Angle{f{0xDB0FC940}}
 		b %Cap{1}
 		b %Cap2{1}
 		u2 %Detail{1}
@@ -120,7 +120,7 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezMeshAssetProperties"}
 		u3 %TypeSize{1248}
-		u3 %TypeVersion{2}
+		u3 %TypeVersion{3}
 	}
 }
 o

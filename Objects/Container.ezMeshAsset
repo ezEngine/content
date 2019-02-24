@@ -14,7 +14,7 @@ o
 			s{"Objects/Container_data/Container.FBX"}
 		}
 		Uuid %DocumentID{u4{1325716919593115325,5652369746131908295}}
-		u4 %Hash{17953453046183266416}
+		u4 %Hash{1109304526942445712}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -54,7 +54,7 @@ o
 		b %RecalculateNormals{0}
 		s %RightDir{"ezBasisAxis::PositiveX"}
 		s %SubmeshName{""}
-		f %UniformScaling{0x0AD7233C}
+		f %UniformScaling{0x0000803F}
 		s %UpDir{"ezBasisAxis::PositiveY"}
 		b %UseSubfolderForMaterialImport{1}
 	}
