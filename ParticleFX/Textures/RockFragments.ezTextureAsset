@@ -15,7 +15,7 @@ o
 			s{"Textures/cc0Textures.com/Rock01/Rock01_col.jpg"}
 		}
 		Uuid %DocumentID{u4{9769005049425169324,4852378641244440764}}
-		u4 %Hash{12535251106621045245}
+		u4 %Hash{59784744733461551}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -47,7 +47,7 @@ o
 		s %Input4{""}
 		b %IsRenderTarget{0}
 		s %MipmapMode{"ezTexConvMipmapMode::Kaiser"}
-		b %PremultipliedAlpha{1}
+		b %PremultipliedAlpha{0}
 		b %PreserveAlphaCoverage{0}
 		s %Resolution{"ezTexture2DResolution::Fixed256x256"}
 		s %TextureFilter{"ezTextureFilterSetting::LowestQuality"}
