@@ -14,12 +14,13 @@ o
 			s{"{ 7c71fc2d-2a1a-4938-9305-f3a0f26d73cc }"}
 		}
 		Uuid %DocumentID{u4{818009951505883019,5482574230177518679}}
-		u4 %Hash{5155698207349005243}
+		u4 %Hash{6575016977757690527}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
 			s{"{ 4aece87c-0ac0-4608-9d62-971c4bcb7dc5 }"}
+			s{"{ 58d44330-37a1-4c9d-9fa2-0540a1d8ee90 }"}
 			s{"{ 7c71fc2d-2a1a-4938-9305-f3a0f26d73cc }"}
 			s{"{ a78c0b0b-808c-44a6-a74b-28189ec0c818 }"}
 			s{"{ b89e395a-6e69-47e1-982d-ade04df8777a }"}
@@ -72,7 +73,7 @@ o
 		s %Shader{"Shaders/Materials/DefaultMaterial.ezShader"}
 		s %ShaderMode{"ezMaterialShaderMode::BaseMaterial"}
 		Uuid %ShaderProperties{u4{6276140505131145742,4930048752403645244}}
-		s %Surface{""}
+		s %Surface{"{ 58d44330-37a1-4c9d-9fa2-0540a1d8ee90 }"}
 	}
 }
 o
