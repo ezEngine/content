@@ -11,7 +11,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{9948428539788972452,5693514604989640662}}
-		u4 %Hash{1740634311389489536}
+		u4 %Hash{18316825890547930682}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{592744304708184274,14641007874030516181}}
@@ -267,11 +267,12 @@ o
 {
 	Uuid %id{u4{3680692074644821197,14548095223894180173}}
 	s %t{"ezCameraComponent"}
-	u3 %v{7}
+	u3 %v{9}
 	p
 	{
 		b %Active{1}
 		f %Aperture{0x0000803F}
+		s %CameraRenderPipeline{""}
 		f %Dimensions{0x00002041}
 		i1 %EditorShortcut{-1}
 		VarArray %ExcludeTags{}
@@ -282,12 +283,11 @@ o
 		VarArray %IncludeTags{}
 		s %Mode{"ezCameraMode::PerspectiveFixedFovY"}
 		f %NearPlane{0xCDCCCC3D}
-		s %RenderPipeline{""}
 		s %RenderTarget{""}
 		Vec2 %RenderTargetOffset{f{0,0}}
 		Vec2 %RenderTargetSize{f{0x0000803F,0x0000803F}}
 		b %ShowStats{0}
-		f %ShutterTime{0x0000803F}
+		Time %ShutterTime{d{0x000000000000F03F}}
 		s %UsageHint{"ezCameraUsageHint::MainView"}
 	}
 }
@@ -363,9 +363,9 @@ o
 		f %PushingForce{0x0000FA43}
 		Angle %RotateSpeed{f{0xDB0FC93F}}
 		f %RunInteractionDistance{0x00004040}
-		f %RunSpeed{0x00007041}
+		f %RunSpeed{0x00002041}
 		f %WalkInteractionDistance{0x00000040}
-		f %WalkSpeed{0x0000A040}
+		f %WalkSpeed{0x00008040}
 		s %WalkSurfaceInteraction{"Footstep"}
 	}
 }
@@ -836,8 +836,8 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezCameraComponent"}
-		u3 %TypeSize{520}
-		u3 %TypeVersion{7}
+		u3 %TypeSize{536}
+		u3 %TypeVersion{9}
 	}
 }
 o
