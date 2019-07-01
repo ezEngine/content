@@ -11,14 +11,16 @@ o
 		s %AssetType{"Surface"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{9792722692401254016,4982072354546932053}}
-		u4 %Hash{4036184529571254980}
+		u4 %Hash{14242046700677998196}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
+			s{"{ 2c2d487a-c8d1-4487-9f55-309c1d9034cb }"}
+			s{"{ 56cee000-c60d-4e64-ba8e-cfc49f512418 }"}
 			s{"{ 707d012d-03fc-461f-9792-5bd128f51688 }"}
-			s{"{ 7fff3165-a053-4b80-9245-065cf5087c2f }"}
 			s{"{ 8731941b-792b-400c-94ee-f960ff29e293 }"}
+			s{"{ d93bbc29-e3d2-451b-aedd-a51e4072c87c }"}
 			s{"{ fb5832e7-eb18-4866-ad1f-a12b1d22118e }"}
 		}
 	}
@@ -35,8 +37,23 @@ o
 	{
 		s %Alignment{"ezSurfaceInteractionAlignment::SurfaceNormal"}
 		Angle %Deviation{f{0}}
+		f %ImpulseThreshold{0}
 		s %Prefab{"{ 8731941b-792b-400c-94ee-f960ff29e293 }"}
 		s %Type{"Footstep"}
+	}
+}
+o
+{
+	Uuid %id{u4{10860744091015159690,4938884878526838962}}
+	s %t{"ezSurfaceInteraction"}
+	u3 %v{1}
+	p
+	{
+		s %Alignment{"ezSurfaceInteractionAlignment::SurfaceNormal"}
+		Angle %Deviation{f{0}}
+		f %ImpulseThreshold{0x00007041}
+		s %Prefab{"{ 2c2d487a-c8d1-4487-9f55-309c1d9034cb }"}
+		s %Type{"Bump_Metal"}
 	}
 }
 o
@@ -48,8 +65,23 @@ o
 	{
 		s %Alignment{"ezSurfaceInteractionAlignment::SurfaceNormal"}
 		Angle %Deviation{f{0}}
+		f %ImpulseThreshold{0}
 		s %Prefab{"{ fb5832e7-eb18-4866-ad1f-a12b1d22118e }"}
 		s %Type{"BulletImpact"}
+	}
+}
+o
+{
+	Uuid %id{u4{17985609424917112507,5084743838445356848}}
+	s %t{"ezSurfaceInteraction"}
+	u3 %v{1}
+	p
+	{
+		s %Alignment{"ezSurfaceInteractionAlignment::SurfaceNormal"}
+		Angle %Deviation{f{0}}
+		f %ImpulseThreshold{0x00002041}
+		s %Prefab{"{ 56cee000-c60d-4e64-ba8e-cfc49f512418 }"}
+		s %Type{"Bump_Wood"}
 	}
 }
 o
@@ -61,8 +93,9 @@ o
 	{
 		s %Alignment{"ezSurfaceInteractionAlignment::SurfaceNormal"}
 		Angle %Deviation{f{0}}
-		s %Prefab{"{ 7fff3165-a053-4b80-9245-065cf5087c2f }"}
-		s %Type{"Collision"}
+		f %ImpulseThreshold{0x0000A041}
+		s %Prefab{"{ d93bbc29-e3d2-451b-aedd-a51e4072c87c }"}
+		s %Type{"Bump_Wood"}
 	}
 }
 o
@@ -80,7 +113,11 @@ o
 			Uuid{u4{9828340909465125783,5408201118269092239}}
 			Uuid{u4{8276517597387077273,5071634314778601986}}
 			Uuid{u4{16045357908732408504,5095595362739722420}}
+			Uuid{u4{2744856721310753723,5501831783890867753}}
+			Uuid{u4{10860744091015159690,4938884878526838962}}
+			Uuid{u4{17985609424917112507,5084743838445356848}}
 		}
+		s %OnCollideInteraction{"Bump_Generic"}
 		f %Restitution{0x0000803E}
 		f %StaticFriction{0x9A99193F}
 	}
@@ -94,8 +131,23 @@ o
 	{
 		s %Alignment{"ezSurfaceInteractionAlignment::ReverseSurfaceNormal"}
 		Angle %Deviation{f{0xDB0F493F}}
+		f %ImpulseThreshold{0}
 		s %Prefab{"{ 707d012d-03fc-461f-9792-5bd128f51688 }"}
 		s %Type{"PulseImpact"}
+	}
+}
+o
+{
+	Uuid %id{u4{2744856721310753723,5501831783890867753}}
+	s %t{"ezSurfaceInteraction"}
+	u3 %v{1}
+	p
+	{
+		s %Alignment{"ezSurfaceInteractionAlignment::SurfaceNormal"}
+		Angle %Deviation{f{0}}
+		f %ImpulseThreshold{0x0000A041}
+		s %Prefab{"{ 56cee000-c60d-4e64-ba8e-cfc49f512418 }"}
+		s %Type{"Bump_Generic"}
 	}
 }
 o
@@ -129,7 +181,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezSurfaceResourceDescriptor"}
-		u3 %TypeSize{1336}
+		u3 %TypeSize{1472}
 		u3 %TypeVersion{2}
 	}
 }
@@ -201,7 +253,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezSurfaceInteraction"}
-		u3 %TypeSize{80}
+		u3 %TypeSize{88}
 		u3 %TypeVersion{1}
 	}
 }

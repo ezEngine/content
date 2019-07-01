@@ -11,7 +11,7 @@ o
 		s %AssetType{"Surface"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{10443522772994204319,5520629884345664304}}
-		u4 %Hash{6741875631015811707}
+		u4 %Hash{15498277655872040913}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -34,6 +34,7 @@ o
 	{
 		s %Alignment{"ezSurfaceInteractionAlignment::SurfaceNormal"}
 		Angle %Deviation{f{0xC2B8B23D}}
+		f %ImpulseThreshold{0}
 		s %Prefab{"{ 715107e7-1f35-4bd4-9c46-a93dad63d14b }"}
 		s %Type{"BulletImpact"}
 	}
@@ -47,6 +48,7 @@ o
 	{
 		s %Alignment{"ezSurfaceInteractionAlignment::SurfaceNormal"}
 		Angle %Deviation{f{0}}
+		f %ImpulseThreshold{0}
 		s %Prefab{"{ 73d03cee-5744-4bcc-a926-d09b82b965e6 }"}
 		s %Type{"Footstep"}
 	}
@@ -65,6 +67,7 @@ o
 			Uuid{u4{10497193038113598630,4946450870601361890}}
 			Uuid{u4{10526326111370374036,4788818136901464359}}
 		}
+		s %OnCollideInteraction{"Bump_Wood"}
 		f %Restitution{0xCDCCCC3D}
 		f %StaticFriction{0x9A99193F}
 	}
@@ -100,7 +103,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezSurfaceResourceDescriptor"}
-		u3 %TypeSize{1336}
+		u3 %TypeSize{1472}
 		u3 %TypeVersion{2}
 	}
 }
@@ -172,7 +175,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezSurfaceInteraction"}
-		u3 %TypeSize{80}
+		u3 %TypeSize{88}
 		u3 %TypeVersion{1}
 	}
 }
