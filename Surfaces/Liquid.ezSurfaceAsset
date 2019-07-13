@@ -11,7 +11,7 @@ o
 		s %AssetType{"Surface"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{1614352151654136493,5727897176130082366}}
-		u4 %Hash{4106130882170724566}
+		u4 %Hash{15023316414740622952}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -30,6 +30,7 @@ o
 		s %BaseSurface{""}
 		f %DynamicFriction{0xCDCCCC3E}
 		VarArray %Interactions{}
+		s %OnCollideInteraction{""}
 		f %Restitution{0x0000803E}
 		f %StaticFriction{0x9A99193F}
 	}
@@ -65,7 +66,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezSurfaceResourceDescriptor"}
-		u3 %TypeSize{1336}
+		u3 %TypeSize{1472}
 		u3 %TypeVersion{2}
 	}
 }
@@ -137,7 +138,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezSurfaceInteraction"}
-		u3 %TypeSize{80}
+		u3 %TypeSize{88}
 		u3 %TypeVersion{1}
 	}
 }

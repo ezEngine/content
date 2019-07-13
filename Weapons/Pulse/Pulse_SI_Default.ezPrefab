@@ -11,7 +11,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{9806294794305770135,5052761689686868269}}
-		u4 %Hash{103115433714494919}
+		u4 %Hash{16342676453066710613}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{11366851411833490850,7956656383203311022}}
@@ -144,14 +144,18 @@ o
 {
 	Uuid %id{u4{72274847284918525,18432172149644490780}}
 	s %t{"ezFmodEventComponent"}
-	u3 %v{2}
+	u3 %v{4}
 	p
 	{
 		b %Active{1}
+		u1 %OcclusionCollisionLayer{0}
+		f %OcclusionThreshold{0x0000003F}
 		s %OnFinishedAction{"ezOnComponentFinishedAction::DeleteGameObject"}
 		b %Paused{0}
 		f %Pitch{0x0000803F}
+		b %ShowDebugInfo{0}
 		s %SoundEvent{"{ 32cb0079-08cc-4f6b-a94b-0832e602ee1a }"}
+		b %UseOcclusion{0}
 		f %Volume{0x0000803F}
 	}
 }
@@ -190,8 +194,8 @@ o
 		s %PluginName{"ezEditorPluginFmod"}
 		VarArray %Properties{}
 		s %TypeName{"ezFmodEventComponent"}
-		u3 %TypeSize{96}
-		u3 %TypeVersion{2}
+		u3 %TypeSize{104}
+		u3 %TypeVersion{4}
 	}
 }
 o

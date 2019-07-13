@@ -14,7 +14,7 @@ o
 			s{"FleetOps/Cassiopeia_data/cassiopeia_alpha.obj"}
 		}
 		Uuid %DocumentID{u4{5540179655752936832,4978292137957891399}}
-		u4 %Hash{13993581989686202203}
+		u4 %Hash{11009771989298032747}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -30,10 +30,10 @@ o
 {
 	Uuid %id{u4{15323988726837033633,4743458506064932414}}
 	s %t{"ezMeshAssetProperties"}
-	u3 %v{2}
+	u3 %v{3}
 	p
 	{
-		f %Angle{0x0000B443}
+		Angle %Angle{f{0xDB0FC940}}
 		b %Cap{1}
 		b %Cap2{1}
 		u2 %Detail{1}
@@ -120,7 +120,7 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezMeshAssetProperties"}
 		u3 %TypeSize{1248}
-		u3 %TypeVersion{2}
+		u3 %TypeVersion{3}
 	}
 }
 o

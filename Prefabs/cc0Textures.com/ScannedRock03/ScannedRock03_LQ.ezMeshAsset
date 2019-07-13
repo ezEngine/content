@@ -14,7 +14,7 @@ o
 			s{"Prefabs/cc0Textures.com/ScannedRock03/ScannedRock03_LQ.obj"}
 		}
 		Uuid %DocumentID{u4{11423714995024481158,5357204773545225924}}
-		u4 %Hash{12201044901173230217}
+		u4 %Hash{12639334905282853928}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -41,10 +41,10 @@ o
 {
 	Uuid %id{u4{3004540685137915527,4827253991435941106}}
 	s %t{"ezMeshAssetProperties"}
-	u3 %v{2}
+	u3 %v{3}
 	p
 	{
-		f %Angle{0x0000B443}
+		Angle %Angle{f{0xDB0FC940}}
 		b %Cap{1}
 		b %Cap2{1}
 		u2 %Detail{1}
@@ -120,7 +120,7 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezMeshAssetProperties"}
 		u3 %TypeSize{1248}
-		u3 %TypeVersion{2}
+		u3 %TypeVersion{3}
 	}
 }
 o

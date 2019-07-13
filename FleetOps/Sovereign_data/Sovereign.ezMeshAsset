@@ -14,7 +14,7 @@ o
 			s{"FleetOps/Sovereign_data/Sovereign.fbx"}
 		}
 		Uuid %DocumentID{u4{8162075323282421672,4738933399542900577}}
-		u4 %Hash{12501391456626631509}
+		u4 %Hash{6479637456350633948}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -41,10 +41,10 @@ o
 {
 	Uuid %id{u4{8296508780212412330,5521607436000109640}}
 	s %t{"ezMeshAssetProperties"}
-	u3 %v{2}
+	u3 %v{3}
 	p
 	{
-		f %Angle{0x0000B443}
+		Angle %Angle{f{0xDB0FC940}}
 		b %Cap{1}
 		b %Cap2{1}
 		u2 %Detail{1}
@@ -132,7 +132,7 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezMeshAssetProperties"}
 		u3 %TypeSize{1248}
-		u3 %TypeVersion{2}
+		u3 %TypeVersion{3}
 	}
 }
 o

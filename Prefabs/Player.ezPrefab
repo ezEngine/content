@@ -479,16 +479,6 @@ o
 }
 o
 {
-	Uuid %id{u4{4447097914284062604,1918706753753133111}}
-	s %t{"ezCategoryAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Category{"AI"}
-	}
-}
-o
-{
 	Uuid %id{u4{16706295012782774504,2108762400861998705}}
 	s %t{"ezReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -512,14 +502,11 @@ o
 	u3 %v{1}
 	p
 	{
-		VarArray %Attributes
-		{
-			Uuid{u4{4447097914284062604,1918706753753133111}}
-		}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Abstract|ezTypeFlags::Phantom"}
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Abstract|ezTypeFlags::Minimal"}
 		VarArray %Functions{}
 		s %ParentTypeName{"ezComponent"}
-		s %PluginName{"ezRecastPlugin"}
+		s %PluginName{"ezEditorPluginRecast"}
 		VarArray %Properties{}
 		s %TypeName{"ezRcComponent"}
 		u3 %TypeSize{48}
@@ -600,23 +587,6 @@ o
 }
 o
 {
-	Uuid %id{u4{2220641395502984353,4570349503499931913}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes
-		{
-			Uuid{u4{6636187815153287374,8860563963814121776}}
-		}
-		s %Category{"ezPropertyCategory::Member"}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"Radius"}
-		s %Type{"float"}
-	}
-}
-o
-{
 	Uuid %id{u4{282463861952624547,4699758092572784874}}
 	s %t{"ezReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -685,23 +655,6 @@ o
 		s %TypeName{"ezEventMessageHandlerComponent"}
 		u3 %TypeSize{56}
 		u3 %TypeVersion{1}
-	}
-}
-o
-{
-	Uuid %id{u4{4761520700709429409,7027825168153539192}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes
-		{
-			Uuid{u4{8854719312668331455,15589790578696341890}}
-		}
-		s %Category{"ezPropertyCategory::Member"}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"CollisionLayer"}
-		s %Type{"ezUInt8"}
 	}
 }
 o
@@ -778,16 +731,6 @@ o
 }
 o
 {
-	Uuid %id{u4{6636187815153287374,8860563963814121776}}
-	s %t{"ezDefaultValueAttribute"}
-	u3 %v{1}
-	p
-	{
-		f %Value{0x0000A041}
-	}
-}
-o
-{
 	Uuid %id{u4{3251891958765718680,9159887340540620231}}
 	s %t{"ezReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -836,7 +779,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezCameraComponent"}
-		u3 %TypeSize{536}
+		u3 %TypeSize{552}
 		u3 %TypeVersion{9}
 	}
 }
@@ -968,31 +911,17 @@ o
 }
 o
 {
-	Uuid %id{u4{8854719312668331455,15589790578696341890}}
-	s %t{"ezDynamicEnumAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %DynamicEnum{"PhysicsCollisionLayer"}
-	}
-}
-o
-{
 	Uuid %id{u4{8334751861380143412,15768867764984547528}}
 	s %t{"ezReflectedTypeDescriptor"}
 	u3 %v{1}
 	p
 	{
 		VarArray %Attributes{}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
 		VarArray %Functions{}
 		s %ParentTypeName{"ezRcComponent"}
-		s %PluginName{"ezRecastPlugin"}
-		VarArray %Properties
-		{
-			Uuid{u4{2220641395502984353,4570349503499931913}}
-			Uuid{u4{4761520700709429409,7027825168153539192}}
-		}
+		s %PluginName{"ezEditorPluginRecast"}
+		VarArray %Properties{}
 		s %TypeName{"ezRcMarkPoiVisibleComponent"}
 		u3 %TypeSize{80}
 		u3 %TypeVersion{1}

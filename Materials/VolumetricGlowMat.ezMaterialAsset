@@ -21,7 +21,7 @@ o
 			s{":app/VisualShader/Utils.ddl"}
 		}
 		Uuid %DocumentID{u4{8992525633171979923,5481807051897566660}}
-		u4 %Hash{8449305887943969930}
+		u4 %Hash{16664088883829236303}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -96,7 +96,7 @@ o
 o
 {
 	Uuid %id{u4{12469715723533096180,4532928967491492601}}
-	s %t{"AssetCache/Common/Stuff/VolumetricGlowMat.autogen.ezShader"}
+	s %t{"AssetCache/Common/Materials/VolumetricGlowMat.autogen.ezShader"}
 	u3 %v{2}
 	p
 	{
@@ -575,12 +575,26 @@ o
 }
 o
 {
-	Uuid %id{u4{4064332376242123180,735939534653531666}}
-	s %t{"ezCategoryAttribute"}
+	Uuid %id{u4{7994879210303008681,735271965806467563}}
+	s %t{"ezReflectedTypeDescriptor"}
 	u3 %v{1}
 	p
 	{
-		s %Category{"Permutation"}
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezShaderTypeBase"}
+		s %PluginName{"ShaderTypes"}
+		VarArray %Properties
+		{
+			Uuid{u4{4640374351635900250,17596537654059906221}}
+			Uuid{u4{16957375915606549863,8695085294056220114}}
+			Uuid{u4{10360363658560979769,1849588074307402094}}
+			Uuid{u4{795820248760503200,11285378393045423840}}
+		}
+		s %TypeName{"AssetCache/Common/Materials/VolumetricGlowMat.autogen.ezShader"}
+		u3 %TypeSize{0}
+		u3 %TypeVersion{2}
 	}
 }
 o
@@ -615,14 +629,14 @@ o
 }
 o
 {
-	Uuid %id{u4{4108044014825170979,1684738668042526284}}
+	Uuid %id{u4{10360363658560979769,1849588074307402094}}
 	s %t{"ezReflectedPropertyDescriptor"}
 	u3 %v{2}
 	p
 	{
 		VarArray %Attributes
 		{
-			Uuid{u4{10568432684736924068,11200711681055452872}}
+			Uuid{u4{3049415408470335622,3387845377093258178}}
 		}
 		s %Category{"ezPropertyCategory::Member"}
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
@@ -735,19 +749,12 @@ o
 }
 o
 {
-	Uuid %id{u4{12134024387036744867,3062473834196535291}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
+	Uuid %id{u4{3049415408470335622,3387845377093258178}}
+	s %t{"ezCategoryAttribute"}
+	u3 %v{1}
 	p
 	{
-		VarArray %Attributes
-		{
-			Uuid{u4{4064332376242123180,735939534653531666}}
-		}
-		s %Category{"ezPropertyCategory::Member"}
-		s %Flags{"ezPropertyFlags::IsEnum|ezPropertyFlags::Phantom"}
-		s %Name{"SHADING_MODE"}
-		s %Type{"SHADING_MODE"}
+		s %Category{"Permutation"}
 	}
 }
 o
@@ -852,30 +859,22 @@ o
 }
 o
 {
-	Uuid %id{u4{15823668362021807722,4628776164797055223}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes
-		{
-			Uuid{u4{11811334439189766963,16127283132163849768}}
-			Uuid{u4{18265940027812410567,14669762836240628089}}
-		}
-		s %Category{"ezPropertyCategory::Member"}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"MaskThreshold"}
-		s %Type{"float"}
-	}
-}
-o
-{
 	Uuid %id{u4{8613031641217622880,4944460115272015607}}
 	s %t{"ezDefaultValueAttribute"}
 	u3 %v{1}
 	p
 	{
 		f %Value{0x0000803F}
+	}
+}
+o
+{
+	Uuid %id{u4{261076793695748497,4988885188191883078}}
+	s %t{"ezCategoryAttribute"}
+	u3 %v{1}
+	p
+	{
+		s %Category{"Permutation"}
 	}
 }
 o
@@ -1069,6 +1068,16 @@ o
 }
 o
 {
+	Uuid %id{u4{6862666737972016546,7444206388540741838}}
+	s %t{"ezCategoryAttribute"}
+	u3 %v{1}
+	p
+	{
+		s %Category{"Constant"}
+	}
+}
+o
+{
 	Uuid %id{u4{9956247472560100012,7466494367249098761}}
 	s %t{"ezReflectedPropertyDescriptor"}
 	u3 %v{2}
@@ -1145,16 +1154,6 @@ o
 }
 o
 {
-	Uuid %id{u4{12918012304811697200,8189245671882186638}}
-	s %t{"ezCategoryAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Category{"Permutation"}
-	}
-}
-o
-{
 	Uuid %id{u4{540429536914844576,8213819539779215949}}
 	s %t{"ezReflectedPropertyDescriptor"}
 	u3 %v{2}
@@ -1166,6 +1165,23 @@ o
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::ReadOnly"}
 		s %Name{"BLEND_MODE::BLEND_MODE_OPAQUE"}
 		s %Type{"ezUInt32"}
+	}
+}
+o
+{
+	Uuid %id{u4{16957375915606549863,8695085294056220114}}
+	s %t{"ezReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{261076793695748497,4988885188191883078}}
+		}
+		s %Category{"ezPropertyCategory::Member"}
+		s %Flags{"ezPropertyFlags::IsEnum|ezPropertyFlags::Phantom"}
+		s %Name{"SHADING_MODE"}
+		s %Type{"SHADING_MODE"}
 	}
 }
 o
@@ -1194,30 +1210,6 @@ o
 	p
 	{
 		f %Value{0x0000003F}
-	}
-}
-o
-{
-	Uuid %id{u4{16945548608661068113,8980769810156336886}}
-	s %t{"ezReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
-		VarArray %Functions{}
-		s %ParentTypeName{"ezShaderTypeBase"}
-		s %PluginName{"ShaderTypes"}
-		VarArray %Properties
-		{
-			Uuid{u4{14359949897663503018,12349461981223657107}}
-			Uuid{u4{12134024387036744867,3062473834196535291}}
-			Uuid{u4{4108044014825170979,1684738668042526284}}
-			Uuid{u4{15823668362021807722,4628776164797055223}}
-		}
-		s %TypeName{"AssetCache/Common/Stuff/VolumetricGlowMat.autogen.ezShader"}
-		u3 %TypeSize{0}
-		u3 %TypeVersion{2}
 	}
 }
 o
@@ -1255,6 +1247,16 @@ o
 }
 o
 {
+	Uuid %id{u4{7510905773344034544,9715078091870630000}}
+	s %t{"ezCategoryAttribute"}
+	u3 %v{1}
+	p
+	{
+		s %Category{"Permutation"}
+	}
+}
+o
+{
 	Uuid %id{u4{8531456234757106898,9843359760009772741}}
 	s %t{"ezReflectedPropertyDescriptor"}
 	u3 %v{2}
@@ -1278,6 +1280,16 @@ o
 	p
 	{
 		f %Value{0}
+	}
+}
+o
+{
+	Uuid %id{u4{8147085278778859840,10194558944798423014}}
+	s %t{"ezDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		d %Value{0x000000000000D03F}
 	}
 }
 o
@@ -1309,12 +1321,20 @@ o
 }
 o
 {
-	Uuid %id{u4{10568432684736924068,11200711681055452872}}
-	s %t{"ezCategoryAttribute"}
-	u3 %v{1}
+	Uuid %id{u4{795820248760503200,11285378393045423840}}
+	s %t{"ezReflectedPropertyDescriptor"}
+	u3 %v{2}
 	p
 	{
-		s %Category{"Permutation"}
+		VarArray %Attributes
+		{
+			Uuid{u4{6862666737972016546,7444206388540741838}}
+			Uuid{u4{8147085278778859840,10194558944798423014}}
+		}
+		s %Category{"ezPropertyCategory::Member"}
+		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
+		s %Name{"MaskThreshold"}
+		s %Type{"float"}
 	}
 }
 o
@@ -1369,23 +1389,6 @@ o
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
 		s %Name{"b"}
 		s %Type{"float"}
-	}
-}
-o
-{
-	Uuid %id{u4{14359949897663503018,12349461981223657107}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes
-		{
-			Uuid{u4{12918012304811697200,8189245671882186638}}
-		}
-		s %Category{"ezPropertyCategory::Member"}
-		s %Flags{"ezPropertyFlags::IsEnum|ezPropertyFlags::Phantom"}
-		s %Name{"BLEND_MODE"}
-		s %Type{"BLEND_MODE"}
 	}
 }
 o
@@ -1480,16 +1483,6 @@ o
 	p
 	{
 		Vec3 %Value{f{0x0000803F,0x0000803F,0x0000803F}}
-	}
-}
-o
-{
-	Uuid %id{u4{18265940027812410567,14669762836240628089}}
-	s %t{"ezDefaultValueAttribute"}
-	u3 %v{1}
-	p
-	{
-		f %Value{0x0000803E}
 	}
 }
 o
@@ -1620,16 +1613,6 @@ o
 }
 o
 {
-	Uuid %id{u4{11811334439189766963,16127283132163849768}}
-	s %t{"ezCategoryAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Category{"Constant"}
-	}
-}
-o
-{
 	Uuid %id{u4{18349806816312788076,16229247027635378395}}
 	s %t{"ezReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -1716,6 +1699,23 @@ o
 		s %TypeName{"ezMaterialShaderMode"}
 		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{4640374351635900250,17596537654059906221}}
+	s %t{"ezReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{7510905773344034544,9715078091870630000}}
+		}
+		s %Category{"ezPropertyCategory::Member"}
+		s %Flags{"ezPropertyFlags::IsEnum|ezPropertyFlags::Phantom"}
+		s %Name{"BLEND_MODE"}
+		s %Type{"BLEND_MODE"}
 	}
 }
 o

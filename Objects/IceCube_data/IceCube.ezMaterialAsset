@@ -1229,7 +1229,7 @@ o
 	u3 %v{1}
 	p
 	{
-		f %Value{0x0000803E}
+		d %Value{0x000000000000D03F}
 	}
 }
 o
@@ -1374,9 +1374,12 @@ o
 o
 {
 	Uuid %id{u4{5462441643721332854,14999284051315167138}}
-	s %t{"ezExposeColorAlphaAttribute"}
+	s %t{"ezDefaultValueAttribute"}
 	u3 %v{1}
-	p{}
+	p
+	{
+		Color %Value{f{0x902D5B3E,0xB570293F,0x0000803F,0x0000803F}}
+	}
 }
 o
 {
@@ -1556,12 +1559,9 @@ o
 o
 {
 	Uuid %id{u4{7934230600191923959,16705434397992460427}}
-	s %t{"ezDefaultValueAttribute"}
+	s %t{"ezExposeColorAlphaAttribute"}
 	u3 %v{1}
-	p
-	{
-		Color %Value{f{0x902D5B3E,0xB570293F,0x0000803F,0x0000803F}}
-	}
+	p{}
 }
 o
 {
