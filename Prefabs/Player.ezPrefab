@@ -11,7 +11,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{9948428539788972452,5693514604989640662}}
-		u4 %Hash{18316825890547930682}
+		u4 %Hash{11862231637854607780}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{592744304708184274,14641007874030516181}}
@@ -400,7 +400,7 @@ o
 			Uuid{u4{13565034080654770949,14763355487724406436}}
 			Uuid{u4{6077719088545909983,14673286384444732120}}
 		}
-		s %GlobalKey{""}
+		s %GlobalKey{"Player"}
 		Vec3 %LocalPosition{f{0,0,0}}
 		Quat %LocalRotation{f{0,0,0,0x0000803F}}
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
