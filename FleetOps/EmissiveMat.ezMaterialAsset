@@ -12,12 +12,13 @@ o
 		VarArray %Dependencies
 		{
 			s{":app/VisualShader/DefaultMaterial.ddl"}
+			s{":app/VisualShader/Inputs.ddl"}
 			s{":app/VisualShader/Math_Basic.ddl"}
 			s{":app/VisualShader/Parameters.ddl"}
 			s{":app/VisualShader/Textures.ddl"}
 		}
 		Uuid %DocumentID{u4{15903596662049351313,5036358118506951106}}
-		u4 %Hash{15772793047951643490}
+		u4 %Hash{2241821228784416094}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -129,7 +130,6 @@ o
 		{
 			Uuid{u4{13457631019404919852,8677627788689998313}}
 			Uuid{u4{13190383498449873539,14868678697096349761}}
-			Uuid{u4{10059695357399267283,9838072586141204232}}
 		}
 		Vec2 %Node::Pos{f{0x5351E8C2,0x0F3605C3}}
 		s %Texture{""}
@@ -149,6 +149,37 @@ o
 		s %NormalTexture{"{ 4dc82890-39e3-4bfc-a97d-86a984d4d3db }"}
 		s %SHADING_MODE{"SHADING_MODE::SHADING_MODE_LIT"}
 		b %TWO_SIDED{0}
+	}
+}
+o
+{
+	Uuid %id{u4{11341009774568751241,5236193468033571852}}
+	s %t{"ShaderNode::InstanceData"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Node::Connections
+		{
+			Uuid{u4{9025827153296289056,13226448189294005741}}
+		}
+		Vec2 %Node::Pos{f{0x75ED5B42,0x921DA642}}
+	}
+}
+o
+{
+	Uuid %id{u4{7718749488105140870,5536860878043080398}}
+	s %t{"ShaderNode::Multiply"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Node::Connections
+		{
+			Uuid{u4{13095783436914304055,15838254224446796153}}
+			Uuid{u4{16050512794762190800,6396831345760543178}}
+		}
+		Vec2 %Node::Pos{f{0x54646743,0xE032ACBF}}
+		f %a{0x0000803F}
+		f %b{0x0000803F}
 	}
 }
 o
@@ -179,6 +210,18 @@ o
 }
 o
 {
+	Uuid %id{u4{16050512794762190800,6396831345760543178}}
+	s %t{"ConnectionInternal"}
+	u3 %v{1}
+	p
+	{
+		s %SourcePin{"result"}
+		Uuid %Target{u4{14527972703481548174,4854793530528460914}}
+		s %TargetPin{"a"}
+	}
+}
+o
+{
 	Uuid %id{u4{18096612296587978288,6449934965513159559}}
 	s %t{"ezDocumentRoot"}
 	u3 %v{1}
@@ -194,6 +237,8 @@ o
 			Uuid{u4{14527972703481548174,4854793530528460914}}
 			Uuid{u4{4849186462065243068,4657367323628553286}}
 			Uuid{u4{15615102834771454125,4928674388096828298}}
+			Uuid{u4{11341009774568751241,5236193468033571852}}
+			Uuid{u4{7718749488105140870,5536860878043080398}}
 		}
 	}
 }
@@ -205,19 +250,7 @@ o
 	p
 	{
 		s %SourcePin{"RGBA"}
-		Uuid %Target{u4{1706951328674939787,4639124623849881781}}
-		s %TargetPin{"BaseColor"}
-	}
-}
-o
-{
-	Uuid %id{u4{10059695357399267283,9838072586141204232}}
-	s %t{"ConnectionInternal"}
-	u3 %v{1}
-	p
-	{
-		s %SourcePin{"Alpha"}
-		Uuid %Target{u4{4849186462065243068,4657367323628553286}}
+		Uuid %Target{u4{7718749488105140870,5536860878043080398}}
 		s %TargetPin{"a"}
 	}
 }
@@ -230,6 +263,18 @@ o
 	{
 		s %SourcePin{"Value"}
 		Uuid %Target{u4{4849186462065243068,4657367323628553286}}
+		s %TargetPin{"b"}
+	}
+}
+o
+{
+	Uuid %id{u4{9025827153296289056,13226448189294005741}}
+	s %t{"ConnectionInternal"}
+	u3 %v{1}
+	p
+	{
+		s %SourcePin{"Color"}
+		Uuid %Target{u4{7718749488105140870,5536860878043080398}}
 		s %TargetPin{"b"}
 	}
 }
@@ -252,8 +297,8 @@ o
 	u3 %v{1}
 	p
 	{
-		s %SourcePin{"RGBA"}
-		Uuid %Target{u4{14527972703481548174,4854793530528460914}}
+		s %SourcePin{"Alpha"}
+		Uuid %Target{u4{4849186462065243068,4657367323628553286}}
 		s %TargetPin{"a"}
 	}
 }
@@ -267,6 +312,18 @@ o
 		s %SourcePin{"result"}
 		Uuid %Target{u4{1706951328674939787,4639124623849881781}}
 		s %TargetPin{"Emissive"}
+	}
+}
+o
+{
+	Uuid %id{u4{13095783436914304055,15838254224446796153}}
+	s %t{"ConnectionInternal"}
+	u3 %v{1}
+	p
+	{
+		s %SourcePin{"result"}
+		Uuid %Target{u4{1706951328674939787,4639124623849881781}}
+		s %TargetPin{"BaseColor"}
 	}
 }
 }
@@ -1248,6 +1305,24 @@ o
 }
 o
 {
+	Uuid %id{u4{10765536432168002227,14077301894287280531}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezVisualShaderNodeBase"}
+		s %PluginName{"VisualShaderTypes"}
+		VarArray %Properties{}
+		s %TypeName{"ShaderNode::InstanceData"}
+		u3 %TypeSize{0}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
 	Uuid %id{u4{2531204913114908651,14636118749865147444}}
 	s %t{"ezDefaultValueAttribute"}
 	u3 %v{1}
@@ -1458,7 +1533,7 @@ o
 		s %PluginName{"ezEditorPluginAssets"}
 		VarArray %Properties{}
 		s %TypeName{"ezMaterialAssetProperties"}
-		u3 %TypeSize{328}
+		u3 %TypeSize{320}
 		u3 %TypeVersion{4}
 	}
 }

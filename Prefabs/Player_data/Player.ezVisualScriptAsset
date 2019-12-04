@@ -11,7 +11,7 @@ o
 		s %AssetType{"Visual Script"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{5136867242186533778,4804868985307711422}}
-		u4 %Hash{8364297313743864536}
+		u4 %Hash{1607150774774133309}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{16379835059721556416,5177569672476132330}}
@@ -356,18 +356,6 @@ o
 }
 o
 {
-	Uuid %id{u4{4346893484615939402,5433642434680214796}}
-	s %t{"ConnectionInternal"}
-	u3 %v{1}
-	p
-	{
-		s %SourcePin{"OnPressed"}
-		Uuid %Target{u4{17667720273520774189,9928131265554086051}}
-		s %TargetPin{"send"}
-	}
-}
-o
-{
 	Uuid %id{u4{3276660435532314171,5441127444129996695}}
 	s %t{"ConnectionInternal"}
 	u3 %v{1}
@@ -449,7 +437,6 @@ o
 			Uuid{u4{18082101938035026713,9856609905471993060}}
 			Uuid{u4{16639907490472063547,9878830696784241713}}
 			Uuid{u4{5912941602589894431,9896698261819564530}}
-			Uuid{u4{17667720273520774189,9928131265554086051}}
 			Uuid{u4{1464393063873383504,9953381013535483133}}
 			Uuid{u4{17932461671466917454,9993297844214828199}}
 			Uuid{u4{11149954979911158575,10014727852635885945}}
@@ -860,29 +847,13 @@ o
 }
 o
 {
-	Uuid %id{u4{17667720273520774189,9928131265554086051}}
-	s %t{"VisualScriptNode::ezMsgTriggerRaycastInteractionComponent<send>"}
-	u3 %v{1}
-	p
-	{
-		Time %Delay{d{0}}
-		VarArray %Node::Connections{}
-		Vec2 %Node::Pos{f{0x327CFC44,0x38DF9444}}
-		b %Recursive{0}
-	}
-}
-o
-{
 	Uuid %id{u4{1464393063873383504,9953381013535483133}}
 	s %t{"VisualScriptNode::ezVisualScriptNode_InputEvent"}
 	u3 %v{1}
 	p
 	{
 		s %InputAction{"Use"}
-		VarArray %Node::Connections
-		{
-			Uuid{u4{4346893484615939402,5433642434680214796}}
-		}
+		VarArray %Node::Connections{}
 		Vec2 %Node::Pos{f{0x34D7AA44,0x83F07944}}
 	}
 }
@@ -909,10 +880,7 @@ o
 	u3 %v{1}
 	p
 	{
-		VarArray %Node::Connections
-		{
-			Uuid{u4{2847018589875791471,14389106338980950847}}
-		}
+		VarArray %Node::Connections{}
 		Vec2 %Node::Pos{f{0x6533AA44,0xD7EC9444}}
 		s %Type{"ezPxRaycastInteractComponent"}
 	}
@@ -1298,18 +1266,6 @@ o
 		s %SourcePin{"OnFalse"}
 		Uuid %Target{u4{18373247599323556667,10389991897914776372}}
 		s %TargetPin{"Deactivate"}
-	}
-}
-o
-{
-	Uuid %id{u4{2847018589875791471,14389106338980950847}}
-	s %t{"ConnectionInternal"}
-	u3 %v{1}
-	p
-	{
-		s %SourcePin{"Component"}
-		Uuid %Target{u4{17667720273520774189,9928131265554086051}}
-		s %TargetPin{"Component"}
 	}
 }
 o
@@ -1720,28 +1676,6 @@ o
 }
 o
 {
-	Uuid %id{u4{18404011757432572276,4271106932133111210}}
-	s %t{"ezReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
-		VarArray %Functions{}
-		s %ParentTypeName{"ezVisualScriptNodeBase"}
-		s %PluginName{"VisualScriptTypes"}
-		VarArray %Properties
-		{
-			Uuid{u4{12486966331364604858,16022964265942561561}}
-			Uuid{u4{7541628374041503468,6004669374982781444}}
-		}
-		s %TypeName{"VisualScriptNode::ezMsgTriggerRaycastInteractionComponent<send>"}
-		u3 %TypeSize{0}
-		u3 %TypeVersion{1}
-	}
-}
-o
-{
 	Uuid %id{u4{1217342449535216093,4706193894255600087}}
 	s %t{"ezVisScriptMappingAttribute"}
 	u3 %v{1}
@@ -1798,20 +1732,6 @@ o
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
 		s %Name{"Name"}
 		s %Type{"ezString"}
-	}
-}
-o
-{
-	Uuid %id{u4{7541628374041503468,6004669374982781444}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes{}
-		s %Category{"ezPropertyCategory::Member"}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"Recursive"}
-		s %Type{"bool"}
 	}
 }
 o
@@ -2450,20 +2370,6 @@ o
 		s %TypeName{"ezVisualScriptAssetProperties"}
 		u3 %TypeSize{56}
 		u3 %TypeVersion{1}
-	}
-}
-o
-{
-	Uuid %id{u4{12486966331364604858,16022964265942561561}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes{}
-		s %Category{"ezPropertyCategory::Member"}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"Delay"}
-		s %Type{"ezTime"}
 	}
 }
 o
