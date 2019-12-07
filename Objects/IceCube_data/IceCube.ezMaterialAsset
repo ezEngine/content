@@ -17,7 +17,7 @@ o
 			s{":app/VisualShader/Utils.ddl"}
 		}
 		Uuid %DocumentID{u4{8991250395416778381,5524739600337817759}}
-		u4 %Hash{2550376453397949148}
+		u4 %Hash{15775692186097458905}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -37,6 +37,18 @@ Objects
 {
 o
 {
+	Uuid %id{u4{13322057737558815567,2856253055474291387}}
+	s %t{"ConnectionInternal"}
+	u3 %v{1}
+	p
+	{
+		s %SourcePin{"Value"}
+		Uuid %Target{u4{13785748936382107008,5101763498737384680}}
+		s %TargetPin{"SubsurfaceColor"}
+	}
+}
+o
+{
 	Uuid %id{u4{373902548264979168,3179747852316121091}}
 	s %t{"ConnectionInternal"}
 	u3 %v{1}
@@ -54,14 +66,14 @@ o
 	u3 %v{2}
 	p
 	{
-		s %BLEND_MODE{"BLEND_MODE::BLEND_MODE_TRANSPARENT"}
+		s %BLEND_MODE{"BLEND_MODE::BLEND_MODE_OPAQUE"}
 		s %BaseTexture{"{ b088e0da-a26d-4894-9eef-0cd28472ac03 }"}
 		f %MaskThreshold{0x0000803E}
 		s %NormalTexture{"{ 7b626370-02ee-4c54-a86c-27470958d4b5 }"}
 		s %RoughnessTexture{"{ f207c20e-dfa0-418c-973d-204aba4077ae }"}
 		s %SHADING_MODE{"SHADING_MODE::SHADING_MODE_LIT"}
 		b %TWO_SIDED{0}
-		Color %TintColor{f{0x902D5B3E,0xB570293F,0x0000803F,0x0000803F}}
+		Color %TintColor{f{0x5182163F,0x40F0EB3F,0x454B3140,0x0000803F}}
 	}
 }
 o
@@ -89,11 +101,8 @@ o
 	{
 		f %IoR{0x6666A63F}
 		f %NewOpacity{0x0000803F}
-		VarArray %Node::Connections
-		{
-			Uuid{u4{5046006961529894147,16467389648013028695}}
-		}
-		Vec2 %Node::Pos{f{0xD8855044,0x89678743}}
+		VarArray %Node::Connections{}
+		Vec2 %Node::Pos{f{0xE4913B44,0x8B7E8443}}
 		f %Thickness{0x0000803F}
 		Vec3 %TintColor{f{0x0000803F,0x0000803F,0x0000803F}}
 	}
@@ -109,8 +118,9 @@ o
 		VarArray %Node::Connections
 		{
 			Uuid{u4{446289907545371053,12248521586678548774}}
+			Uuid{u4{13322057737558815567,2856253055474291387}}
 		}
-		Vec2 %Node::Pos{f{0x355B0D44,0x4D2AAF43}}
+		Vec2 %Node::Pos{f{0x355B0D44,0x3C98CE43}}
 		s %ParamName{"TintColor"}
 	}
 }
@@ -147,6 +157,7 @@ o
 		f %Reflectance{0x0000803E}
 		Vec4 %RefractionColor{f{0,0,0,0x0000803F}}
 		f %Roughness{0xCDCC4C3E}
+		Vec3 %SubsurfaceColor{f{0,0,0}}
 	}
 }
 o
@@ -248,18 +259,6 @@ o
 		s %TargetPin{"Roughness"}
 	}
 }
-o
-{
-	Uuid %id{u4{5046006961529894147,16467389648013028695}}
-	s %t{"ConnectionInternal"}
-	u3 %v{1}
-	p
-	{
-		s %SourcePin{"Refraction"}
-		Uuid %Target{u4{13785748936382107008,5101763498737384680}}
-		s %TargetPin{"RefractionColor"}
-	}
-}
 }
 Types
 {
@@ -353,6 +352,7 @@ o
 			Uuid{u4{15388913065968328453,11188089115316402371}}
 			Uuid{u4{13652862081152275637,1931931446829192038}}
 			Uuid{u4{4737060376990519197,5534452074735684677}}
+			Uuid{u4{17888293823252574217,5278584362329602531}}
 		}
 		s %TypeName{"ShaderNode::MaterialOutput"}
 		u3 %TypeSize{0}
@@ -785,6 +785,23 @@ o
 }
 o
 {
+	Uuid %id{u4{17888293823252574217,5278584362329602531}}
+	s %t{"ezReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{13542406804441022416,9548951225033578222}}
+		}
+		s %Category{"ezPropertyCategory::Member"}
+		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
+		s %Name{"SubsurfaceColor"}
+		s %Type{"ezVec3"}
+	}
+}
+o
+{
 	Uuid %id{u4{4737060376990519197,5534452074735684677}}
 	s %t{"ezReflectedPropertyDescriptor"}
 	u3 %v{2}
@@ -1138,6 +1155,16 @@ o
 	p
 	{
 		s %Category{"Permutation"}
+	}
+}
+o
+{
+	Uuid %id{u4{13542406804441022416,9548951225033578222}}
+	s %t{"ezDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		Vec3 %Value{f{0,0,0}}
 	}
 }
 o

@@ -14,7 +14,7 @@ o
 			s{"Objects/Asteroid_data/Asteroid.obj"}
 		}
 		Uuid %DocumentID{u4{2545641796057708168,5030287473565369107}}
-		u4 %Hash{15095165430110318092}
+		u4 %Hash{8780458220807782919}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -80,7 +80,7 @@ o
 	u3 %v{1}
 	p
 	{
-		s %Label{"lambert2SG"}
+		s %Label{"DefaultMaterial"}
 		s %Resource{"{ eed69dde-aab0-4ccd-8f98-a9822a389ea0 }"}
 	}
 }
