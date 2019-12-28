@@ -39,9 +39,10 @@ export class Player2 extends ez.TickedTypescriptComponent {
         this.weapon2 = this.gun.FindChildByName("Weapon2", true);
         this.weapon3 = this.gun.FindChildByName("Weapon3", true);
         this.interact = this.camera.TryGetComponentOfBaseType(ez.PxRaycastInteractComponent);
+        this.SetTickInterval(ez.Time.Milliseconds(0));
     }
 
-    Tick(): number {
+    Tick(): void {
 
         // character controller update
         {
@@ -67,8 +68,6 @@ export class Player2 extends ez.TickedTypescriptComponent {
 
             this.headBone.ChangeVerticalRotation(down - up);
         }
-
-        return ez.Time.Milliseconds(0);
     }
 
     static RegisterMessageHandlers() {
