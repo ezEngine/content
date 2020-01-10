@@ -34,7 +34,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{2748503368244801213,5677744300305575374}}
-		u4 %Hash{3051994387561830070}
+		u4 %Hash{11436360955496306930}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{13485460540666280126,647087153874927426}}
@@ -117,7 +117,7 @@ o
 		Vec3 %LocalPosition{f{0,0,0}}
 		Quat %LocalRotation{f{0,0,0,0x0000803F}}
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
-		f %LocalUniformScaling{0x0000803F}
+		f %LocalUniformScaling{0x00000040}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{"PushButton"}
 		VarArray %Tags
