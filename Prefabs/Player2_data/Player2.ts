@@ -1,5 +1,7 @@
 import ez = require("TypeScript/ez")
 
+import msgs = require("Scripting/Messages")
+
 enum ActiveWeapon {
     Gun1,
     Gun2,
@@ -79,6 +81,7 @@ export class Player2 extends ez.TickedTypescriptComponent {
 
         ez.TypescriptComponent.RegisterMessageHandler(ez.MsgInputActionTriggered, "OnMsgInputActionTriggered");
         ez.TypescriptComponent.RegisterMessageHandler(ez.MsgDamage, "OnMsgMsgDamage");
+        ez.TypescriptComponent.RegisterMessageHandler(msgs.MsgAddHealth, "OnMsgAddHealth");
     }
 
     OnMsgInputActionTriggered(msg: ez.MsgInputActionTriggered): void {
@@ -165,6 +168,19 @@ export class Player2 extends ez.TickedTypescriptComponent {
 
             camera.SetParent(rbCam);
         }
+    }
+
+    OnMsgAddHealth(msg: msgs.MsgAddHealth): void {
+
+
+        if (this.health <= 0 || this.health >= 100) {
+            msg.return_consumed = false;
+            return;
+        }
+
+        msg.return_consumed = true;
+
+        this.health = ez.Utils.Clamp(this.health + msg.addHealth, 1, 100);
     }
 }
 

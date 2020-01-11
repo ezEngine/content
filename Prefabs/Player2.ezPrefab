@@ -21,7 +21,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{8325318639183543703,4757176779305952111}}
-		u4 %Hash{2423717158884209033}
+		u4 %Hash{6179962192598422135}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{14146522745554303380,2902865256510917925}}
@@ -165,7 +165,7 @@ o
 			Uuid{u4{1632982377772426898,5345566257393890410}}
 			Uuid{u4{12321513403865792957,5135711551099382971}}
 		}
-		s %GlobalKey{""}
+		s %GlobalKey{"Player"}
 		Vec3 %LocalPosition{f{0,0,0}}
 		Quat %LocalRotation{f{0,0,0,0x0000803F}}
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
@@ -219,7 +219,7 @@ o
 {
 	Uuid %id{u4{1632982377772426898,5345566257393890410}}
 	s %t{"ezTypeScriptComponent"}
-	u3 %v{3}
+	u3 %v{4}
 	p
 	{
 		b %Active{1}
@@ -846,8 +846,8 @@ o
 		s %PluginName{"ezEditorPluginTypeScript"}
 		VarArray %Properties{}
 		s %TypeName{"ezTypeScriptComponent"}
-		u3 %TypeSize{176}
-		u3 %TypeVersion{3}
+		u3 %TypeSize{184}
+		u3 %TypeVersion{4}
 	}
 }
 o
