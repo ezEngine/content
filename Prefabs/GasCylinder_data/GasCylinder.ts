@@ -10,8 +10,8 @@ export class GasCylinder extends ez.TickedTypescriptComponent {
         ez.TypescriptComponent.RegisterMessageHandler(ez.MsgDamage, "OnMsgDamage");
     }
 
-    private capHealth = 10;
-    private bodyHealth = 100;
+    private capHealth = 5;
+    private bodyHealth = 30;
 
     constructor() {
         super()
@@ -100,7 +100,7 @@ export class GasCylinder extends ez.TickedTypescriptComponent {
             let spawnExpl = exp.TryGetComponentOfBaseType(ez.SpawnComponent);
 
             if (spawnExpl != null) {
-                spawnExpl.TriggerManualSpawn();
+                spawnExpl.TriggerManualSpawn(false, ez.Vec3.ZeroVector());
             }
         }
 

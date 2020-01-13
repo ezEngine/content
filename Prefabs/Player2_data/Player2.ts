@@ -1,11 +1,14 @@
 import ez = require("TypeScript/ez")
 
 import msgs = require("Scripting/Messages")
+import guns = require("Prefabs/Guns/Gun")
 
 enum ActiveWeapon {
-    Gun1,
-    Gun2,
-    Gun3
+    Pistol = 0,
+    Shotgun = 1,
+    MachineGun = 2,
+    PlasmaRifle = 3,
+    RocketLauncher = 4,
 };
 
 export class Player2 extends ez.TickedTypescriptComponent {
@@ -21,12 +24,10 @@ export class Player2 extends ez.TickedTypescriptComponent {
     camera: ez.GameObject = null;
     input: ez.InputComponent = null;
     headBone: ez.HeadBoneComponent = null;
-    gun: ez.GameObject = null;
+    gunRoot: ez.GameObject = null;
     flashlight: ez.SpotLightComponent = null;
-    activeWeapon: ActiveWeapon = ActiveWeapon.Gun1;
-    weapon1: ez.GameObject = null;
-    weapon2: ez.GameObject = null;
-    weapon3: ez.GameObject = null;
+    activeWeapon: ActiveWeapon = ActiveWeapon.Pistol;
+    guns: ez.GameObject[] = [null, null, null];
     interact: ez.PxRaycastInteractComponent = null;
 
     OnSimulationStarted(): void {
@@ -35,11 +36,13 @@ export class Player2 extends ez.TickedTypescriptComponent {
         this.camera = owner.FindChildByName("Camera", true);
         this.input = owner.TryGetComponentOfBaseType(ez.InputComponent);
         this.headBone = this.camera.TryGetComponentOfBaseType(ez.HeadBoneComponent);
-        this.gun = owner.FindChildByName("Gun", true);
-        this.flashlight = this.gun.TryGetComponentOfBaseType(ez.SpotLightComponent);
-        this.weapon1 = this.gun.FindChildByName("Weapon1", true);
-        this.weapon2 = this.gun.FindChildByName("Weapon2", true);
-        this.weapon3 = this.gun.FindChildByName("Weapon3", true);
+        this.gunRoot = owner.FindChildByName("Gun", true);
+        this.flashlight = this.gunRoot.TryGetComponentOfBaseType(ez.SpotLightComponent);
+        this.guns[ActiveWeapon.Pistol] = ez.Utils.FindPrefabRootNode(this.gunRoot.FindChildByName("Pistol", true));
+        this.guns[ActiveWeapon.Shotgun] = ez.Utils.FindPrefabRootNode(this.gunRoot.FindChildByName("Shotgun", true));
+        this.guns[ActiveWeapon.MachineGun] = ez.Utils.FindPrefabRootNode(this.gunRoot.FindChildByName("MachineGun", true));
+        this.guns[ActiveWeapon.PlasmaRifle] = ez.Utils.FindPrefabRootNode(this.gunRoot.FindChildByName("PlasmaRifle", true));
+        this.guns[ActiveWeapon.RocketLauncher] = ez.Utils.FindPrefabRootNode(this.gunRoot.FindChildByName("RocketLauncher", true));
         this.interact = this.camera.TryGetComponentOfBaseType(ez.PxRaycastInteractComponent);
         this.SetTickInterval(ez.Time.Milliseconds(0));
     }
@@ -96,15 +99,23 @@ export class Player2 extends ez.TickedTypescriptComponent {
             }
 
             if (msg.InputActionHash == ez.Utils.StringToHash("SwitchWeapon1")) {
-                this.activeWeapon = ActiveWeapon.Gun1;
+                this.activeWeapon = ActiveWeapon.Pistol;
             }
 
             if (msg.InputActionHash == ez.Utils.StringToHash("SwitchWeapon2")) {
-                this.activeWeapon = ActiveWeapon.Gun2;
+                this.activeWeapon = ActiveWeapon.Shotgun;
             }
 
             if (msg.InputActionHash == ez.Utils.StringToHash("SwitchWeapon3")) {
-                this.activeWeapon = ActiveWeapon.Gun3;
+                this.activeWeapon = ActiveWeapon.MachineGun;
+            }
+
+            if (msg.InputActionHash == ez.Utils.StringToHash("SwitchWeapon4")) {
+                this.activeWeapon = ActiveWeapon.PlasmaRifle;
+            }
+
+            if (msg.InputActionHash == ez.Utils.StringToHash("SwitchWeapon5")) {
+                this.activeWeapon = ActiveWeapon.RocketLauncher;
             }
 
             if (msg.InputActionHash == ez.Utils.StringToHash("Use")) {
@@ -114,20 +125,10 @@ export class Player2 extends ez.TickedTypescriptComponent {
 
         if (msg.InputActionHash == ez.Utils.StringToHash("Shoot")) {
 
-            switch (this.activeWeapon) {
-                case ActiveWeapon.Gun1:
-                    this.weapon1.TryGetComponentOfBaseType(ez.SpawnComponent).TriggerManualSpawn();
-                    break;
+            let msgFire = new guns.MsgFireGun();
+            msgFire.triggerState = msg.TriggerState;
 
-                case ActiveWeapon.Gun2:
-                    this.weapon2.TryGetComponentOfBaseType(ez.SpawnComponent).TriggerManualSpawn();
-                    break;
-
-                case ActiveWeapon.Gun3:
-                    this.weapon3.TryGetComponentOfBaseType(ez.SpawnComponent).TriggerManualSpawn();
-                    break;
-            }
-
+            this.guns[this.activeWeapon].SendMessage(msgFire);
         }
     }
 
