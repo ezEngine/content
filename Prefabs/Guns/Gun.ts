@@ -1,12 +1,39 @@
 import ez = require("TypeScript/ez")
 
-export class MsgFireGun extends ez.Message {
-    EZ_DECLARE_MESSAGE_TYPE;
-
-    triggerState: ez.TriggerState;
+export enum AmmoType {
+    Pistol,
+    MachineGun,
+    Shotgun,
+    PlasmaRifle,
+    Rockets,
 }
 
-export abstract class Gun extends ez.TypescriptComponent {
+export class AmmoPouch {
+    ammo: number[] = [];
+
+    constructor() {
+        this.ammo[AmmoType.Pistol] = 20;
+        this.ammo[AmmoType.MachineGun] = 50;
+        this.ammo[AmmoType.PlasmaRifle] = 50;
+        this.ammo[AmmoType.Shotgun] = 10;
+        this.ammo[AmmoType.Rockets] = 5;
+    }
+}
+
+export enum GunInteraction {
+    Fire,
+    Reload,
+}
+
+export class MsgGunInteraction extends ez.Message {
+    EZ_DECLARE_MESSAGE_TYPE;
+
+    interaction: GunInteraction;
+    keyState: ez.TriggerState;
+    ammoPouch: AmmoPouch = null;
+}
+
+export abstract class Gun extends ez.TickedTypescriptComponent {
 
     /* BEGIN AUTO-GENERATED: VARIABLES */
     /* END AUTO-GENERATED: VARIABLES */
@@ -23,48 +50,81 @@ export abstract class Gun extends ez.TypescriptComponent {
 
     static RegisterMessageHandlers() {
 
-        ez.TypescriptComponent.RegisterMessageHandler(MsgFireGun, "OnMsgFireGun");
+        ez.TypescriptComponent.RegisterMessageHandler(MsgGunInteraction, "OnMsgGunInteraction");
     }
 
     OnSimulationStarted(): void {
         let owner = this.GetOwner();
-        
+
         let node = owner.FindChildByName("ShootSound", true);
         if (node != null) {
             this.shootSoundComponent = node.TryGetComponentOfBaseType(ez.FmodEventComponent);
         }
     }
 
-    OnMsgFireGun(msg: MsgFireGun): void {
+    OnMsgGunInteraction(msg: MsgGunInteraction): void {
 
-        if (msg.triggerState == ez.TriggerState.Deactivated) {
-            this.requireSingleShotReset = false;
-            return;
-        }
+        if (msg.interaction == GunInteraction.Fire) {
 
-        if (this.singleShotPerTrigger) {
+            if (msg.keyState == ez.TriggerState.Deactivated) {
+                this.requireSingleShotReset = false;
+                return;
+            }
 
-            if (msg.triggerState == ez.TriggerState.Activated) {
+            if (this.ammoInClip == 0) {
+                // empty gun sound etc.
+                return;
+            }
 
-                if (!this.requireSingleShotReset) {
-                    this.requireSingleShotReset = true;
-                    this.Fire();
+            if (this.singleShotPerTrigger) {
+
+                if (msg.keyState == ez.TriggerState.Activated) {
+
+                    if (!this.requireSingleShotReset) {
+                        this.requireSingleShotReset = true;
+                        this.Fire();
+                    }
                 }
             }
-        }
-        else {
+            else {
 
-            this.Fire();
+                this.Fire();
+            }
+        }
+        else if (msg.interaction == GunInteraction.Reload) {
+
+            if (this.GetAmmoInClip() >= this.GetAmmoClipSize())
+                return;
+
+            this.Reload(msg.ammoPouch);
         }
     }
 
     abstract Fire(): void;
+    
+    Reload(ammoPouch: AmmoPouch): void {
+        let type = this.GetAmmoType();
+        let needed = this.GetAmmoClipSize() - this.ammoInClip;
+        let take = Math.min(needed, ammoPouch.ammo[type]);
+
+        ammoPouch.ammo[type] -= take;
+        this.ammoInClip += take;
+    }
 
     PlayShootSound(): void {
 
         if (this.shootSoundComponent != null && this.shootSoundComponent.IsValid()) {
             this.shootSoundComponent.StartOneShot();
         }
+    }
+
+    protected ammoInClip: number = 0;
+
+    abstract GetAmmoType(): AmmoType;
+    abstract GetAmmoClipSize(): number;
+
+    GetAmmoInClip(): number {
+        return this.ammoInClip;
     }
 }
 

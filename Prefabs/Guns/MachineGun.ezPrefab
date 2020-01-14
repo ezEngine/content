@@ -11,7 +11,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{8220003832695476884,5171673296852343585}}
-		u4 %Hash{1019626681757388018}
+		u4 %Hash{3121200636979331081}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{4405703544011486622,14687799291685879860}}
@@ -19,9 +19,9 @@ o
 		VarArray %Outputs{}
 		VarArray %References
 		{
+			s{"{ 75e3d101-4bb1-4830-8e90-88c3a944936d }"}
 			s{"{ aa1fc14c-cf99-4ae1-a9e6-f1fe042695c9 }"}
 			s{"{ d4e58c28-450f-449a-a920-7e0459066700 }"}
-			s{"{ f2190f5d-4f25-4e56-bca2-a79c78c66bb2 }"}
 		}
 	}
 }
@@ -191,7 +191,7 @@ o
 		b %Active{1}
 		b %HandleGlobalEvents{0}
 		VarDict %Parameters{}
-		s %Script{"{ f2190f5d-4f25-4e56-bca2-a79c78c66bb2 }"}
+		s %Script{"{ 75e3d101-4bb1-4830-8e90-88c3a944936d }"}
 	}
 }
 }

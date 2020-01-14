@@ -1,7 +1,9 @@
 import ez = require("TypeScript/ez")
-import gun = require("Prefabs/Guns/Gun")
+import guns = require("Prefabs/Guns/Gun")
 
-export class Pistol extends gun.Gun {
+export class Pistol extends guns.Gun {
+
+
     /* BEGIN AUTO-GENERATED: VARIABLES */
     /* END AUTO-GENERATED: VARIABLES */
 
@@ -13,16 +15,33 @@ export class Pistol extends gun.Gun {
 
     static RegisterMessageHandlers() {
 
-        gun.Gun.RegisterMessageHandlers();
+        guns.Gun.RegisterMessageHandlers();
 
         //ez.TypescriptComponent.RegisterMessageHandler(ez.MsgSetColor, "OnMsgSetColor");
     }
 
+    Tick(): void { }
+
+    GetAmmoType(): guns.AmmoType {
+        return guns.AmmoType.Pistol;
+    }
+
+    GetAmmoClipSize(): number {
+        return 15;
+    }
+
     Fire(): void {
 
-        this.GetOwner().TryGetComponentOfBaseType(ez.SpawnComponent).TriggerManualSpawn(false, ez.Vec3.ZeroVector());
+        let spawn = this.GetOwner().FindChildByName("Spawn").TryGetComponentOfBaseType(ez.SpawnComponent);
+        if (spawn.CanTriggerManualSpawn() == false)
+            return;
+
+        this.ammoInClip -= 1;
+
+        spawn.TriggerManualSpawn(false, ez.Vec3.ZeroVector());
 
         this.PlayShootSound();
+
     }
 
 }

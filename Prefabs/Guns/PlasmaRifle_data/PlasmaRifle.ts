@@ -18,11 +18,23 @@ export class PlasmaRifle extends gun.Gun {
         //ez.TypescriptComponent.RegisterMessageHandler(ez.MsgSetColor, "OnMsgSetColor");
     }
 
+    Tick(): void { }
+
+    GetAmmoClipSize(): number {
+        return 30;
+    }
+
+    GetAmmoType(): gun.AmmoType {
+        return gun.AmmoType.PlasmaRifle;
+    }
+
     Fire(): void {
 
         let spawn = this.GetOwner().FindChildByName("Spawn").TryGetComponentOfBaseType(ez.SpawnComponent);
         if (spawn.CanTriggerManualSpawn() == false)
             return;
+
+        this.ammoInClip -= 1;
 
         spawn.TriggerManualSpawn(true, ez.Vec3.ZeroVector());
 
