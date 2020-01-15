@@ -46,6 +46,11 @@ export abstract class Gun extends ez.TickedTypescriptComponent {
         ez.TypescriptComponent.RegisterMessageHandler(MsgGunInteraction, "OnMsgGunInteraction");
     }
 
+    OnActivated(): void {
+
+        this.DeselectGun();
+    }
+
     OnSimulationStarted(): void {
         let owner = this.GetOwner();
 
@@ -53,6 +58,7 @@ export abstract class Gun extends ez.TickedTypescriptComponent {
         if (node != null) {
             this.shootSoundComponent = node.TryGetComponentOfBaseType(ez.FmodEventComponent);
         }
+
     }
 
     OnMsgGunInteraction(msg: MsgGunInteraction): void {
@@ -66,6 +72,8 @@ export abstract class Gun extends ez.TickedTypescriptComponent {
 
             if (this.ammoInClip == 0) {
                 // empty gun sound etc.
+
+                this.Reload(msg.ammoPouch);
                 return;
             }
 
@@ -94,7 +102,7 @@ export abstract class Gun extends ez.TickedTypescriptComponent {
     }
 
     abstract Fire(): void;
-    
+
     Reload(ammoPouch: AmmoPouch): void {
         let type = this.GetAmmoType();
         let needed = this.GetAmmoClipSize() - this.ammoInClip;
@@ -118,6 +126,35 @@ export abstract class Gun extends ez.TickedTypescriptComponent {
 
     GetAmmoInClip(): number {
         return this.ammoInClip;
+    }
+
+    SelectGun(): void {
+
+        let graphics = this.GetOwner().FindChildByName("Graphics", true);
+
+        ez.Log.Info("Selecting " + this.GetOwner().GetName());
+
+        if (graphics == null)
+            return;
+
+        ez.Log.Info("Selected " + this.GetOwner().GetName());
+
+        graphics.SetActive(true);
+    }
+
+    DeselectGun(): void {
+
+        let graphics = this.GetOwner().FindChildByName("Graphics", true);
+
+        ez.Log.Info("Deselecting " + this.GetOwner().GetName());
+
+        if (graphics == null)
+            return;
+
+        ez.Log.Info("Deselected " + this.GetOwner().GetName());
+
+
+        graphics.SetActive(false);
     }
 }
 

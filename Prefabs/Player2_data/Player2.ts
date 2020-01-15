@@ -19,7 +19,7 @@ export class Player2 extends ez.TickedTypescriptComponent {
     headBone: ez.HeadBoneComponent = null;
     gunRoot: ez.GameObject = null;
     flashlight: ez.SpotLightComponent = null;
-    activeWeapon: _ge.Weapon = _ge.Weapon.Pistol;
+    activeWeapon: _ge.Weapon = _ge.Weapon.None;
     guns: ez.GameObject[] = [];
     gunComp: _guns.Gun[] = [];
     interact: ez.PxRaycastInteractComponent = null;
@@ -44,6 +44,7 @@ export class Player2 extends ez.TickedTypescriptComponent {
         this.SetTickInterval(ez.Time.Milliseconds(0));
 
         this.weaponUnlocked[_ge.Weapon.Pistol] = true;
+        this.weaponUnlocked[_ge.Weapon.PlasmaRifle] = true;
     }
 
     Tick(): void {
@@ -55,6 +56,7 @@ export class Player2 extends ez.TickedTypescriptComponent {
             this.gunComp[_ge.Weapon.PlasmaRifle] = this.guns[_ge.Weapon.PlasmaRifle].TryGetScriptComponent("PlasmaRifle");
             this.gunComp[_ge.Weapon.RocketLauncher] = this.guns[_ge.Weapon.RocketLauncher].TryGetScriptComponent("RocketLauncher");
 
+            this.SwitchToWeapon(_ge.Weapon.PlasmaRifle);
             return;
         }
 
@@ -227,7 +229,16 @@ export class Player2 extends ez.TickedTypescriptComponent {
         if (this.weaponUnlocked[weapon] == undefined || this.weaponUnlocked[weapon] == false)
             return;
 
+        if (this.activeWeapon == weapon)
+            return;
+
+        if (this.gunComp[this.activeWeapon])
+            this.gunComp[this.activeWeapon].DeselectGun();
+
         this.activeWeapon = weapon;
+
+        if (this.gunComp[this.activeWeapon])
+            this.gunComp[this.activeWeapon].SelectGun();
     }
 
     OnMsgUnlockWeapon(msg: _gm.MsgUnlockWeapon): void {

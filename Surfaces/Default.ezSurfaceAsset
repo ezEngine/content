@@ -11,7 +11,7 @@ o
 		s %AssetType{"Surface"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{9792722692401254016,4982072354546932053}}
-		u4 %Hash{15929069043063866003}
+		u4 %Hash{7005618665115755329}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -21,6 +21,7 @@ o
 			s{"{ 707d012d-03fc-461f-9792-5bd128f51688 }"}
 			s{"{ 8731941b-792b-400c-94ee-f960ff29e293 }"}
 			s{"{ 9bd6d5f2-c682-451b-91a0-8b719e3e29c1 }"}
+			s{"{ a0e40c49-9113-4bdf-ba33-3e603732813e }"}
 			s{"{ d93bbc29-e3d2-451b-aedd-a51e4072c87c }"}
 			s{"{ fb5832e7-eb18-4866-ad1f-a12b1d22118e }"}
 		}
@@ -106,6 +107,21 @@ o
 }
 o
 {
+	Uuid %id{u4{5559001015262277533,5108954205752775667}}
+	s %t{"ezSurfaceInteraction"}
+	u3 %v{1}
+	p
+	{
+		s %Alignment{"ezSurfaceInteractionAlignment::SurfaceNormal"}
+		Angle %Deviation{f{0}}
+		f %ImpulseScale{0x0000803F}
+		f %ImpulseThreshold{0}
+		s %Prefab{"{ a0e40c49-9113-4bdf-ba33-3e603732813e }"}
+		s %Type{"Plasma_Impact"}
+	}
+}
+o
+{
 	Uuid %id{u4{7976948093863279760,5116577666127728256}}
 	s %t{"ezSurfaceResourceDescriptor"}
 	u3 %v{2}
@@ -123,6 +139,7 @@ o
 			Uuid{u4{10860744091015159690,4938884878526838962}}
 			Uuid{u4{17985609424917112507,5084743838445356848}}
 			Uuid{u4{10141305288190018184,5711432163794217117}}
+			Uuid{u4{5559001015262277533,5108954205752775667}}
 		}
 		s %OnCollideInteraction{"Bump_Generic"}
 		f %Restitution{0x0000803E}

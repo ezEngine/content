@@ -15,11 +15,12 @@ export enum Consumable {
 }
 
 export enum Weapon {
-    Pistol = 0,
-    Shotgun = 1,
-    MachineGun = 2,
-    PlasmaRifle = 3,
-    RocketLauncher = 4,
+    None = 0,
+    Pistol = 1,
+    Shotgun = 2,
+    MachineGun = 3,
+    PlasmaRifle = 4,
+    RocketLauncher = 5,
 };
 
 export let MaxConsumableAmount: number[] = []

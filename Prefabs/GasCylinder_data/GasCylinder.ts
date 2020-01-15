@@ -11,7 +11,7 @@ export class GasCylinder extends ez.TickedTypescriptComponent {
     }
 
     private capHealth = 5;
-    private bodyHealth = 30;
+    private bodyHealth = 50;
 
     constructor() {
         super()
