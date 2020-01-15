@@ -1,15 +1,8 @@
 import ez = require("TypeScript/ez")
 
-import msgs = require("Scripting/Messages")
-import guns = require("Prefabs/Guns/Gun")
-
-enum WeaponType {
-    Pistol = 0,
-    Shotgun = 1,
-    MachineGun = 2,
-    PlasmaRifle = 3,
-    RocketLauncher = 4,
-};
+import _ge = require("Scripting/GameEnums")
+import _gm = require("Scripting/GameMessages")
+import _guns = require("Prefabs/Guns/Gun")
 
 export class Player2 extends ez.TickedTypescriptComponent {
 
@@ -26,11 +19,12 @@ export class Player2 extends ez.TickedTypescriptComponent {
     headBone: ez.HeadBoneComponent = null;
     gunRoot: ez.GameObject = null;
     flashlight: ez.SpotLightComponent = null;
-    activeWeapon: WeaponType = WeaponType.Pistol;
+    activeWeapon: _ge.Weapon = _ge.Weapon.Pistol;
     guns: ez.GameObject[] = [];
-    gunComp: guns.Gun[] = [];
+    gunComp: _guns.Gun[] = [];
     interact: ez.PxRaycastInteractComponent = null;
-    ammoPouch: guns.AmmoPouch = new guns.AmmoPouch();
+    ammoPouch: _guns.AmmoPouch = new _guns.AmmoPouch();
+    weaponUnlocked: boolean[] = [];
 
     OnSimulationStarted(): void {
         let owner = this.GetOwner();
@@ -40,24 +34,26 @@ export class Player2 extends ez.TickedTypescriptComponent {
         this.headBone = this.camera.TryGetComponentOfBaseType(ez.HeadBoneComponent);
         this.gunRoot = owner.FindChildByName("Gun", true);
         this.flashlight = this.gunRoot.TryGetComponentOfBaseType(ez.SpotLightComponent);
-        this.guns[WeaponType.Pistol] = ez.Utils.FindPrefabRootNode(this.gunRoot.FindChildByName("Pistol", true));
-        this.guns[WeaponType.Shotgun] = ez.Utils.FindPrefabRootNode(this.gunRoot.FindChildByName("Shotgun", true));
-        this.guns[WeaponType.MachineGun] = ez.Utils.FindPrefabRootNode(this.gunRoot.FindChildByName("MachineGun", true));
-        this.guns[WeaponType.PlasmaRifle] = ez.Utils.FindPrefabRootNode(this.gunRoot.FindChildByName("PlasmaRifle", true));
-        this.guns[WeaponType.RocketLauncher] = ez.Utils.FindPrefabRootNode(this.gunRoot.FindChildByName("RocketLauncher", true));
+        this.guns[_ge.Weapon.Pistol] = ez.Utils.FindPrefabRootNode(this.gunRoot.FindChildByName("Pistol", true));
+        this.guns[_ge.Weapon.Shotgun] = ez.Utils.FindPrefabRootNode(this.gunRoot.FindChildByName("Shotgun", true));
+        this.guns[_ge.Weapon.MachineGun] = ez.Utils.FindPrefabRootNode(this.gunRoot.FindChildByName("MachineGun", true));
+        this.guns[_ge.Weapon.PlasmaRifle] = ez.Utils.FindPrefabRootNode(this.gunRoot.FindChildByName("PlasmaRifle", true));
+        this.guns[_ge.Weapon.RocketLauncher] = ez.Utils.FindPrefabRootNode(this.gunRoot.FindChildByName("RocketLauncher", true));
 
         this.interact = this.camera.TryGetComponentOfBaseType(ez.PxRaycastInteractComponent);
         this.SetTickInterval(ez.Time.Milliseconds(0));
+
+        this.weaponUnlocked[_ge.Weapon.Pistol] = true;
     }
 
     Tick(): void {
 
-        if (this.gunComp[WeaponType.Pistol] == null) {
-            this.gunComp[WeaponType.Pistol] = this.guns[WeaponType.Pistol].TryGetScriptComponent("Pistol");
-            this.gunComp[WeaponType.Shotgun] = this.guns[WeaponType.Shotgun].TryGetScriptComponent("Shotgun");
-            this.gunComp[WeaponType.MachineGun] = this.guns[WeaponType.MachineGun].TryGetScriptComponent("MachineGun");
-            this.gunComp[WeaponType.PlasmaRifle] = this.guns[WeaponType.PlasmaRifle].TryGetScriptComponent("PlasmaRifle");
-            this.gunComp[WeaponType.RocketLauncher] = this.guns[WeaponType.RocketLauncher].TryGetScriptComponent("RocketLauncher");
+        if (this.gunComp[_ge.Weapon.Pistol] == null) {
+            this.gunComp[_ge.Weapon.Pistol] = this.guns[_ge.Weapon.Pistol].TryGetScriptComponent("Pistol");
+            this.gunComp[_ge.Weapon.Shotgun] = this.guns[_ge.Weapon.Shotgun].TryGetScriptComponent("Shotgun");
+            this.gunComp[_ge.Weapon.MachineGun] = this.guns[_ge.Weapon.MachineGun].TryGetScriptComponent("MachineGun");
+            this.gunComp[_ge.Weapon.PlasmaRifle] = this.guns[_ge.Weapon.PlasmaRifle].TryGetScriptComponent("PlasmaRifle");
+            this.gunComp[_ge.Weapon.RocketLauncher] = this.guns[_ge.Weapon.RocketLauncher].TryGetScriptComponent("RocketLauncher");
 
             return;
         }
@@ -93,16 +89,21 @@ export class Player2 extends ez.TickedTypescriptComponent {
         ez.Debug.Draw2DText("Health: " + Math.ceil(this.health), new ez.Vec2(10, 10), ez.Color.White(), 32);
 
         const ammoInClip = this.gunComp[this.activeWeapon].GetAmmoInClip();
-        const ammoOfType = this.ammoPouch.ammo[this.gunComp[this.activeWeapon].GetAmmoType()];
 
-        ez.Debug.Draw2DText("Ammo: " + ammoInClip + " / " + ammoOfType, new ez.Vec2(10, 50), ez.Color.White(), 32);
+        if (this.gunComp[this.activeWeapon].GetAmmoType() == _ge.Consumable.Ammo_None) {
+            ez.Debug.Draw2DText("Ammo: " + ammoInClip, new ez.Vec2(10, 50), ez.Color.White(), 32);
+        } else {
+            const ammoOfType = this.ammoPouch.ammo[this.gunComp[this.activeWeapon].GetAmmoType()];
+            ez.Debug.Draw2DText("Ammo: " + ammoInClip + " / " + ammoOfType, new ez.Vec2(10, 50), ez.Color.White(), 32);
+        }
     }
 
     static RegisterMessageHandlers() {
 
         ez.TypescriptComponent.RegisterMessageHandler(ez.MsgInputActionTriggered, "OnMsgInputActionTriggered");
         ez.TypescriptComponent.RegisterMessageHandler(ez.MsgDamage, "OnMsgMsgDamage");
-        ez.TypescriptComponent.RegisterMessageHandler(msgs.MsgAddHealth, "OnMsgAddHealth");
+        ez.TypescriptComponent.RegisterMessageHandler(_gm.MsgAddConsumable, "OnMsgAddConsumable");
+        ez.TypescriptComponent.RegisterMessageHandler(_gm.MsgUnlockWeapon, "OnMsgUnlockWeapon");
     }
 
     OnMsgInputActionTriggered(msg: ez.MsgInputActionTriggered): void {
@@ -116,25 +117,20 @@ export class Player2 extends ez.TickedTypescriptComponent {
                 this.flashlight.SetActive(!this.flashlight.IsActive());
             }
 
-            if (msg.InputActionHash == ez.Utils.StringToHash("SwitchWeapon1")) {
-                this.activeWeapon = WeaponType.Pistol;
-            }
+            if (msg.InputActionHash == ez.Utils.StringToHash("SwitchWeapon1"))
+                this.SwitchToWeapon(_ge.Weapon.Pistol);
 
-            if (msg.InputActionHash == ez.Utils.StringToHash("SwitchWeapon2")) {
-                this.activeWeapon = WeaponType.Shotgun;
-            }
+            if (msg.InputActionHash == ez.Utils.StringToHash("SwitchWeapon2"))
+                this.SwitchToWeapon(_ge.Weapon.Shotgun);
 
-            if (msg.InputActionHash == ez.Utils.StringToHash("SwitchWeapon3")) {
-                this.activeWeapon = WeaponType.MachineGun;
-            }
+            if (msg.InputActionHash == ez.Utils.StringToHash("SwitchWeapon3"))
+                this.SwitchToWeapon(_ge.Weapon.MachineGun);
 
-            if (msg.InputActionHash == ez.Utils.StringToHash("SwitchWeapon4")) {
-                this.activeWeapon = WeaponType.PlasmaRifle;
-            }
+            if (msg.InputActionHash == ez.Utils.StringToHash("SwitchWeapon4"))
+                this.SwitchToWeapon(_ge.Weapon.PlasmaRifle);
 
-            if (msg.InputActionHash == ez.Utils.StringToHash("SwitchWeapon5")) {
-                this.activeWeapon = WeaponType.RocketLauncher;
-            }
+            if (msg.InputActionHash == ez.Utils.StringToHash("SwitchWeapon5"))
+                this.SwitchToWeapon(_ge.Weapon.RocketLauncher);
 
             if (msg.InputActionHash == ez.Utils.StringToHash("Use")) {
                 this.interact.ExecuteInteraction();
@@ -143,20 +139,20 @@ export class Player2 extends ez.TickedTypescriptComponent {
 
         if (msg.InputActionHash == ez.Utils.StringToHash("Shoot")) {
 
-            let msgInteract = new guns.MsgGunInteraction();
+            let msgInteract = new _guns.MsgGunInteraction();
             msgInteract.keyState = msg.TriggerState;
             msgInteract.ammoPouch = this.ammoPouch;
-            msgInteract.interaction = guns.GunInteraction.Fire;
+            msgInteract.interaction = _guns.GunInteraction.Fire;
 
             this.guns[this.activeWeapon].SendMessage(msgInteract);
         }
 
         if (msg.InputActionHash == ez.Utils.StringToHash("Reload")) {
 
-            let msgInteract = new guns.MsgGunInteraction();
+            let msgInteract = new _guns.MsgGunInteraction();
             msgInteract.keyState = msg.TriggerState;
             msgInteract.ammoPouch = this.ammoPouch;
-            msgInteract.interaction = guns.GunInteraction.Reload;
+            msgInteract.interaction = _guns.GunInteraction.Reload;
 
             this.guns[this.activeWeapon].SendMessage(msgInteract);
         }
@@ -201,17 +197,48 @@ export class Player2 extends ez.TickedTypescriptComponent {
         }
     }
 
-    OnMsgAddHealth(msg: msgs.MsgAddHealth): void {
+    OnMsgAddConsumable(msg: _gm.MsgAddConsumable): void {
 
+        const maxAmount = _ge.MaxConsumableAmount[msg.consumableType];
 
-        if (this.health <= 0 || this.health >= 100) {
-            msg.return_consumed = false;
+        if (msg.consumableType == _ge.Consumable.Health) {
+
+            if (this.health <= 0 || this.health >= maxAmount) {
+                msg.return_consumed = false;
+                return;
+            }
+
+            msg.return_consumed = true;
+
+            this.health = ez.Utils.Clamp(this.health + msg.amount, 1, 100);
+
             return;
         }
 
+        if (msg.consumableType > _ge.Consumable.AmmoTypes_Start && msg.consumableType < _ge.Consumable.AmmoTypes_End) {
+            const amount = this.ammoPouch.ammo[msg.consumableType] + msg.amount;
+
+            this.ammoPouch.ammo[msg.consumableType] = ez.Utils.Clamp(amount, 0, maxAmount);
+        }
+    }
+
+    SwitchToWeapon(weapon: _ge.Weapon) {
+
+        if (this.weaponUnlocked[weapon] == undefined || this.weaponUnlocked[weapon] == false)
+            return;
+
+        this.activeWeapon = weapon;
+    }
+
+    OnMsgUnlockWeapon(msg: _gm.MsgUnlockWeapon): void {
+
         msg.return_consumed = true;
 
-        this.health = ez.Utils.Clamp(this.health + msg.addHealth, 1, 100);
+        if (this.weaponUnlocked[msg.WeaponType] == undefined || this.weaponUnlocked[msg.WeaponType] == false) {
+
+            this.weaponUnlocked[msg.WeaponType] = true;
+            this.SwitchToWeapon(msg.WeaponType);
+        }
     }
 }
 

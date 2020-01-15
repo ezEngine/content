@@ -1,4 +1,5 @@
 import ez = require("TypeScript/ez")
+import _ge = require("Scripting/GameEnums")
 import gun = require("Prefabs/Guns/Gun")
 
 export class PlasmaRifle extends gun.Gun {
@@ -24,8 +25,8 @@ export class PlasmaRifle extends gun.Gun {
         return 30;
     }
 
-    GetAmmoType(): gun.AmmoType {
-        return gun.AmmoType.PlasmaRifle;
+    GetAmmoType(): _ge.Consumable {
+        return _ge.Consumable.Ammo_Plasma;
     }
 
     Fire(): void {

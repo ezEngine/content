@@ -1,22 +1,15 @@
 import ez = require("TypeScript/ez")
-
-export enum AmmoType {
-    Pistol,
-    MachineGun,
-    Shotgun,
-    PlasmaRifle,
-    Rockets,
-}
+import _ge = require("Scripting/GameEnums")
 
 export class AmmoPouch {
     ammo: number[] = [];
 
     constructor() {
-        this.ammo[AmmoType.Pistol] = 20;
-        this.ammo[AmmoType.MachineGun] = 50;
-        this.ammo[AmmoType.PlasmaRifle] = 50;
-        this.ammo[AmmoType.Shotgun] = 10;
-        this.ammo[AmmoType.Rockets] = 5;
+        this.ammo[_ge.Consumable.Ammo_Pistol] = 20;
+        this.ammo[_ge.Consumable.Ammo_MachineGun] = 50;
+        this.ammo[_ge.Consumable.Ammo_Plasma] = 50;
+        this.ammo[_ge.Consumable.Ammo_Shotgun] = 10;
+        this.ammo[_ge.Consumable.Ammo_Rocket] = 5;
     }
 }
 
@@ -120,7 +113,7 @@ export abstract class Gun extends ez.TickedTypescriptComponent {
 
     protected ammoInClip: number = 0;
 
-    abstract GetAmmoType(): AmmoType;
+    abstract GetAmmoType(): _ge.Consumable;
     abstract GetAmmoClipSize(): number;
 
     GetAmmoInClip(): number {
