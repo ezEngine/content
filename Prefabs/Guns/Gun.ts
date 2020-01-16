@@ -132,12 +132,8 @@ export abstract class Gun extends ez.TickedTypescriptComponent {
 
         let graphics = this.GetOwner().FindChildByName("Graphics", true);
 
-        ez.Log.Info("Selecting " + this.GetOwner().GetName());
-
         if (graphics == null)
             return;
-
-        ez.Log.Info("Selected " + this.GetOwner().GetName());
 
         graphics.SetActive(true);
     }
@@ -146,13 +142,8 @@ export abstract class Gun extends ez.TickedTypescriptComponent {
 
         let graphics = this.GetOwner().FindChildByName("Graphics", true);
 
-        ez.Log.Info("Deselecting " + this.GetOwner().GetName());
-
         if (graphics == null)
             return;
-
-        ez.Log.Info("Deselected " + this.GetOwner().GetName());
-
 
         graphics.SetActive(false);
     }

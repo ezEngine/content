@@ -44,7 +44,7 @@ export class Player2 extends ez.TickedTypescriptComponent {
         this.SetTickInterval(ez.Time.Milliseconds(0));
 
         this.weaponUnlocked[_ge.Weapon.Pistol] = true;
-        this.weaponUnlocked[_ge.Weapon.PlasmaRifle] = true;
+        //this.weaponUnlocked[_ge.Weapon.PlasmaRifle] = true;
     }
 
     Tick(): void {
