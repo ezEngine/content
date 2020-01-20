@@ -135,7 +135,7 @@ export abstract class Gun extends ez.TickedTypescriptComponent {
         if (graphics == null)
             return;
 
-        graphics.SetActive(true);
+        graphics.SetActiveFlag(true);
     }
 
     DeselectGun(): void {
@@ -145,7 +145,7 @@ export abstract class Gun extends ez.TickedTypescriptComponent {
         if (graphics == null)
             return;
 
-        graphics.SetActive(false);
+        graphics.SetActiveFlag(false);
     }
 }
 

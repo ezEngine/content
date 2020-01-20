@@ -56,7 +56,7 @@ export class Player2 extends ez.TickedTypescriptComponent {
             this.gunComp[_ge.Weapon.PlasmaRifle] = this.guns[_ge.Weapon.PlasmaRifle].TryGetScriptComponent("PlasmaRifle");
             this.gunComp[_ge.Weapon.RocketLauncher] = this.guns[_ge.Weapon.RocketLauncher].TryGetScriptComponent("RocketLauncher");
 
-            this.SwitchToWeapon(_ge.Weapon.PlasmaRifle);
+            this.SwitchToWeapon(_ge.Weapon.Pistol);
             return;
         }
 
@@ -116,7 +116,7 @@ export class Player2 extends ez.TickedTypescriptComponent {
         if (msg.TriggerState == ez.TriggerState.Activated) {
 
             if (msg.InputActionHash == ez.Utils.StringToHash("Flashlight")) {
-                this.flashlight.SetActive(!this.flashlight.IsActive());
+                this.flashlight.SetActiveFlag(!this.flashlight.GetActiveFlag());
             }
 
             if (msg.InputActionHash == ez.Utils.StringToHash("SwitchWeapon1"))
