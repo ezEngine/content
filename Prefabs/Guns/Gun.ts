@@ -105,6 +105,10 @@ export abstract class Gun extends ez.TickedTypescriptComponent {
 
     Reload(ammoPouch: AmmoPouch): void {
         let type = this.GetAmmoType();
+
+        if (type == _ge.Consumable.Ammo_None)
+            return;
+
         let needed = this.GetAmmoClipSize() - this.ammoInClip;
         let take = Math.min(needed, ammoPouch.ammo[type]);
 

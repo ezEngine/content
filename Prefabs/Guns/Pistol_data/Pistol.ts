@@ -21,13 +21,32 @@ export class Pistol extends guns.Gun {
         //ez.TypescriptComponent.RegisterMessageHandler(ez.MsgSetColor, "OnMsgSetColor");
     }
 
-    Tick(): void { }
+    nextAmmoPlus1Time: number = 0;
+
+    OnSimulationStarted(): void {
+
+        super.OnSimulationStarted();
+
+        this.SetTickInterval(0);
+    }
+
+    Tick(): void {
+
+        const now = ez.Time.GetGameTime();
+
+        if (this.nextAmmoPlus1Time < now) {
+            this.ammoInClip = ez.Utils.Clamp(this.ammoInClip + 1, 0, this.GetAmmoClipSize());
+
+            this.nextAmmoPlus1Time = now + ez.Time.Seconds(0.5);
+        }
+    }
 
     GetAmmoType(): _ge.Consumable {
-        return _ge.Consumable.Ammo_Pistol;
+        return _ge.Consumable.Ammo_None;
     }
+
     GetAmmoClipSize(): number {
-        return 15;
+        return 8;
     }
 
     Fire(): void {
@@ -35,6 +54,8 @@ export class Pistol extends guns.Gun {
         let spawn = this.GetOwner().FindChildByName("Spawn").TryGetComponentOfBaseType(ez.SpawnComponent);
         if (spawn.CanTriggerManualSpawn() == false)
             return;
+
+        this.nextAmmoPlus1Time = ez.Time.GetGameTime() + ez.Time.Seconds(1.5);
 
         this.ammoInClip -= 1;
 
