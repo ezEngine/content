@@ -98,6 +98,26 @@ export class Player2 extends ez.TickedTypescriptComponent {
             const ammoOfType = this.ammoPouch.ammo[this.gunComp[this.activeWeapon].GetAmmoType()];
             ez.Debug.Draw2DText("Ammo: " + ammoInClip + " / " + ammoOfType, new ez.Vec2(10, 50), ez.Color.White(), 32);
         }
+
+        const resolution = ez.Debug.GetResolution();
+        let screenCenter = resolution;
+        screenCenter.MulNumber(0.5);
+
+        let lines: ez.Debug.Line[] = [];
+        
+        lines[0] = new ez.Debug.Line();
+        lines[0].startX = screenCenter.x;
+        lines[0].startY = screenCenter.y - 10;
+        lines[0].endX = screenCenter.x;
+        lines[0].endY = screenCenter.y + 10;
+
+        lines[1] = new ez.Debug.Line();
+        lines[1].startX = screenCenter.x - 10;
+        lines[1].startY = screenCenter.y;
+        lines[1].endX = screenCenter.x + 10;
+        lines[1].endY = screenCenter.y;
+
+        ez.Debug.DrawLines2D(lines);
     }
 
     static RegisterMessageHandlers() {
