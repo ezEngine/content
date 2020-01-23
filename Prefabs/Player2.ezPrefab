@@ -21,7 +21,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{8325318639183543703,4757176779305952111}}
-		u4 %Hash{1597265529796212055}
+		u4 %Hash{5431900958361835136}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{14146522745554303380,2902865256510917925}}
@@ -189,6 +189,7 @@ o
 		VarArray %Children
 		{
 			Uuid{u4{10551215745110884581,14988566571032470811}}
+			Uuid{u4{15694140455671702950,5420418590396448288}}
 		}
 		VarArray %Components
 		{
@@ -349,6 +350,52 @@ o
 }
 o
 {
+	Uuid %id{u4{15694140455671702950,5420418590396448288}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{7950382221197526173,5542071289512806489}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0x84CD9E3E,0x9AF20EBE,0x582DF0BD}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{"Flashlight"}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+			s{"AutoColMesh"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{7950382221197526173,5542071289512806489}}
+	s %t{"ezSpotLightComponent"}
+	u3 %v{2}
+	p
+	{
+		b %Active{0}
+		b %CastShadows{1}
+		f %ConstantBias{0xCDCCCC3D}
+		Angle %InnerSpotAngle{f{0x920A863E}}
+		f %Intensity{0x0000FA43}
+		ColorGamma %LightColor{u1{255,255,255,255}}
+		Angle %OuterSpotAngle{f{0xF3665F3F}}
+		f %PenumbraSize{0xCDCCCC3D}
+		f %Range{0}
+		f %SlopeBias{0x0000803E}
+	}
+}
+o
+{
 	Uuid %id{u4{18334765152918242439,5544760844148596969}}
 	s %t{"ezGameObject"}
 	u3 %v{1}
@@ -454,25 +501,6 @@ o
 }
 o
 {
-	Uuid %id{u4{17242664992033016901,10486169515563744170}}
-	s %t{"ezSpotLightComponent"}
-	u3 %v{2}
-	p
-	{
-		b %Active{0}
-		b %CastShadows{0}
-		f %ConstantBias{0xCDCCCC3D}
-		Angle %InnerSpotAngle{f{0x920A863E}}
-		f %Intensity{0x9AF97944}
-		ColorGamma %LightColor{u1{255,255,255,255}}
-		Angle %OuterSpotAngle{f{0xF3665F3F}}
-		f %PenumbraSize{0xCDCCCC3D}
-		f %Range{0}
-		f %SlopeBias{0x0000803E}
-	}
-}
-o
-{
 	Uuid %id{u4{898315265817063976,10752299773481158898}}
 	s %t{"ezPrefabReferenceComponent"}
 	u3 %v{4}
@@ -510,10 +538,7 @@ o
 			Uuid{u4{18334765152918242439,5544760844148596969}}
 			Uuid{u4{4048982691901164177,4999962066616314334}}
 		}
-		VarArray %Components
-		{
-			Uuid{u4{17242664992033016901,10486169515563744170}}
-		}
+		VarArray %Components{}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0,0,0}}
 		Quat %LocalRotation{f{0,0,0,0x0000803F}}

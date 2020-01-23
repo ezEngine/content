@@ -37,7 +37,7 @@ export class Shotgun extends gun.Gun {
 
         this.ammoInClip -= 1;
 
-        for (let i = 0; i < 8; ++i) {
+        for (let i = 0; i < 16; ++i) {
             spawn.TriggerManualSpawn(true, new ez.Vec3(ez.Random.DoubleMinMax(-0.05, 0.05), 0, 0));
         }
 

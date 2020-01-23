@@ -11,7 +11,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{14525557976052393641,5395822087457718604}}
-		u4 %Hash{17707683640970193469}
+		u4 %Hash{1301255694885744620}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{12675088828524786237,7528991678657620864}}
@@ -46,7 +46,7 @@ o
 	p
 	{
 		f %Damage{0x0000A040}
-		f %Impulse{0x0000F041}
+		f %Impulse{0x0000C842}
 		s %Interaction{"BulletImpact"}
 		s %Reaction{"ezProjectileReaction::Absorb"}
 		s %Surface{"{ 0a105955-e069-4523-80ce-7b9867bde687 }"}
@@ -59,6 +59,7 @@ o
 	u3 %v{1}
 	p
 	{
+		b %Active{1}
 		VarArray %Children{}
 		VarArray %Components
 		{
@@ -85,6 +86,7 @@ o
 	u3 %v{1}
 	p
 	{
+		b %Active{1}
 		VarArray %Children
 		{
 			Uuid{u4{7913312135095674292,5200884820511990112}}

@@ -18,6 +18,7 @@ export class Player2 extends ez.TickedTypescriptComponent {
     input: ez.InputComponent = null;
     headBone: ez.HeadBoneComponent = null;
     gunRoot: ez.GameObject = null;
+    flashlightObj: ez.GameObject = null;
     flashlight: ez.SpotLightComponent = null;
     activeWeapon: _ge.Weapon = _ge.Weapon.None;
     guns: ez.GameObject[] = [];
@@ -33,7 +34,8 @@ export class Player2 extends ez.TickedTypescriptComponent {
         this.input = owner.TryGetComponentOfBaseType(ez.InputComponent);
         this.headBone = this.camera.TryGetComponentOfBaseType(ez.HeadBoneComponent);
         this.gunRoot = owner.FindChildByName("Gun", true);
-        this.flashlight = this.gunRoot.TryGetComponentOfBaseType(ez.SpotLightComponent);
+        this.flashlightObj = owner.FindChildByName("Flashlight", true);
+        this.flashlight = this.flashlightObj.TryGetComponentOfBaseType(ez.SpotLightComponent);
         this.guns[_ge.Weapon.Pistol] = ez.Utils.FindPrefabRootNode(this.gunRoot.FindChildByName("Pistol", true));
         this.guns[_ge.Weapon.Shotgun] = ez.Utils.FindPrefabRootNode(this.gunRoot.FindChildByName("Shotgun", true));
         this.guns[_ge.Weapon.MachineGun] = ez.Utils.FindPrefabRootNode(this.gunRoot.FindChildByName("MachineGun", true));
@@ -99,25 +101,10 @@ export class Player2 extends ez.TickedTypescriptComponent {
             ez.Debug.Draw2DText("Ammo: " + ammoInClip + " / " + ammoOfType, new ez.Vec2(10, 50), ez.Color.White(), 32);
         }
 
-        const resolution = ez.Debug.GetResolution();
-        let screenCenter = resolution;
-        screenCenter.MulNumber(0.5);
+        if (this.activeWeapon != _ge.Weapon.None) {
 
-        let lines: ez.Debug.Line[] = [];
-        
-        lines[0] = new ez.Debug.Line();
-        lines[0].startX = screenCenter.x;
-        lines[0].startY = screenCenter.y - 10;
-        lines[0].endX = screenCenter.x;
-        lines[0].endY = screenCenter.y + 10;
-
-        lines[1] = new ez.Debug.Line();
-        lines[1].startX = screenCenter.x - 10;
-        lines[1].startY = screenCenter.y;
-        lines[1].endX = screenCenter.x + 10;
-        lines[1].endY = screenCenter.y;
-
-        ez.Debug.DrawLines2D(lines);
+            this.gunComp[this.activeWeapon].RenderCrosshair();
+        }
     }
 
     static RegisterMessageHandlers() {
@@ -190,6 +177,9 @@ export class Player2 extends ez.TickedTypescriptComponent {
         this.health -= msg.Damage * 2;
 
         if (this.health <= 0) {
+
+            ez.Log.Info("Player died.")
+
             let owner = this.GetOwner();
 
             let camera = owner.FindChildByName("Camera");

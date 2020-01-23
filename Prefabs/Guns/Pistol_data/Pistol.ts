@@ -65,5 +65,8 @@ export class Pistol extends guns.Gun {
 
     }
 
+    RenderCrosshair(): void {
+        // render nothing, have a laser pointer already
+    }
 }
 
