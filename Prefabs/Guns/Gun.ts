@@ -172,7 +172,7 @@ export abstract class Gun extends ez.TickedTypescriptComponent {
         lines[1].endX = screenCenter.x + 10;
         lines[1].endY = screenCenter.y;
 
-        ez.Debug.DrawLines2D(lines);
+        ez.Debug.Draw2DLines(lines);
         
     }
 }
