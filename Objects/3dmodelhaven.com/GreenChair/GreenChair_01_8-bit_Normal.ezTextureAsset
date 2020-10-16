@@ -11,10 +11,10 @@ o
 		s %AssetType{"Texture 2D"}
 		VarArray %Dependencies
 		{
-			s{"Objects/GreenChair_data/GreenChair_01_8-bit_Normal.jpg"}
+			s{"Objects/3dmodelhaven.com/GreenChair/GreenChair_01_8-bit_Normal.jpg"}
 		}
 		Uuid %DocumentID{u4{6589157212879883177,5687534346059630489}}
-		u4 %Hash{6047943437527160560}
+		u4 %Hash{15498510191492628799}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -41,7 +41,7 @@ o
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
-		s %Input1{"Objects/GreenChair_data/GreenChair_01_8-bit_Normal.jpg"}
+		s %Input1{"Objects/3dmodelhaven.com/GreenChair/GreenChair_01_8-bit_Normal.jpg"}
 		s %Input2{""}
 		s %Input3{""}
 		s %Input4{""}
