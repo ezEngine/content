@@ -14,7 +14,7 @@ o
 			s{"Textures/cc0Textures.com/Rock02/Rock02_rgh.jpg"}
 		}
 		Uuid %DocumentID{u4{7488121323834806,4812147288480945213}}
-		u4 %Hash{10858733694678451397}
+		u4 %Hash{2986566718815053828}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::R1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}

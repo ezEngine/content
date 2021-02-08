@@ -14,7 +14,7 @@ o
 			s{"Vegetation/cgbookcase/Leafcards/Leaves Walnut 01_N.tga"}
 		}
 		Uuid %DocumentID{u4{681128388614434442,5313861808740051822}}
-		u4 %Hash{12169540368572033254}
+		u4 %Hash{7147625951833811357}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGB1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}

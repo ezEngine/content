@@ -14,7 +14,7 @@ o
 			s{"Textures/cc0Textures.com/Ground08/Ground08_nrm.jpg"}
 		}
 		Uuid %DocumentID{u4{5594764982475951019,5745392215959046157}}
-		u4 %Hash{7529330725581995452}
+		u4 %Hash{11681639124841053422}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGB1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}

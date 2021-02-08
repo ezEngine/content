@@ -14,7 +14,7 @@ o
 			s{"FleetOps/Shashura_data/Shashura_N.png"}
 		}
 		Uuid %DocumentID{u4{9516716831661666739,5731688537165904341}}
-		u4 %Hash{17965573640516161244}
+		u4 %Hash{2125707551621555901}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGB1"}
 		s %CompressionMode{"ezTexConvCompressionMode::None"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}

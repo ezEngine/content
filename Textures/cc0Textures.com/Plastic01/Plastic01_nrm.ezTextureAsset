@@ -14,7 +14,7 @@ o
 			s{"Textures/cc0Textures.com/Plastic01/Plastic01_nrm.jpg"}
 		}
 		Uuid %DocumentID{u4{2092303343776239529,5588970614230312069}}
-		u4 %Hash{7952325815884221386}
+		u4 %Hash{9134428858979733302}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGB1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}

@@ -14,7 +14,7 @@ o
 			s{"ParticleFX/Textures/weapon_phaserhit.jpg"}
 		}
 		Uuid %DocumentID{u4{16824498308245865901,5113157683498060634}}
-		u4 %Hash{3998265785618684345}
+		u4 %Hash{5250063604498258183}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGB1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}

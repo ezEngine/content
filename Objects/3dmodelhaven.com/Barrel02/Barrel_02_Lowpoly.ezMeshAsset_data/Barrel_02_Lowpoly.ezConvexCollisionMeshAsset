@@ -14,7 +14,7 @@ o
 			s{"Objects/3dmodelhaven.com/Barrel02/Barrel_02_Lowpoly.FBX"}
 		}
 		Uuid %DocumentID{u4{594119192071105193,4971962643642683101}}
-		u4 %Hash{8525148958841160168}
+		u4 %Hash{14831268314196154306}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -35,15 +35,14 @@ o
 	{
 		s %ConvexMeshType{"ezConvexCollisionMeshType::ConvexHull"}
 		u1 %Detail{1}
-		s %ForwardDir{"ezBasisAxis::NegativeZ"}
+		b %FlipForwardDir{0}
 		f %Height{0x0000803F}
 		b %IsConvexMesh{1}
+		u2 %MaxConvexPieces{2}
 		s %MeshFile{"Objects/3dmodelhaven.com/Barrel02/Barrel_02_Lowpoly.FBX"}
-		Vec3 %NonUniformScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %Radius{0x0000003F}
 		f %Radius2{0x0000003F}
 		s %RightDir{"ezBasisAxis::PositiveX"}
-		s %SubmeshName{""}
 		VarArray %Surfaces
 		{
 			Uuid{u4{2354518410278426519,5648378819788165604}}
@@ -184,7 +183,7 @@ o
 		s %PluginName{"ezEditorPluginPhysX"}
 		VarArray %Properties{}
 		s %TypeName{"ezCollisionMeshAssetProperties"}
-		u3 %TypeSize{1232}
+		u3 %TypeSize{1160}
 		u3 %TypeVersion{2}
 	}
 }

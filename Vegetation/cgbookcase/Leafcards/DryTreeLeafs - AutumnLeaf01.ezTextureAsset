@@ -14,7 +14,7 @@ o
 			s{"Vegetation/cgbookcase/Leafcards/DryTreeLeafs - AutumnLeaf01.tga"}
 		}
 		Uuid %DocumentID{u4{17988121863770725777,5052715575141100145}}
-		u4 %Hash{2021776799113678079}
+		u4 %Hash{6927974295786106103}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGBA1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}

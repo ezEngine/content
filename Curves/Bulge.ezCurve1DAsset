@@ -11,7 +11,7 @@ o
 		s %AssetType{"Curve1D"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{11988856012587992460,5501033070655572374}}
-		u4 %Hash{9309105918583818737}
+		u4 %Hash{1903595915557088187}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -20,6 +20,20 @@ o
 }
 Objects
 {
+o
+{
+	Uuid %id{u4{18096612296587978288,6449934965513159559}}
+	s %t{"ezDocumentRoot"}
+	u3 %v{1}
+	s %n{"ObjectTree"}
+	p
+	{
+		VarArray %Children
+		{
+			Uuid{u4{9757482701941135896,9130238582945252753}}
+		}
+	}
+}
 o
 {
 	Uuid %id{u4{9757482701941135896,9130238582945252753}}
@@ -79,20 +93,6 @@ o
 		s %RightTangentMode{"ezCurveTangentMode::Bezier"}
 		i4 %Tick{0}
 		d %Value{0}
-	}
-}
-o
-{
-	Uuid %id{u4{2331929996458303894,10589274742767665264}}
-	s %t{"ezDocumentRoot"}
-	u3 %v{1}
-	s %n{"ObjectTree"}
-	p
-	{
-		VarArray %Children
-		{
-			Uuid{u4{9757482701941135896,9130238582945252753}}
-		}
 	}
 }
 }

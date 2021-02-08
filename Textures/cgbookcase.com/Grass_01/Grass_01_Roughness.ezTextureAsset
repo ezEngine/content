@@ -14,7 +14,7 @@ o
 			s{"Textures/cgbookcase.com/Grass_01/Grass_01_Roughness.jpg"}
 		}
 		Uuid %DocumentID{u4{3797216644804230066,4649268820620318250}}
-		u4 %Hash{16147201033173792286}
+		u4 %Hash{12761604115229181419}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::R1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}

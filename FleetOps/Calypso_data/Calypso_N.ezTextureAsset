@@ -14,7 +14,7 @@ o
 			s{"FleetOps/Calypso_data/Calypso_N.png"}
 		}
 		Uuid %DocumentID{u4{6419064937458709140,4888885951299332839}}
-		u4 %Hash{14419189087574910551}
+		u4 %Hash{12574364614810657312}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGB1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}

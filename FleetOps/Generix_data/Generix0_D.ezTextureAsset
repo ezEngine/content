@@ -14,7 +14,7 @@ o
 			s{"FleetOps/Generix_data/Generix0_D.png"}
 		}
 		Uuid %DocumentID{u4{8887514256862289295,4687711898228023680}}
-		u4 %Hash{18443969754197094631}
+		u4 %Hash{11371972260744382908}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGBA1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}

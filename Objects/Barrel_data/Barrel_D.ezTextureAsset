@@ -14,7 +14,7 @@ o
 			s{"Objects/Barrel_data/barrel_D.jpg"}
 		}
 		Uuid %DocumentID{u4{8252961257044626612,5690646120073061922}}
-		u4 %Hash{9686449302656093651}
+		u4 %Hash{4888900913244525006}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGB1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}

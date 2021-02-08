@@ -14,7 +14,7 @@ o
 			s{"Objects/Tire_data/Tire_D.jpg"}
 		}
 		Uuid %DocumentID{u4{11490210415867357623,4730488258032116331}}
-		u4 %Hash{10296579347822640214}
+		u4 %Hash{2733524035003586536}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGB1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}

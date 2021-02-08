@@ -14,7 +14,7 @@ o
 			s{"Textures/cc0Textures.com/Planks04/Planks04_rgh.jpg"}
 		}
 		Uuid %DocumentID{u4{14592499175433147582,5032433203200529423}}
-		u4 %Hash{3191479558823346840}
+		u4 %Hash{840477991947307773}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::R1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}

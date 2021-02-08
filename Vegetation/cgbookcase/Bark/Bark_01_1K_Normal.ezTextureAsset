@@ -14,7 +14,7 @@ o
 			s{"Vegetation/cgbookcase/Bark/Bark_01_1K_Normal.jpg"}
 		}
 		Uuid %DocumentID{u4{9883267518698695313,4822952103108466356}}
-		u4 %Hash{13113153692609338990}
+		u4 %Hash{7417316120518030347}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGB1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}

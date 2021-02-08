@@ -14,7 +14,7 @@ o
 			s{"Textures/cc0Textures.com/Wood07/Wood07_col.jpg"}
 		}
 		Uuid %DocumentID{u4{4621872638995996832,4885686754073099542}}
-		u4 %Hash{14230712985141178622}
+		u4 %Hash{12471907682490544509}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGB1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}

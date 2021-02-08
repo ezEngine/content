@@ -14,7 +14,7 @@ o
 			s{"Textures/cgbookcase.com/Bark_02/Bark_02_Color.jpg"}
 		}
 		Uuid %DocumentID{u4{2238383654402915203,5158977718912476274}}
-		u4 %Hash{14582508619489799420}
+		u4 %Hash{12028104969816966048}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGB1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}

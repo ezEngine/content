@@ -14,7 +14,7 @@ o
 			s{"Textures/cc0Textures.com/MetalPlates03/MetalPlates03_rgh.jpg"}
 		}
 		Uuid %DocumentID{u4{2936632516455186330,4699600555960150049}}
-		u4 %Hash{16696835108454497834}
+		u4 %Hash{8359065566054658824}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::R1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}

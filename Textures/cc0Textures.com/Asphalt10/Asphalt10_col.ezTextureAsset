@@ -14,7 +14,7 @@ o
 			s{"Textures/cc0Textures.com/Asphalt10/Asphalt10_col.jpg"}
 		}
 		Uuid %DocumentID{u4{2548184805406378426,5086920326477014891}}
-		u4 %Hash{10017618216507432198}
+		u4 %Hash{18179106740085795604}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGB1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}

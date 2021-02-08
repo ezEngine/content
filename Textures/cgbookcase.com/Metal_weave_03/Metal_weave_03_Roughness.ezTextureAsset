@@ -14,7 +14,7 @@ o
 			s{"Textures/cgbookcase.com/Metal_weave_03/Metal_weave_03_Roughness.jpg"}
 		}
 		Uuid %DocumentID{u4{15040670613934588091,4853193829339714726}}
-		u4 %Hash{7949469716980920490}
+		u4 %Hash{5818359548816624380}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::R1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}

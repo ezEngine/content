@@ -14,7 +14,7 @@ o
 			s{"Textures/cc0Textures.com/PavingStones13/PavingStones13_col.jpg"}
 		}
 		Uuid %DocumentID{u4{18031520366024138679,5542605228621694766}}
-		u4 %Hash{2695852267553550452}
+		u4 %Hash{15567475837614667982}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -37,6 +37,7 @@ o
 		f %CVarResScale{0x0000803F}
 		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGB1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
+		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
