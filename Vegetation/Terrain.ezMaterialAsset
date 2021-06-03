@@ -17,7 +17,7 @@ o
 			s{":app/VisualShader/Textures.ddl"}
 		}
 		Uuid %DocumentID{u4{3955855163042476932,4675641314156751492}}
-		u4 %Hash{12093363963923278185}
+		u4 %Hash{2402377271052865358}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -27,7 +27,6 @@ o
 		{
 			s{"{ 22c4324d-84ba-4dcc-b756-bafe1d89d7bf }"}
 			s{"{ 2d7ec886-0455-4288-be84-e1c72eff6253 }"}
-			s{"{ 491578b5-9856-4b38-aca7-1b8c709bd1d4 }"}
 			s{"{ 55d6b51d-24e0-419f-bb69-1ad5a4864eee }"}
 			s{"{ 8dc1cf30-83eb-45b0-bc65-c94bdd8f2024 }"}
 			s{"{ f14acee4-d5ca-4f9c-b6c2-cd71182cb2b6 }"}
@@ -227,7 +226,7 @@ o
 		s %Shader{"{ ab742a84-3700-40e3-84b3-0ad04f05e636 }"}
 		s %ShaderMode{"ezMaterialShaderMode::Custom"}
 		Uuid %ShaderProperties{u4{14329428325882798308,4980862833166118250}}
-		s %Surface{"{ 491578b5-9856-4b38-aca7-1b8c709bd1d4 }"}
+		s %Surface{""}
 	}
 }
 o
