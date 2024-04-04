@@ -14,7 +14,7 @@ o
 			s{"Textures/ambientcg.com/Rope001/Rope001_Roughness.jpg"}
 		}
 		Uuid %DocumentID{u4{15636469124368289436,5059851841131070575}}
-		u4 %Hash{6729967716649120071}
+		u4 %Hash{10302747917277167822}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Textures/ambientcg.com/Rope001/Rope001_Roughness.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

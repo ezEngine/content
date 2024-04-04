@@ -14,7 +14,7 @@ o
 			s{"FleetOps/Sovereign_data/Sovereign_D.png"}
 		}
 		Uuid %DocumentID{u4{15006231137471373225,5719705027336181274}}
-		u4 %Hash{5376596814107188652}
+		u4 %Hash{6165450700850496788}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"FleetOps/Sovereign_data/Sovereign_D.png"}
 		}
+		s %Tags{""}
 	}
 }
 }

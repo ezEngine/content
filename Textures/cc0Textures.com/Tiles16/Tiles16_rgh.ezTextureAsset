@@ -14,7 +14,7 @@ o
 			s{"Textures/cc0Textures.com/Tiles16/Tiles16_rgh.jpg"}
 		}
 		Uuid %DocumentID{u4{4536910635102626442,5536462644676578171}}
-		u4 %Hash{1753583249748531570}
+		u4 %Hash{17653562458946971159}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Textures/cc0Textures.com/Tiles16/Tiles16_rgh.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

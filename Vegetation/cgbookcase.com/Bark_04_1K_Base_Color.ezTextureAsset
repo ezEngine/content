@@ -14,7 +14,7 @@ o
 			s{"Vegetation/cgbookcase.com/Bark_04_1K_Base_Color.jpg"}
 		}
 		Uuid %DocumentID{u4{12198751618073808034,5433248952506019174}}
-		u4 %Hash{7398989424343074699}
+		u4 %Hash{12759985179000130928}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Vegetation/cgbookcase.com/Bark_04_1K_Base_Color.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

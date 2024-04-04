@@ -14,7 +14,7 @@ o
 			s{"FleetOps/Shashura_data/Shashura_N.png"}
 		}
 		Uuid %DocumentID{u4{9516716831661666739,5731688537165904341}}
-		u4 %Hash{2125707551621555901}
+		u4 %Hash{16484992254795086408}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"FleetOps/Shashura_data/Shashura_N.png"}
 		}
+		s %Tags{""}
 	}
 }
 }

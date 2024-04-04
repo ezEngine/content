@@ -19,7 +19,7 @@ o
 			s{"FleetOps/Skyboxes/env_light_storm5.jpg"}
 		}
 		Uuid %DocumentID{u4{15530269749395229353,5262773584222534699}}
-		u4 %Hash{17860881459040380200}
+		u4 %Hash{789586579447723765}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
@@ -32,6 +32,7 @@ o
 			s{"FleetOps/Skyboxes/env_light_storm4.jpg"}
 			s{"FleetOps/Skyboxes/env_light_storm5.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

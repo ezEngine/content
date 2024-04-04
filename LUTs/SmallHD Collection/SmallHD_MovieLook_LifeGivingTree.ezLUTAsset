@@ -14,7 +14,7 @@ o
 			s{"LUTs/SmallHD Collection/SmallHD_MovieLook_LifeGivingTree.cube"}
 		}
 		Uuid %DocumentID{u4{13750660152849681054,5676041582293414866}}
-		u4 %Hash{14540643014764333228}
+		u4 %Hash{939576372311953717}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
@@ -22,6 +22,7 @@ o
 		{
 			s{"LUTs/SmallHD Collection/SmallHD_MovieLook_LifeGivingTree.cube"}
 		}
+		s %Tags{""}
 	}
 }
 }

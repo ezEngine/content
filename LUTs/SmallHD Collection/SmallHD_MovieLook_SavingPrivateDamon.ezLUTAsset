@@ -14,7 +14,7 @@ o
 			s{"LUTs/SmallHD Collection/SmallHD_MovieLook_SavingPrivateDamon.cube"}
 		}
 		Uuid %DocumentID{u4{1246621518195557812,5534462923574288259}}
-		u4 %Hash{15194772193389370028}
+		u4 %Hash{17723750520285942220}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
@@ -22,6 +22,7 @@ o
 		{
 			s{"LUTs/SmallHD Collection/SmallHD_MovieLook_SavingPrivateDamon.cube"}
 		}
+		s %Tags{""}
 	}
 }
 }

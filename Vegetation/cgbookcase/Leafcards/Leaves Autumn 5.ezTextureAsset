@@ -14,7 +14,7 @@ o
 			s{"Vegetation/cgbookcase/Leafcards/Leaves Autumn 5.tga"}
 		}
 		Uuid %DocumentID{u4{8840375011110304698,5493286579110787993}}
-		u4 %Hash{14018193081373755076}
+		u4 %Hash{9693940274363344377}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Vegetation/cgbookcase/Leafcards/Leaves Autumn 5.tga"}
 		}
+		s %Tags{""}
 	}
 }
 }

@@ -14,7 +14,7 @@ o
 			s{"Objects/Tire_data/Tire_N.jpg"}
 		}
 		Uuid %DocumentID{u4{17522375186610294168,4774362935136973123}}
-		u4 %Hash{8447638482659715944}
+		u4 %Hash{16591397029061975206}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Objects/Tire_data/Tire_N.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

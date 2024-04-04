@@ -14,7 +14,7 @@ o
 			s{"Vegetation/TerrainMask.jpg"}
 		}
 		Uuid %DocumentID{u4{1527564486751623325,4620496772036806148}}
-		u4 %Hash{14645565065917209979}
+		u4 %Hash{7273955703870382590}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
@@ -22,6 +22,7 @@ o
 		{
 			s{"Vegetation/TerrainMask.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

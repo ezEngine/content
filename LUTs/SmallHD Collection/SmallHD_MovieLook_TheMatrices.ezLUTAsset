@@ -14,7 +14,7 @@ o
 			s{"LUTs/SmallHD Collection/SmallHD_MovieLook_TheMatrices.cube"}
 		}
 		Uuid %DocumentID{u4{14264205610439685050,5674355518357885295}}
-		u4 %Hash{18352470833154879803}
+		u4 %Hash{15255466899539510440}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
@@ -22,6 +22,7 @@ o
 		{
 			s{"LUTs/SmallHD Collection/SmallHD_MovieLook_TheMatrices.cube"}
 		}
+		s %Tags{""}
 	}
 }
 }

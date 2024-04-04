@@ -14,7 +14,7 @@ o
 			s{"Textures/Bricks_data/Bricks_D.jpg"}
 		}
 		Uuid %DocumentID{u4{12367571580951632575,5266549402132519093}}
-		u4 %Hash{15504671983796020622}
+		u4 %Hash{8263215965990367586}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Textures/Bricks_data/Bricks_D.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

@@ -14,7 +14,7 @@ o
 			s{"Objects/3dmodelhaven.com/GreenChair/GreenChair_01_16-bit_Roughness.jpg"}
 		}
 		Uuid %DocumentID{u4{10024443909249292457,5406673880142666876}}
-		u4 %Hash{2855985446573594220}
+		u4 %Hash{15135805409056729755}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Objects/3dmodelhaven.com/GreenChair/GreenChair_01_16-bit_Roughness.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

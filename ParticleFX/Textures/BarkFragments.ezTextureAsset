@@ -15,7 +15,7 @@ o
 			s{"Textures/cgbookcase.com/Bark_02/Bark_02_Color.jpg"}
 		}
 		Uuid %DocumentID{u4{162700357792486316,4850074554625298946}}
-		u4 %Hash{2891127605807516569}
+		u4 %Hash{17533324839093074949}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -27,6 +27,7 @@ o
 			s{"ParticleFX/Textures/FragmentMask.jpg"}
 			s{"Textures/cgbookcase.com/Bark_02/Bark_02_Color.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

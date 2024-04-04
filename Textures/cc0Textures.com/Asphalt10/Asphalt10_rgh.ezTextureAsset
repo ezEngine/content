@@ -14,7 +14,7 @@ o
 			s{"Textures/cc0Textures.com/Asphalt10/Asphalt10_rgh.jpg"}
 		}
 		Uuid %DocumentID{u4{14088818435219723962,5469001482506707578}}
-		u4 %Hash{9272532931378526449}
+		u4 %Hash{11558640906400960115}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Textures/cc0Textures.com/Asphalt10/Asphalt10_rgh.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

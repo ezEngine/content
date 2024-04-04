@@ -15,7 +15,7 @@ o
 			s{"FleetOps/Cassiopeia_data/Cassiopeia_D.png"}
 		}
 		Uuid %DocumentID{u4{16159780687570004134,5745454315371220956}}
-		u4 %Hash{6868015946527148112}
+		u4 %Hash{11287788112275590874}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -27,6 +27,7 @@ o
 			s{"FleetOps/Cassiopeia_data/Cassiopeia_A.png"}
 			s{"FleetOps/Cassiopeia_data/Cassiopeia_D.png"}
 		}
+		s %Tags{""}
 	}
 }
 }

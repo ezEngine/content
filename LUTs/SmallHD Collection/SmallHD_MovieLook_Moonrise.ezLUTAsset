@@ -14,7 +14,7 @@ o
 			s{"LUTs/SmallHD Collection/SmallHD_MovieLook_Moonrise.cube"}
 		}
 		Uuid %DocumentID{u4{6272051678487671947,5306805900368381785}}
-		u4 %Hash{13999067343225856986}
+		u4 %Hash{3369743491382201942}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
@@ -22,6 +22,7 @@ o
 		{
 			s{"LUTs/SmallHD Collection/SmallHD_MovieLook_Moonrise.cube"}
 		}
+		s %Tags{""}
 	}
 }
 }

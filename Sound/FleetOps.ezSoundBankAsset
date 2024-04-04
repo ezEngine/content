@@ -14,7 +14,7 @@ o
 			s{"Sound/Soundbanks/Desktop/FleetOps.bank"}
 		}
 		Uuid %DocumentID{u4{3368653996455012767,4981081860679884060}}
-		u4 %Hash{17852558965809770475}
+		u4 %Hash{1207689866358505269}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
@@ -22,6 +22,7 @@ o
 		{
 			s{"Sound/Soundbanks/Desktop/FleetOps.bank"}
 		}
+		s %Tags{""}
 	}
 }
 }

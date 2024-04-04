@@ -14,7 +14,7 @@ o
 			s{"ParticleFX/Textures/Circle.png"}
 		}
 		Uuid %DocumentID{u4{4443670298732833674,5348748372068650263}}
-		u4 %Hash{3455835078628809783}
+		u4 %Hash{7381355041305341720}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"ParticleFX/Textures/Circle.png"}
 		}
+		s %Tags{""}
 	}
 }
 }

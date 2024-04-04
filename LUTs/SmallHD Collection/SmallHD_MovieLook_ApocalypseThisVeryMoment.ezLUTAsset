@@ -14,7 +14,7 @@ o
 			s{"LUTs/SmallHD Collection/SmallHD_MovieLook_ApocalypseThisVeryMoment.cube"}
 		}
 		Uuid %DocumentID{u4{18182112224422888612,4906827929910356617}}
-		u4 %Hash{2544887767972967956}
+		u4 %Hash{4834685687469912820}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
@@ -22,6 +22,7 @@ o
 		{
 			s{"LUTs/SmallHD Collection/SmallHD_MovieLook_ApocalypseThisVeryMoment.cube"}
 		}
+		s %Tags{""}
 	}
 }
 }

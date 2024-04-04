@@ -14,7 +14,7 @@ o
 			s{"Kenney.nl/Particles/spark_06.png"}
 		}
 		Uuid %DocumentID{u4{3680391994688239488,4922863558975054146}}
-		u4 %Hash{2323269187594035823}
+		u4 %Hash{10853643925362594289}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Kenney.nl/Particles/spark_06.png"}
 		}
+		s %Tags{""}
 	}
 }
 }

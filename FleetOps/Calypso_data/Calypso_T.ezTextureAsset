@@ -14,7 +14,7 @@ o
 			s{"FleetOps/Calypso_data/Calypso_T.png"}
 		}
 		Uuid %DocumentID{u4{8853947848877466783,5357818334285878465}}
-		u4 %Hash{7939037237869795710}
+		u4 %Hash{9630888247802826121}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"FleetOps/Calypso_data/Calypso_T.png"}
 		}
+		s %Tags{""}
 	}
 }
 }

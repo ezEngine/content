@@ -14,7 +14,7 @@ o
 			s{"Objects/Fern_data/Fern_D.png"}
 		}
 		Uuid %DocumentID{u4{2971503509673122742,5439981789848112031}}
-		u4 %Hash{15197498484617273350}
+		u4 %Hash{6662924215282170153}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Objects/Fern_data/Fern_D.png"}
 		}
+		s %Tags{""}
 	}
 }
 }

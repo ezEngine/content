@@ -15,7 +15,7 @@ o
 			s{"Textures/cc0Textures.com/MetalWalkway006/MetalWalkway006_Opacity.png"}
 		}
 		Uuid %DocumentID{u4{16419698411069305221,5572544450784295111}}
-		u4 %Hash{480562726115735911}
+		u4 %Hash{7149092162953309348}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -27,6 +27,7 @@ o
 			s{"Textures/cc0Textures.com/MetalWalkway006/MetalWalkway006_Color.jpg"}
 			s{"Textures/cc0Textures.com/MetalWalkway006/MetalWalkway006_Opacity.png"}
 		}
+		s %Tags{""}
 	}
 }
 }

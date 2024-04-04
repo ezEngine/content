@@ -14,7 +14,7 @@ o
 			s{"ParticleFX/Textures/weapon_phaserhit.jpg"}
 		}
 		Uuid %DocumentID{u4{16824498308245865901,5113157683498060634}}
-		u4 %Hash{5250063604498258183}
+		u4 %Hash{3044074842597323725}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"ParticleFX/Textures/weapon_phaserhit.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

@@ -15,7 +15,7 @@ o
 			s{"Textures/cc0Textures.com/Ground08/Ground08_col.jpg"}
 		}
 		Uuid %DocumentID{u4{2808218218952289939,5386007595799983679}}
-		u4 %Hash{12397636802577669254}
+		u4 %Hash{10605720235501879776}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -27,6 +27,7 @@ o
 			s{"ParticleFX/Textures/FragmentMask.jpg"}
 			s{"Textures/cc0Textures.com/Ground08/Ground08_col.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

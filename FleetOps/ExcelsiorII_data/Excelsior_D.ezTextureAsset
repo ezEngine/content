@@ -14,7 +14,7 @@ o
 			s{"FleetOps/ExcelsiorII_data/ExcelsiorII_D.png"}
 		}
 		Uuid %DocumentID{u4{6703208666448483508,5077350605220584747}}
-		u4 %Hash{11072514324027990111}
+		u4 %Hash{16102767319684378370}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"FleetOps/ExcelsiorII_data/ExcelsiorII_D.png"}
 		}
+		s %Tags{""}
 	}
 }
 }

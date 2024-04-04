@@ -14,7 +14,7 @@ o
 			s{"Objects/3dmodelhaven.com/Glock/Glock_01_8-bit_Diffuse.jpg"}
 		}
 		Uuid %DocumentID{u4{3582987842000120506,5466213857743927607}}
-		u4 %Hash{15192424163494532541}
+		u4 %Hash{7903853974700007429}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Objects/3dmodelhaven.com/Glock/Glock_01_8-bit_Diffuse.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

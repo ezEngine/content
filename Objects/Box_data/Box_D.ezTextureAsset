@@ -14,7 +14,7 @@ o
 			s{"Objects/Box_data/Box_D.jpg"}
 		}
 		Uuid %DocumentID{u4{7426557848921589900,5501373919580532739}}
-		u4 %Hash{13473915548510710731}
+		u4 %Hash{8819982814298923192}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Objects/Box_data/Box_D.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

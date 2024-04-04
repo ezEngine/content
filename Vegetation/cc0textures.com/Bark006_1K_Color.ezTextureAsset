@@ -14,7 +14,7 @@ o
 			s{"Vegetation/cc0textures.com/Bark006_1K_Color.jpg"}
 		}
 		Uuid %DocumentID{u4{8409675174396914875,5387050689832229587}}
-		u4 %Hash{7449996995354537734}
+		u4 %Hash{11571229155918707027}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Vegetation/cc0textures.com/Bark006_1K_Color.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

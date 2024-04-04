@@ -14,7 +14,7 @@ o
 			s{"Textures/EZ-logo-512.png"}
 		}
 		Uuid %DocumentID{u4{7249466418992931489,5148044655871750934}}
-		u4 %Hash{9545539110965993419}
+		u4 %Hash{12987758712254567043}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Textures/EZ-logo-512.png"}
 		}
+		s %Tags{""}
 	}
 }
 }

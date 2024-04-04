@@ -14,7 +14,7 @@ o
 			s{"Textures/cc0Textures.com/Plastic01/Plastic01_col.jpg"}
 		}
 		Uuid %DocumentID{u4{13354338693209419710,5197085001362718678}}
-		u4 %Hash{206386443645529321}
+		u4 %Hash{7131082530665345303}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Textures/cc0Textures.com/Plastic01/Plastic01_col.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

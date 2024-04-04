@@ -14,7 +14,7 @@ o
 			s{"Objects/3dmodelhaven.com/Barrel01/Barrel_01_Explosive_16-bit_Roughness.jpg"}
 		}
 		Uuid %DocumentID{u4{738811191982592914,4968774881348440935}}
-		u4 %Hash{55238178313878236}
+		u4 %Hash{15180383271535275640}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Objects/3dmodelhaven.com/Barrel01/Barrel_01_Explosive_16-bit_Roughness.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

@@ -14,7 +14,7 @@ o
 			s{"LUTs/SmallHD Collection/SmallHD_MovieLook_BobFord.cube"}
 		}
 		Uuid %DocumentID{u4{3074954721051185050,4730670728602153104}}
-		u4 %Hash{12355721298978300734}
+		u4 %Hash{245509210154319548}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
@@ -22,6 +22,7 @@ o
 		{
 			s{"LUTs/SmallHD Collection/SmallHD_MovieLook_BobFord.cube"}
 		}
+		s %Tags{""}
 	}
 }
 }

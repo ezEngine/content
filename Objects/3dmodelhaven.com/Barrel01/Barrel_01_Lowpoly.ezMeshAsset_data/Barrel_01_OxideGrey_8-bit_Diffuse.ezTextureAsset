@@ -14,7 +14,7 @@ o
 			s{"Objects/3dmodelhaven.com/Barrel01/Barrel_01_OxideGrey_8-bit_Diffuse.jpg"}
 		}
 		Uuid %DocumentID{u4{14130951941945731983,5638236677862355139}}
-		u4 %Hash{7532694349498156692}
+		u4 %Hash{15051540526029694771}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Objects/3dmodelhaven.com/Barrel01/Barrel_01_OxideGrey_8-bit_Diffuse.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

@@ -14,7 +14,7 @@ o
 			s{"Textures/cc0Textures.com/Planks04/Planks04_nrm.jpg"}
 		}
 		Uuid %DocumentID{u4{3895462311362391687,5222686487175146570}}
-		u4 %Hash{5484180321041635283}
+		u4 %Hash{1176441017563198388}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Textures/cc0Textures.com/Planks04/Planks04_nrm.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

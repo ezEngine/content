@@ -14,7 +14,7 @@ o
 			s{"Textures/cc0Textures.com/MetalWalkway006/MetalWalkway006_Roughness.jpg"}
 		}
 		Uuid %DocumentID{u4{3896417961568193703,5262733796521771031}}
-		u4 %Hash{14252054027995927891}
+		u4 %Hash{8112953834511013514}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Textures/cc0Textures.com/MetalWalkway006/MetalWalkway006_Roughness.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

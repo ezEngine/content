@@ -14,7 +14,7 @@ o
 			s{"Vegetation/cc0textures.com/Bark006_1K_Roughness.jpg"}
 		}
 		Uuid %DocumentID{u4{16333174455522282679,4770540730119789432}}
-		u4 %Hash{8726753618183153877}
+		u4 %Hash{18341268444658373762}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Vegetation/cc0textures.com/Bark006_1K_Roughness.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

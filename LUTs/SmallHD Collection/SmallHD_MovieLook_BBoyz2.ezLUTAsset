@@ -14,7 +14,7 @@ o
 			s{"LUTs/SmallHD Collection/SmallHD_MovieLook_BBoyz2.cube"}
 		}
 		Uuid %DocumentID{u4{17735516546309925766,5060507118737697995}}
-		u4 %Hash{1543619900323413673}
+		u4 %Hash{3152510987014037075}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
@@ -22,6 +22,7 @@ o
 		{
 			s{"LUTs/SmallHD Collection/SmallHD_MovieLook_BBoyz2.cube"}
 		}
+		s %Tags{""}
 	}
 }
 }

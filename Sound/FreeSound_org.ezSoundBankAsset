@@ -14,7 +14,7 @@ o
 			s{"Sound/Soundbanks/Desktop/FreeSound.org.bank"}
 		}
 		Uuid %DocumentID{u4{5768038521217511833,4998709897592088329}}
-		u4 %Hash{878245369475252445}
+		u4 %Hash{293636436340375294}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
@@ -22,6 +22,7 @@ o
 		{
 			s{"Sound/Soundbanks/Desktop/FreeSound.org.bank"}
 		}
+		s %Tags{""}
 	}
 }
 }

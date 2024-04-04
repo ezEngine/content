@@ -14,7 +14,7 @@ o
 			s{"Kenney.nl/Particles/Smoke.png"}
 		}
 		Uuid %DocumentID{u4{9023375375892539551,5432773217930151114}}
-		u4 %Hash{15319838240302358192}
+		u4 %Hash{3110122592072267410}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Kenney.nl/Particles/Smoke.png"}
 		}
+		s %Tags{""}
 	}
 }
 }

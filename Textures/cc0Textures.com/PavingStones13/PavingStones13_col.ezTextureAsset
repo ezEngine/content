@@ -14,7 +14,7 @@ o
 			s{"Textures/cc0Textures.com/PavingStones13/PavingStones13_col.jpg"}
 		}
 		Uuid %DocumentID{u4{18031520366024138679,5542605228621694766}}
-		u4 %Hash{15567475837614667982}
+		u4 %Hash{18440574194321952683}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Textures/cc0Textures.com/PavingStones13/PavingStones13_col.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }

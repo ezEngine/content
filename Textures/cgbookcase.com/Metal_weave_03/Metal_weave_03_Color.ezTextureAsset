@@ -14,7 +14,7 @@ o
 			s{"Textures/cgbookcase.com/Metal_weave_03/Metal_weave_03_Color.png"}
 		}
 		Uuid %DocumentID{u4{16468088688569284269,5627688999360775915}}
-		u4 %Hash{2603868007383062278}
+		u4 %Hash{2353102933425188228}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -25,6 +25,7 @@ o
 		{
 			s{"Textures/cgbookcase.com/Metal_weave_03/Metal_weave_03_Color.png"}
 		}
+		s %Tags{""}
 	}
 }
 }

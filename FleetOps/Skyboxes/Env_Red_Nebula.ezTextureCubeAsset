@@ -19,7 +19,7 @@ o
 			s{"FleetOps/Skyboxes/env_red_nebula5.jpg"}
 		}
 		Uuid %DocumentID{u4{11258170546573733297,5237613303395363983}}
-		u4 %Hash{374974677330152444}
+		u4 %Hash{2935751569044768635}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
@@ -32,6 +32,7 @@ o
 			s{"FleetOps/Skyboxes/env_red_nebula4.jpg"}
 			s{"FleetOps/Skyboxes/env_red_nebula5.jpg"}
 		}
+		s %Tags{""}
 	}
 }
 }
