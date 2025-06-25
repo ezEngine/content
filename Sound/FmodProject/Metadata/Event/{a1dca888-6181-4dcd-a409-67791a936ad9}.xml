@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{a1dca888-6181-4dcd-a409-67791a936ad9}">
 		<property name="name">
 			<value>Burning Gas</value>
@@ -41,6 +41,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{52b0e613-0c1d-4de3-81f8-ee6c4c284267}">
+		<property name="uiTrackHeight">
+			<value>28</value>
+		</property>
 		<relationship name="mixerGroup">
 			<destination>{0ba9745b-a22f-45fb-8d3b-733d6645b965}</destination>
 		</relationship>
@@ -64,8 +67,15 @@
 			<value>1</value>
 		</property>
 	</object>
-	<object class="MarkerTrack" id="{d16ae300-baa8-484e-9c7a-5d8c3f1e1646}" />
+	<object class="MarkerTrack" id="{d16ae300-baa8-484e-9c7a-5d8c3f1e1646}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="GroupTrack" id="{8aac5a63-f698-49cb-a97f-48d99b14ce34}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
 			<destination>{a13bc363-d306-417a-bbc1-017bb8aac632}</destination>
 		</relationship>

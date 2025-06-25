@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Workspace" id="{2fb8ffa6-32a8-498d-b0d0-15313a0929cc}">
 		<property name="builtBanksOutputDirectory">
 			<value>../Soundbanks</value>
@@ -19,11 +19,17 @@
 		<relationship name="masterBankFolder">
 			<destination>{0ab7647b-3a82-48a1-a9c7-41b9818b00c4}</destination>
 		</relationship>
+		<relationship name="masterSandboxFolder">
+			<destination>{dff519ff-a7e4-4c82-b82a-309b37055ac6}</destination>
+		</relationship>
 		<relationship name="masterAssetFolder">
 			<destination>{38395770-0db2-44d2-8ad3-1114e556ca7a}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{e3083924-6aa0-45f0-a8be-7d98f1fd21f5}</destination>
+		</relationship>
+		<relationship name="profilerSessionFolder">
+			<destination>{63ea7ffb-ce5f-40c6-a4ac-38c907963372}</destination>
 		</relationship>
 		<relationship name="platforms">
 			<destination>{aff20ba3-aeb0-43ac-8e46-65176c7ecf36}</destination>

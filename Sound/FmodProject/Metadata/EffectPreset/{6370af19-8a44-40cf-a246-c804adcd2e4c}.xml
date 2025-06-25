@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="EffectPreset" id="{6370af19-8a44-40cf-a246-c804adcd2e4c}">
 		<property name="name">
 			<value>Occlusion EQ</value>

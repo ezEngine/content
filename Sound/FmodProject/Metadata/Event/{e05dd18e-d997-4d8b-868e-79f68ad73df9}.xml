@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{e05dd18e-d997-4d8b-868e-79f68ad73df9}">
 		<property name="name">
 			<value>Soft</value>
@@ -41,6 +41,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{3d09ab78-2a50-4b2e-b46f-8f64c703f91f}">
+		<property name="uiTrackHeight">
+			<value>28</value>
+		</property>
 		<relationship name="mixerGroup">
 			<destination>{ee98e5b8-af87-4f33-ad0f-9c09d257571d}</destination>
 		</relationship>
@@ -63,12 +66,22 @@
 		<property name="priority">
 			<value>0</value>
 		</property>
+		<property name="maximumDistance">
+			<value>10</value>
+		</property>
 		<property name="triggerCooldown">
 			<value>10</value>
 		</property>
 	</object>
-	<object class="MarkerTrack" id="{103395c0-a25e-41a8-becb-b365554cc9ba}" />
+	<object class="MarkerTrack" id="{103395c0-a25e-41a8-becb-b365554cc9ba}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="GroupTrack" id="{730d6e86-bbf5-4f6e-884c-e82924636009}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
 			<destination>{cf1502f5-d118-473b-9d24-6b93e1ad4478}</destination>
 		</relationship>

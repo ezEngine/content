@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{01ca36d4-9cda-44ff-b47b-2168c69513ea}">
 		<property name="name">
 			<value>Wooden</value>
@@ -61,10 +61,19 @@
 	</object>
 	<object class="EventAutomatableProperties" id="{55a6d765-befa-4c03-a12d-4211b4aee313}">
 		<property name="maxVoices">
-			<value>5</value>
+			<value>3</value>
 		</property>
 		<property name="voiceStealing">
+			<value>3</value>
+		</property>
+		<property name="priority">
 			<value>1</value>
+		</property>
+		<property name="maximumDistance">
+			<value>15</value>
+		</property>
+		<property name="triggerCooldown">
+			<value>75</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{4a8f97e0-c1af-42aa-b59e-ff6c732f47df}" />

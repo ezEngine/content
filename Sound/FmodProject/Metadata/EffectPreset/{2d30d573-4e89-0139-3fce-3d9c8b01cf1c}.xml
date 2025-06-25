@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="EffectPreset" id="{2d30d573-4e89-0139-3fce-3d9c8b01cf1c}">
 		<property name="name">
 			<value>FMOD Spatializer</value>

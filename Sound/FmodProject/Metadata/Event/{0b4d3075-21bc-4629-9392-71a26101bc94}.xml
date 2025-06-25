@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{0b4d3075-21bc-4629-9392-71a26101bc94}">
 		<property name="name">
 			<value>ComputerBeep</value>
@@ -41,6 +41,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{fd4cb36c-a216-4a0d-8caa-189592b000d6}">
+		<property name="uiTrackHeight">
+			<value>28</value>
+		</property>
 		<relationship name="mixerGroup">
 			<destination>{48bd637a-b1b6-4613-aaf2-a54a92ed3818}</destination>
 		</relationship>
@@ -57,8 +60,15 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{585752f5-3718-4c5b-adab-762b02d49b3f}" />
-	<object class="MarkerTrack" id="{cc211b91-1f1f-40e5-86ac-ab8c18935f5b}" />
+	<object class="MarkerTrack" id="{cc211b91-1f1f-40e5-86ac-ab8c18935f5b}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="GroupTrack" id="{62a43461-32bf-47e4-903c-71875e0e1178}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
 			<destination>{daf9a57d-da0a-46e4-95dc-3c5081e33951}</destination>
 		</relationship>

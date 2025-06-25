@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{23343d9a-7fa0-46ac-898e-b23396b57a00}">
 		<property name="name">
 			<value>SlideLoop</value>
@@ -38,6 +38,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{047eb36d-e2e6-406a-97db-71641509eee3}">
+		<property name="uiTrackHeight">
+			<value>28</value>
+		</property>
 		<relationship name="mixerGroup">
 			<destination>{31977da6-fb5d-43f7-9714-9beff155f27f}</destination>
 		</relationship>
@@ -51,8 +54,15 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{fde9b698-f62a-408d-8368-abccae53a295}" />
-	<object class="MarkerTrack" id="{f0d87f40-8069-4bb7-8a02-fa723f036a39}" />
+	<object class="MarkerTrack" id="{f0d87f40-8069-4bb7-8a02-fa723f036a39}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="GroupTrack" id="{6f03a30e-d351-48ad-af05-90f8718022e4}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
 			<destination>{6aa458e1-d606-406f-a8bd-ef634dd299c3}</destination>
 		</relationship>

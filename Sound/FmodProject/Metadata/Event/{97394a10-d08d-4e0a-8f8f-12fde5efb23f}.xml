@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{97394a10-d08d-4e0a-8f8f-12fde5efb23f}">
 		<property name="name">
 			<value>Nested Event</value>
@@ -38,6 +38,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{7e4cc1c2-3a0e-4be4-8c95-31479b804ac6}">
+		<property name="uiTrackHeight">
+			<value>28</value>
+		</property>
 		<relationship name="mixerGroup">
 			<destination>{f98075ed-a0dd-49a1-9e80-c346191139f9}</destination>
 		</relationship>
@@ -51,8 +54,15 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{81611acb-ce08-40e2-8d8b-399b32744251}" />
-	<object class="MarkerTrack" id="{f0ab69c1-5d42-4d8d-a747-381b34edb84d}" />
+	<object class="MarkerTrack" id="{f0ab69c1-5d42-4d8d-a747-381b34edb84d}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="GroupTrack" id="{389fc89b-1491-43fa-aa68-91fd2417c98f}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
 			<destination>{252e528e-0ef1-4f68-9698-7b99c72fc97f}</destination>
 		</relationship>
