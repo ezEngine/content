@@ -406,7 +406,7 @@ o
 			s{"Animations/Al/Al.glb"}
 		}
 		Uuid %DocumentID{u4{11561329096333486221,5547861603629142276}}
-		u4 %Hash{9375949414821542566}
+		u4 %Hash{16703445253120229124}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{599831854230532670,3884195237922503630}}
@@ -1891,11 +1891,11 @@ o
 	u3 %v{1}
 	p
 	{
-		s %Geometry{"ezSkeletonJointGeometryType::Box"}
-		f %Length{0x295C0F3E}
-		Vec3 %Offset{f{0,0,0x8FC2F5BC}}
+		s %Geometry{"ezSkeletonJointGeometryType::CapsuleSideways"}
+		f %Length{0xCDCCCC3D}
+		Vec3 %Offset{f{0xEC51B83D,0,0x8FC2F5BC}}
 		Quat %Rotation{f{0,0,0,0x0000803F}}
-		f %Thickness{0x0AD7233E}
+		f %Thickness{0xCDCCCC3D}
 		f %Width{0xEC51383E}
 	}
 }
@@ -2434,11 +2434,11 @@ o
 	u3 %v{1}
 	p
 	{
-		s %Geometry{"ezSkeletonJointGeometryType::Box"}
+		s %Geometry{"ezSkeletonJointGeometryType::CapsuleSideways"}
 		f %Length{0x0AD7233E}
-		Vec3 %Offset{f{0,0,0}}
+		Vec3 %Offset{f{0xCDCCCC3D,0,0x8FC2F53C}}
 		Quat %Rotation{f{0,0,0,0x0000803F}}
-		f %Thickness{0x5C8F423E}
+		f %Thickness{0xAE47E13D}
 		f %Width{0xC3F5A83E}
 	}
 }
@@ -2770,11 +2770,11 @@ o
 	u3 %v{1}
 	p
 	{
-		s %Geometry{"ezSkeletonJointGeometryType::Box"}
-		f %Length{0x295C0F3E}
-		Vec3 %Offset{f{0,0,0x0AD7A3BC}}
+		s %Geometry{"ezSkeletonJointGeometryType::CapsuleSideways"}
+		f %Length{0xB81E053E}
+		Vec3 %Offset{f{0xCDCCCC3D,0,0x0AD7A3BC}}
 		Quat %Rotation{f{0,0,0,0x0000803F}}
-		f %Thickness{0x0AD7233E}
+		f %Thickness{0xEC51B83D}
 		f %Width{0x1F856B3E}
 	}
 }
@@ -2785,7 +2785,7 @@ o
 	u3 %v{1}
 	p
 	{
-		s %Geometry{"ezSkeletonJointGeometryType::Sphere"}
+		s %Geometry{"ezSkeletonJointGeometryType::CapsuleSideways"}
 		f %Length{0xCDCCCC3D}
 		Vec3 %Offset{f{0x295C8F3D,0,0x8FC2F5BC}}
 		Quat %Rotation{f{0,0,0,0x0000803F}}
