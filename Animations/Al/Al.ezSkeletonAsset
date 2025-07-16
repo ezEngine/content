@@ -406,7 +406,7 @@ o
 			s{"Animations/Al/Al.glb"}
 		}
 		Uuid %DocumentID{u4{11561329096333486221,5547861603629142276}}
-		u4 %Hash{16703445253120229124}
+		u4 %Hash{14432478645114699135}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{599831854230532670,3884195237922503630}}
@@ -1134,7 +1134,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x7EF60CB0,0x10B5263D,0xA52D4332,0x56D849A9,0x802726B2,0xFE7494AF,0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -1167,7 +1167,7 @@ o
 		Angle %SwingLimitZ{f{0xC2B8B23D}}
 		Transform %Transform{f{0x00000032,0x67F5CC3E,0x000080AF,0x1BDB153D,0x8B8B09B9,0x8123A1B6,0x20D47F3F,0xFEFF7F3F,0xFDFF7F3F,0xFEFF7F3F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0xC2B8323E}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -1202,7 +1202,7 @@ o
 		Angle %SwingLimitZ{f{0xC2B8323E}}
 		Transform %Transform{f{0,0x93A9103E,0x0000C031,0xC0D18CB9,0,0,0x0000803F,0x0000803F,0xFFFF7F3F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0xC2B8B23E}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -1225,7 +1225,7 @@ o
 		Quat %GizmoOffsetRotationRO{f{0xEA0205BF,0x290B053F,0x8C91F5BE,0xAC7FF53E}}
 		Vec3 %GizmoOffsetTranslationRO{f{0x28A312BD,0xA245B6BD,0xB860D43D}}
 		s %JointType{"ezSkeletonJointType::SwingTwist"}
-		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Quat %LocalRotation{f{0x0200003F,0,0x000040B3,0xDAB35D3F}}
 		s %Name{"DEF-foot.L"}
 		b %OverrideCollisionLayer{0}
 		b %OverrideSurface{0}
@@ -1292,7 +1292,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x0038D4B1,0x014BFD3C,0x68D7DAB3,0xB55E0432,0x06B413AC,0xB5DC8BBA,0xF6FF7F3F,0x0000803F,0xFFFF7F3F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -1322,7 +1322,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x0070F6B1,0x1440303D,0x000090B2,0x81420EB9,0xE8389B38,0xECC148B8,0x0000803F,0x0000803F,0xFEFF7F3F,0xFFFF7F3F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -1352,7 +1352,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x0623D238,0xABEAF33D,0x4E158CBC,0x00414EBC,0xCAFD34BF,0x53414E3C,0x6CFD343F,0x0000803F,0xFCFF7F3F,0x0100803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -1382,7 +1382,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x0000C82F,0x4F742D3D,0xC065AD32,0xE6704CB2,0xCB402AB2,0xA762C63A,0xEDFF7F3F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -1412,7 +1412,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x6DD5D1B9,0x5F09F93D,0xC464AA3B,0x99D388BC,0x34F8343F,0xD5D388BC,0xD7F7343F,0xFFFF7F3F,0xFDFF7F3F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -1442,7 +1442,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x75029ABC,0x47ED0F3E,0x4CACA53D,0x19A11ABF,0x5AB1B03E,0xB3A3B63E,0x05A11F3F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -1465,7 +1465,7 @@ o
 		Quat %GizmoOffsetRotationRO{f{0xEA0205BF,0x290B053F,0x8C91F5BE,0xAC7FF53E}}
 		Vec3 %GizmoOffsetTranslationRO{f{0x26A312BD,0xA245B63D,0xC060D43D}}
 		s %JointType{"ezSkeletonJointType::SwingTwist"}
-		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Quat %LocalRotation{f{0x0200003F,0,0x000040B3,0xDAB35D3F}}
 		s %Name{"DEF-foot.R"}
 		b %OverrideCollisionLayer{0}
 		b %OverrideSurface{0}
@@ -1505,7 +1505,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0xB5C6BA3C,0x1DA4DF3C,0x26A0093D,0xD8597D3E,0x971F723F,0xE252503E,0xF47A5B3D,0x0000803F,0x0100803F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -1550,7 +1550,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x00006631,0xBA07253D,0x006CCCB0,0xB31BCA31,0x80DC2EB2,0x05B35ABA,0xFAFF7F3F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -1573,7 +1573,7 @@ o
 		Quat %GizmoOffsetRotationRO{f{0xE7BFDD3E,0xE7BFDDBE,0x12170FBF,0x11170F3F}}
 		Vec3 %GizmoOffsetTranslationRO{f{0x0084B73A,0xA045B6BD,0x199E6E3F}}
 		s %JointType{"ezSkeletonJointType::SwingTwist"}
-		Quat %LocalRotation{f{0x60918B3C,0x018404BE,0x7CA37B3F,0xEC8304BE}}
+		Quat %LocalRotation{f{0x97A37BBF,0x4A8404BE,0x48908B3C,0x2284043E}}
 		s %Name{"DEF-thigh.L"}
 		b %OverrideCollisionLayer{0}
 		b %OverrideSurface{0}
@@ -1616,7 +1616,7 @@ o
 		Angle %SwingLimitZ{f{0xC2B8B23F}}
 		Transform %Transform{f{0x435AF63C,0xE5D35F3E,0x6E018BBC,0x9798383E,0xCC102FBF,0x0A27383E,0x160A2F3F,0x0000803F,0x0000803F,0x0100803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0xC2B8323E}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -1758,7 +1758,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x00A072B1,0xD775313E,0x00A00CB2,0xFEC90FB9,0xCFDC763F,0x2C9287BE,0x7AEC02BA,0x0000803F,0x0300803F,0xFCFF7F3F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -1785,7 +1785,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x0060A1B1,0x788A0E3D,0x3009E7B3,0x807C08A5,0x000000AA,0x9311F1A5,0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -1820,7 +1820,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0,0xB0354D3D,0xDAAC6A3F,0x275C4A3F,0,0,0xF9CC1C3F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -1866,7 +1866,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0,0,0,0,0,0,0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -1986,7 +1986,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x80AD6FB3,0xE405493D,0x0000C031,0x02F28139,0x36DEA9B8,0x82540C3A,0xFDFF7F3F,0xFDFF7F3F,0xFEFF7F3F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2016,7 +2016,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x9C0F033B,0x178EF53D,0xFE21FD3C,0x8F7B50B3,0x2105353F,0xFC7B50B3,0xC504353F,0xFEFF7F3F,0xFCFF7F3F,0xFFFF7F3F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2046,7 +2046,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x9BADD13A,0xC691DC3D,0xE71D27BD,0x2A33C2BC,0x15EB343F,0x8033C2BC,0xB8EA343F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2079,7 +2079,7 @@ o
 		Angle %SwingLimitZ{f{0xC2B8323E}}
 		Transform %Transform{f{0,0x197E0D3E,0x000050B2,0xCF8284BD,0,0,0xAD767F3F,0x0000803F,0xFFFF7F3F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0xC2B8B23E}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2132,13 +2132,13 @@ o
 		Quat %GizmoOffsetRotationRO{f{0xE7BFDD3E,0xE7BFDDBE,0x12170FBF,0x11170F3F}}
 		Vec3 %GizmoOffsetTranslationRO{f{0x0085B73A,0xA045B63D,0x1A9E6E3F}}
 		s %JointType{"ezSkeletonJointType::SwingTwist"}
-		Quat %LocalRotation{f{0x50918B3C,0xFE83043E,0x7BA37BBF,0xF88304BE}}
+		Quat %LocalRotation{f{0x88A37BBF,0xCC83043E,0x68918BBC,0x0A84043E}}
 		s %Name{"DEF-thigh.R"}
 		b %OverrideCollisionLayer{0}
 		b %OverrideSurface{0}
 		f %Stiffness{0x00002041}
 		s %Surface{""}
-		Angle %SwingLimitY{f{0xF3665F3F}}
+		Angle %SwingLimitY{f{0x920A063F}}
 		Angle %SwingLimitZ{f{0x920A063F}}
 		Transform %Transform{f{0xA245B6BD,0xAD7FE33C,0x73833C3D,0x77137E3F,0,0,0x739DFA3D,0x0000803F,0xFFFF7F3F,0xFCFF7F3F}}
 		Angle %TwistLimitCenterAngle{f{0}}
@@ -2172,7 +2172,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0,0,0,0xF20435BF,0,0,0xF404353F,0x0000803F,0xFFFF7F3F,0xFFFF7F3F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2277,7 +2277,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x000099AF,0x7CFD0A3D,0xB4592C34,0xC41F0C32,0x0C007BAC,0x181194BA,0xF5FF7F3F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2322,7 +2322,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0xB2C6BABC,0x2FA4DF3C,0x26A0093D,0xDA597DBE,0x961F723F,0xDD52503E,0xF77A5BBD,0xFCFF7F3F,0x0100803F,0xFCFF7F3F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2352,7 +2352,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x00C06B30,0xB107253D,0x00F106B1,0x0F3DC131,0xE33F48B1,0x87B25A3A,0xFAFF7F3F,0xFFFF7F3F,0xFDFF7F3F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2394,7 +2394,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0,0,0,0,0,0,0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2424,7 +2424,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x2FADD1BA,0xCA91DC3D,0xE71D27BD,0x2B33C2BC,0x16EB34BF,0x8033C23C,0xB7EA343F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2469,7 +2469,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x8B0F03BB,0x1C8EF53D,0xFF21FD3C,0x8C7B50B3,0x230535BF,0xFC7B5033,0xC304353F,0xFFFF7F3F,0xFFFF7F3F,0xFFFF7F3F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2499,7 +2499,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x64D6D139,0x6309F93D,0xC864AA3B,0x99D388BC,0x35F834BF,0xD3D3883C,0xD6F7343F,0xFFFF7F3F,0xFDFF7F3F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2532,7 +2532,7 @@ o
 		Angle %SwingLimitZ{f{0xC2B8B23D}}
 		Transform %Transform{f{0x000000B2,0x67F5CC3E,0x000080AF,0x1BDB153D,0x8B8B09B9,0x8123A1B6,0x20D47F3F,0xFEFF7F3F,0xFDFF7F3F,0xFEFF7F3F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0xC2B8323E}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2562,7 +2562,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x00B02EB1,0x4513213D,0x45EC6AB4,0xD69F4A30,0x0F4E6CB1,0x00884CB7,0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2592,7 +2592,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x00802D30,0x58742D3D,0x001DD1B3,0x2C263DB2,0x1B8768B1,0xAF62C6BA,0xEDFF7F3F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2622,7 +2622,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0xBE1DD2B8,0xA6EAF33D,0x4F158CBC,0xFD404EBC,0xCAFD343F,0x58414EBC,0x6CFD343F,0x0000803F,0xFCFF7F3F,0x0100803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2649,7 +2649,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x00702831,0x124BFD3C,0x7CEDD7B3,0x57D90432,0x0766BB2D,0xB5DC8B3A,0xF6FF7F3F,0x0000803F,0xFFFF7F3F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2682,7 +2682,7 @@ o
 		Angle %SwingLimitZ{f{0xC2B8323E}}
 		Transform %Transform{f{0,0xFC05FE3D,0x0000C02F,0xE5449EBD,0,0,0x033C7F3F,0x0000803F,0xFFFF7F3F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0xC2B8B23E}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2745,7 +2745,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x00E0CA31,0x0240303D,0x00003833,0x824E0EB9,0xFC699BB8,0x5A0D4938,0x0000803F,0x0000803F,0xFDFF7F3F,0xFFFF7F3F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2820,7 +2820,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x75029A3C,0x47ED0F3E,0x4CACA53D,0x19A11ABF,0x5AB1B0BE,0xB3A3B6BE,0x05A11F3F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2847,7 +2847,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x005076B1,0x69A2E23C,0xE8127234,0xDE3297B1,0x0450932C,0x63C81F3A,0xFDFF7F3F,0xFFFF7F3F,0xFEFF7F3F,0xFFFF7F3F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2877,7 +2877,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x004057B0,0x3C13213D,0x9A0ADCB3,0xB40D6EB0,0x466625B2,0x00844C37,0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2904,7 +2904,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x00A08530,0x808A0E3D,0x00B73732,0x888F0723,0x0000002A,0x211919A5,0x0000803F,0x0000803F,0xFFFF7F3F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2937,7 +2937,7 @@ o
 		Angle %SwingLimitZ{f{0xC2B8B23F}}
 		Transform %Transform{f{0x435AF6BC,0xE5D35F3E,0x6E018BBC,0x9798383E,0xCC102F3F,0x0A2738BE,0x160A2F3F,0x0000803F,0x0000803F,0x0100803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0xC2B8323E}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2964,7 +2964,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x00301331,0x85FD0A3D,0xF8F03333,0xBAA30C32,0x0993C62D,0x1011943A,0xF5FF7F3F,0x0000803F,0xFFFF7F3F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -2991,7 +2991,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x00507631,0x79A2E23C,0x204749B2,0x3EBF97B1,0x026C8EAD,0x42C81FBA,0xFDFF7F3F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -3018,7 +3018,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x601504B4,0xF505493D,0x0000D8B2,0x84F68139,0x2AB3A938,0xBF550CBA,0xFDFF7F3F,0xFDFF7F3F,0xFDFF7F3F,0xFFFF7F3F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -3045,7 +3045,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x00B08631,0xD775313E,0x006013B2,0xFEC90FB9,0xCFDC763F,0x2C9287BE,0x7AEC02BA,0x0000803F,0x0300803F,0xFCFF7F3F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
@@ -3075,7 +3075,7 @@ o
 		Angle %SwingLimitZ{f{0}}
 		Transform %Transform{f{0x4D01B8B1,0x28B5263D,0x499AE7B3,0xAEF66BA9,0x006583B1,0xF075942F,0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
-		Angle %TwistLimitHalfAngle{f{0}}
+		Angle %TwistLimitHalfAngle{f{0x920A063F}}
 	}
 }
 o
