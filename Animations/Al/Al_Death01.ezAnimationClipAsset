@@ -14,7 +14,7 @@ o
 			s{"Animations/Al/Al.glb"}
 		}
 		Uuid %DocumentID{u4{12868560010182856594,4738083272580130093}}
-		u4 %Hash{15696441666850748322}
+		u4 %Hash{13993186364393926933}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
@@ -29,6 +29,17 @@ o
 }
 Objects
 {
+o
+{
+	Uuid %id{u4{13140400752126250151,5444288798692044477}}
+	s %t{"ezEventTrackControlPointData"}
+	u3 %v{1}
+	p
+	{
+		s %Event{"AnimMode-Powered"}
+		i4 %Tick{3840}
+	}
+}
 o
 {
 	Uuid %id{u4{13188963891851953031,5637759524918184714}}
@@ -52,6 +63,17 @@ o
 }
 o
 {
+	Uuid %id{u4{8858775037348773526,5730797267827105380}}
+	s %t{"ezEventTrackControlPointData"}
+	u3 %v{1}
+	p
+	{
+		s %Event{"AnimMode-Limp"}
+		i4 %Tick{5520}
+	}
+}
+o
+{
 	Uuid %id{u4{18096612296587978288,6449934965513159559}}
 	s %t{"ezDocumentRoot"}
 	u3 %v{1}
@@ -71,7 +93,11 @@ o
 	u3 %v{3}
 	p
 	{
-		VarArray %ControlPoints{}
+		VarArray %ControlPoints
+		{
+			Uuid{u4{13140400752126250151,5444288798692044477}}
+			Uuid{u4{8858775037348773526,5730797267827105380}}
+		}
 	}
 }
 }

@@ -14,7 +14,7 @@ o
 			s{"Animations/Al/Al.glb"}
 		}
 		Uuid %DocumentID{u4{13291955919715474055,4828991401249833940}}
-		u4 %Hash{15822384596408905293}
+		u4 %Hash{4456400507161172994}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
@@ -39,14 +39,14 @@ o
 		b %Additive{0}
 		s %AdditiveReference{"ezAdditiveAnimationReference::FirstKeyFrame"}
 		f %AdjustScale{0x0000803F}
-		Vec3 %ConstantRootMotion{f{0,0,0}}
+		Vec3 %ConstantRootMotion{f{0x0000803F,0,0}}
 		Uuid %EventTrack{u4{8900224497715022717,17877094660647981642}}
 		s %File{"Animations/Al/Al.glb"}
 		u3 %FirstFrame{0}
 		u3 %NumFrames{0}
 		s %PreviewMesh{"{ c78f2a5e-574b-4ced-94bd-7a0642ab3df2 }"}
-		s %RootMotion{"ezRootMotionSource::None"}
-		f %RootMotionDistance{0}
+		s %RootMotion{"ezRootMotionSource::Constant"}
+		f %RootMotionDistance{0x00004040}
 		s %UseAnimationClip{"Sprint_Loop"}
 	}
 }

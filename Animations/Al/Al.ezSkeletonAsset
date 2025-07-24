@@ -406,7 +406,7 @@ o
 			s{"Animations/Al/Al.glb"}
 		}
 		Uuid %DocumentID{u4{11561329096333486221,5547861603629142276}}
-		u4 %Hash{14432478645114699135}
+		u4 %Hash{12547057528438204065}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{599831854230532670,3884195237922503630}}
@@ -1612,8 +1612,8 @@ o
 		b %OverrideSurface{0}
 		f %Stiffness{0x00002041}
 		s %Surface{""}
-		Angle %SwingLimitY{f{0xAA619C3F}}
-		Angle %SwingLimitZ{f{0xC2B8B23F}}
+		Angle %SwingLimitY{f{0xF366DF3F}}
+		Angle %SwingLimitZ{f{0x920A0640}}
 		Transform %Transform{f{0x435AF63C,0xE5D35F3E,0x6E018BBC,0x9798383E,0xCC102FBF,0x0A27383E,0x160A2F3F,0x0000803F,0x0000803F,0x0100803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
 		Angle %TwistLimitHalfAngle{f{0x920A063F}}
@@ -2933,8 +2933,8 @@ o
 		b %OverrideSurface{0}
 		f %Stiffness{0x00002041}
 		s %Surface{""}
-		Angle %SwingLimitY{f{0xAA619C3F}}
-		Angle %SwingLimitZ{f{0xC2B8B23F}}
+		Angle %SwingLimitY{f{0xF366DF3F}}
+		Angle %SwingLimitZ{f{0x920A0640}}
 		Transform %Transform{f{0x435AF6BC,0xE5D35F3E,0x6E018BBC,0x9798383E,0xCC102F3F,0x0A2738BE,0x160A2F3F,0x0000803F,0x0000803F,0x0100803F}}
 		Angle %TwistLimitCenterAngle{f{0}}
 		Angle %TwistLimitHalfAngle{f{0x920A063F}}
