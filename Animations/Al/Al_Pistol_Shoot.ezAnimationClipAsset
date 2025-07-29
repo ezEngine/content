@@ -14,7 +14,7 @@ o
 			s{"Animations/Al/Al.glb"}
 		}
 		Uuid %DocumentID{u4{17366107786816577667,4728766084141676815}}
-		u4 %Hash{17317820070339164076}
+		u4 %Hash{8231904052129063333}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
@@ -52,6 +52,17 @@ o
 }
 o
 {
+	Uuid %id{u4{10141457102441800118,5028358971592149514}}
+	s %t{"ezEventTrackControlPointData"}
+	u3 %v{1}
+	p
+	{
+		s %Event{"gun.shoot"}
+		i4 %Tick{0}
+	}
+}
+o
+{
 	Uuid %id{u4{18096612296587978288,6449934965513159559}}
 	s %t{"ezDocumentRoot"}
 	u3 %v{1}
@@ -71,7 +82,10 @@ o
 	u3 %v{3}
 	p
 	{
-		VarArray %ControlPoints{}
+		VarArray %ControlPoints
+		{
+			Uuid{u4{10141457102441800118,5028358971592149514}}
+		}
 	}
 }
 }

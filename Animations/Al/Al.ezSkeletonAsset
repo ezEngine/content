@@ -406,13 +406,16 @@ o
 			s{"Animations/Al/Al.glb"}
 		}
 		Uuid %DocumentID{u4{11561329096333486221,5547861603629142276}}
-		u4 %Hash{12547057528438204065}
+		u4 %Hash{13668363374173610490}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{599831854230532670,3884195237922503630}}
 		}
 		VarArray %Outputs{}
-		VarArray %PackageDeps{}
+		VarArray %PackageDeps
+		{
+			s{"{ 72115f7a-5947-4a21-899f-868368bd41d7 }"}
+		}
 		VarArray %References
 		{
 			s{"Animations/Al/Al.glb"}
@@ -2248,7 +2251,7 @@ o
 		s %PreviewMesh{"{ c78f2a5e-574b-4ced-94bd-7a0642ab3df2 }"}
 		s %RightDir{"ezBasisAxis::NegativeX"}
 		s %RightFootJoint{"DEF-foot.R"}
-		s %Surface{""}
+		s %Surface{"{ 72115f7a-5947-4a21-899f-868368bd41d7 }"}
 		f %UniformScaling{0x0000803F}
 		s %UpDir{"ezBasisAxis::PositiveY"}
 	}

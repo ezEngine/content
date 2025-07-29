@@ -14,7 +14,7 @@ o
 			s{"Animations/Al/Al.glb"}
 		}
 		Uuid %DocumentID{u4{16276105733913763738,4642528324702026512}}
-		u4 %Hash{5098573634237433985}
+		u4 %Hash{1777078644812190454}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
@@ -29,6 +29,17 @@ o
 }
 Objects
 {
+o
+{
+	Uuid %id{u4{5331910571466178999,5278826217494292186}}
+	s %t{"ezEventTrackControlPointData"}
+	u3 %v{1}
+	p
+	{
+		s %Event{"Melee-Hit"}
+		i4 %Tick{880}
+	}
+}
 o
 {
 	Uuid %id{u4{2537283078016853401,5560628082557001828}}
@@ -71,7 +82,10 @@ o
 	u3 %v{3}
 	p
 	{
-		VarArray %ControlPoints{}
+		VarArray %ControlPoints
+		{
+			Uuid{u4{5331910571466178999,5278826217494292186}}
+		}
 	}
 }
 }

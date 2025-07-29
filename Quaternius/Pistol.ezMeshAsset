@@ -14,7 +14,7 @@ o
 			s{"Quaternius/Pistol.fbx"}
 		}
 		Uuid %DocumentID{u4{6511531008309236645,4811307474624618720}}
-		u4 %Hash{9672980008336443145}
+		u4 %Hash{1202559164594116080}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -79,7 +79,7 @@ o
 		s %RightDir{"ezBasisAxis::NegativeX"}
 		b %SimplifyMesh{0}
 		s %TexCoordPrecision{"ezMeshTexCoordPrecision::_16Bit"}
-		f %UniformScaling{0x0000803F}
+		f %UniformScaling{0xCDCCCC3D}
 		s %UpDir{"ezBasisAxis::PositiveY"}
 		s %VertexColorConversion{"ezMeshVertexColorConversion::None"}
 	}
