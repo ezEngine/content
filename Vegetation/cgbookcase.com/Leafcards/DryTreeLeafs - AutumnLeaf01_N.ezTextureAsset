@@ -2,7 +2,7 @@ HeaderV2
 {
 o
 {
-	Uuid %id{u4{681128388614434442,5313861808740051822}}
+	Uuid %id{u4{5809160195127034776,4643063330195160980}}
 	s %t{"ezAssetDocumentInfo"}
 	u3 %v{2}
 	s %n{"Header"}
@@ -11,10 +11,10 @@ o
 		s %AssetType{"Texture 2D"}
 		VarArray %Dependencies
 		{
-			s{"Vegetation/cgbookcase/Leafcards/Leaves Walnut 01_N.tga"}
+			s{"Vegetation/cgbookcase.com/Leafcards/DryTreeLeafs - AutumnLeaf01_N.tga"}
 		}
-		Uuid %DocumentID{u4{681128388614434442,5313861808740051822}}
-		u4 %Hash{132713697386493588}
+		Uuid %DocumentID{u4{5809160195127034776,4643063330195160980}}
+		u4 %Hash{16231463298255477863}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -23,7 +23,7 @@ o
 		VarArray %PackageDeps{}
 		VarArray %References
 		{
-			s{"Vegetation/cgbookcase/Leafcards/Leaves Walnut 01_N.tga"}
+			s{"Vegetation/cgbookcase.com/Leafcards/DryTreeLeafs - AutumnLeaf01_N.tga"}
 		}
 		s %Tags{""}
 	}
@@ -33,7 +33,7 @@ Objects
 {
 o
 {
-	Uuid %id{u4{5839242090554631041,4889460205061066911}}
+	Uuid %id{u4{17035341778420367771,5286039565819936373}}
 	s %t{"ezTextureAssetProperties"}
 	u3 %v{5}
 	p
@@ -49,7 +49,7 @@ o
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
-		s %Input1{"Vegetation/cgbookcase/Leafcards/Leaves Walnut 01_N.tga"}
+		s %Input1{"Vegetation/cgbookcase.com/Leafcards/DryTreeLeafs - AutumnLeaf01_N.tga"}
 		s %Input2{""}
 		s %Input3{""}
 		s %Input4{""}
@@ -72,7 +72,7 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{5839242090554631041,4889460205061066911}}
+			Uuid{u4{17035341778420367771,5286039565819936373}}
 		}
 	}
 }

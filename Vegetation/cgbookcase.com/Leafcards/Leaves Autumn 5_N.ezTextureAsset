@@ -2,7 +2,7 @@ HeaderV2
 {
 o
 {
-	Uuid %id{u4{475192038990454406,5609648201793199389}}
+	Uuid %id{u4{9717481469167978683,5377650944666325372}}
 	s %t{"ezAssetDocumentInfo"}
 	u3 %v{2}
 	s %n{"Header"}
@@ -11,10 +11,10 @@ o
 		s %AssetType{"Texture 2D"}
 		VarArray %Dependencies
 		{
-			s{"Vegetation/cgbookcase/Leafcards/Leaves Walnut 01.tga"}
+			s{"Vegetation/cgbookcase.com/Leafcards/Leaves Autumn 5_N.tga"}
 		}
-		Uuid %DocumentID{u4{475192038990454406,5609648201793199389}}
-		u4 %Hash{1818267572271459931}
+		Uuid %DocumentID{u4{9717481469167978683,5377650944666325372}}
+		u4 %Hash{4130504560735041550}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -23,7 +23,7 @@ o
 		VarArray %PackageDeps{}
 		VarArray %References
 		{
-			s{"Vegetation/cgbookcase/Leafcards/Leaves Walnut 01.tga"}
+			s{"Vegetation/cgbookcase.com/Leafcards/Leaves Autumn 5_N.tga"}
 		}
 		s %Tags{""}
 	}
@@ -33,7 +33,7 @@ Objects
 {
 o
 {
-	Uuid %id{u4{6101456532060381580,4997138694166805265}}
+	Uuid %id{u4{1982387705255211927,4680261117033320934}}
 	s %t{"ezTextureAssetProperties"}
 	u3 %v{5}
 	p
@@ -43,23 +43,23 @@ o
 		s %AddressModeW{"ezImageAddressMode::Clamp"}
 		f %AlphaThreshold{0x0000003F}
 		f %CVarResScale{0x0000803F}
-		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGBA1"}
+		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGB1"}
 		s %CompressionMode{"ezTexConvCompressionMode::High"}
 		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
-		s %Input1{"Vegetation/cgbookcase/Leafcards/Leaves Walnut 01.tga"}
+		s %Input1{"Vegetation/cgbookcase.com/Leafcards/Leaves Autumn 5_N.tga"}
 		s %Input2{""}
 		s %Input3{""}
 		s %Input4{""}
 		b %IsRenderTarget{0}
 		s %MipmapMode{"ezTexConvMipmapMode::Kaiser"}
 		b %PremultipliedAlpha{0}
-		b %PreserveAlphaCoverage{1}
+		b %PreserveAlphaCoverage{0}
 		s %Resolution{"ezTexture2DResolution::Fixed256x256"}
 		s %TextureFilter{"ezTextureFilterSetting::DefaultQuality"}
-		s %Usage{"ezTexConvUsage::Color"}
+		s %Usage{"ezTexConvUsage::NormalMap"}
 	}
 }
 o
@@ -72,7 +72,7 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{6101456532060381580,4997138694166805265}}
+			Uuid{u4{1982387705255211927,4680261117033320934}}
 		}
 	}
 }
