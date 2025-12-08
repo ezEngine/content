@@ -11,13 +11,13 @@ o
 		s %AssetType{"Material"}
 		VarArray %Dependencies
 		{
-			s{":app/VisualShader/Output_Material.ddl"}
 			s{":app/VisualShader/Inputs.ddl"}
 			s{":app/VisualShader/Math_Basic.ddl"}
+			s{":app/VisualShader/Output_Material.ddl"}
 			s{":app/VisualShader/Textures.ddl"}
 		}
 		Uuid %DocumentID{u4{3955855163042476932,4675641314156751492}}
-		u4 %Hash{2088825543710853816}
+		u4 %Hash{17668794329382679312}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -87,19 +87,6 @@ o
 }
 o
 {
-	Uuid %id{u4{7328059690339784345,4738945634639430923}}
-	s %t{"ezDocumentObject_ConnectionBase"}
-	u3 %v{1}
-	p
-	{
-		Uuid %Source{u4{801333117112252332,5520956058541846713}}
-		s %SourcePin{"RGBA"}
-		Uuid %Target{u4{5701450533820958388,4696090494967258096}}
-		s %TargetPin{"a"}
-	}
-}
-o
-{
 	Uuid %id{u4{15063744505529313950,4813884491275321676}}
 	s %t{"ShaderNode::Texture2D"}
 	u3 %v{1}
@@ -107,19 +94,18 @@ o
 	{
 		s %Name{"BaseTexture2"}
 		Vec2 %Node::Pos{f{0x4693A9C3,0x4623F543}}
-		s %Texture{"{ 55d6b51d-24e0-419f-bb69-1ad5a4864eee }"}
 	}
 }
 o
 {
-	Uuid %id{u4{17649698835531937968,4816760717951465460}}
+	Uuid %id{u4{816162864964351130,4892135032991721137}}
 	s %t{"ezDocumentObject_ConnectionBase"}
 	u3 %v{1}
 	p
 	{
 		Uuid %Source{u4{3242430547511225490,5581238889136691916}}
 		s %SourcePin{"result"}
-		Uuid %Target{u4{801333117112252332,5520956058541846713}}
+		Uuid %Target{u4{11484150259617625341,16321986208283453582}}
 		s %TargetPin{"UV"}
 	}
 }
@@ -174,7 +160,6 @@ o
 		s %RoughnessTexture{"{ 22c4324d-84ba-4dcc-b756-bafe1d89d7bf }"}
 		s %SHADING_MODE{"SHADING_MODE::SHADING_MODE_LIT"}
 		b %TWO_SIDED{0}
-		b %VERTEX_SKINNING{0}
 	}
 }
 o
@@ -186,18 +171,6 @@ o
 	{
 		s %Name{"NormalTexture"}
 		Vec2 %Node::Pos{f{0x3D7D0BC3,0x57939343}}
-		s %Texture{"{ 8dc1cf30-83eb-45b0-bc65-c94bdd8f2024 }"}
-	}
-}
-o
-{
-	Uuid %id{u4{15337665768841648771,5003102134519112640}}
-	s %t{"ShaderNode::RoughnessTexture"}
-	u3 %v{1}
-	p
-	{
-		Vec2 %Node::Pos{f{0xABC436C3,0x0E11C243}}
-		s %Texture{"{ 22c4324d-84ba-4dcc-b756-bafe1d89d7bf }"}
 	}
 }
 o
@@ -238,15 +211,15 @@ o
 }
 o
 {
-	Uuid %id{u4{8220623368075759263,5127972428597007854}}
+	Uuid %id{u4{788999641970722183,5105670193470923549}}
 	s %t{"ezDocumentObject_ConnectionBase"}
 	u3 %v{1}
 	p
 	{
-		Uuid %Source{u4{15337665768841648771,5003102134519112640}}
-		s %SourcePin{"Roughness"}
-		Uuid %Target{u4{6570354206761472407,4916704494131281579}}
-		s %TargetPin{"Roughness"}
+		Uuid %Source{u4{3242430547511225490,5581238889136691916}}
+		s %SourcePin{"result"}
+		Uuid %Target{u4{13781163087338312558,11508290897225868043}}
+		s %TargetPin{"UV"}
 	}
 }
 o
@@ -260,6 +233,19 @@ o
 		s %SourcePin{"RGBA"}
 		Uuid %Target{u4{7717393033662795622,9717150354020277199}}
 		s %TargetPin{"a"}
+	}
+}
+o
+{
+	Uuid %id{u4{12174536975232950912,5204573217644580729}}
+	s %t{"ezDocumentObject_ConnectionBase"}
+	u3 %v{1}
+	p
+	{
+		Uuid %Source{u4{11484150259617625341,16321986208283453582}}
+		s %SourcePin{"Red"}
+		Uuid %Target{u4{6570354206761472407,4916704494131281579}}
+		s %TargetPin{"Roughness"}
 	}
 }
 o
@@ -318,6 +304,19 @@ o
 }
 o
 {
+	Uuid %id{u4{14227048717094309043,5381582828149150046}}
+	s %t{"ezDocumentObject_ConnectionBase"}
+	u3 %v{1}
+	p
+	{
+		Uuid %Source{u4{13781163087338312558,11508290897225868043}}
+		s %SourcePin{"RGBA"}
+		Uuid %Target{u4{5701450533820958388,4696090494967258096}}
+		s %TargetPin{"a"}
+	}
+}
+o
+{
 	Uuid %id{u4{16097543946233190569,5407948860352526253}}
 	s %t{"ezDocumentObject_ConnectionBase"}
 	u3 %v{1}
@@ -327,17 +326,6 @@ o
 		s %SourcePin{"Green"}
 		Uuid %Target{u4{7717393033662795622,9717150354020277199}}
 		s %TargetPin{"b"}
-	}
-}
-o
-{
-	Uuid %id{u4{801333117112252332,5520956058541846713}}
-	s %t{"ShaderNode::BaseTexture"}
-	u3 %v{1}
-	p
-	{
-		Vec2 %Node::Pos{f{0x6B6F06C3,0x2CB8FE42}}
-		s %Texture{"{ 2d7ec886-0455-4288-be84-e1c72eff6253 }"}
 	}
 }
 o
@@ -431,19 +419,6 @@ o
 }
 o
 {
-	Uuid %id{u4{7515903292190295950,5716194477904743307}}
-	s %t{"ezDocumentObject_ConnectionBase"}
-	u3 %v{1}
-	p
-	{
-		Uuid %Source{u4{3242430547511225490,5581238889136691916}}
-		s %SourcePin{"result"}
-		Uuid %Target{u4{15337665768841648771,5003102134519112640}}
-		s %TargetPin{"UV"}
-	}
-}
-o
-{
 	Uuid %id{u4{10059729616937078703,5743987030045058913}}
 	s %t{"ShaderNode::Texture2D"}
 	u3 %v{1}
@@ -451,7 +426,6 @@ o
 	{
 		s %Name{"MaterialMask"}
 		Vec2 %Node::Pos{f{0x649193C2,0x14752C44}}
-		s %Texture{"{ f14acee4-d5ca-4f9c-b6c2-cd71182cb2b6 }"}
 	}
 }
 o
@@ -466,9 +440,7 @@ o
 		{
 			Uuid{u4{8941596582442294676,5347827158064275421}}
 			Uuid{u4{6570354206761472407,4916704494131281579}}
-			Uuid{u4{801333117112252332,5520956058541846713}}
 			Uuid{u4{162772191097833891,4992139533485426057}}
-			Uuid{u4{15337665768841648771,5003102134519112640}}
 			Uuid{u4{10059729616937078703,5743987030045058913}}
 			Uuid{u4{10134743275557278904,5096969902446039938}}
 			Uuid{u4{3242430547511225490,5581238889136691916}}
@@ -485,19 +457,21 @@ o
 			Uuid{u4{3806073499907451317,5067813866794711529}}
 			Uuid{u4{14387890430886406824,5628384155481607413}}
 			Uuid{u4{5370751425947082373,5527693146690966738}}
-			Uuid{u4{8220623368075759263,5127972428597007854}}
-			Uuid{u4{7515903292190295950,5716194477904743307}}
 			Uuid{u4{12022074901672005532,5261149625105863163}}
 			Uuid{u4{2586142770939558023,5527149923005326906}}
 			Uuid{u4{8474419314728602007,4680318256982136873}}
-			Uuid{u4{17649698835531937968,4816760717951465460}}
 			Uuid{u4{16097543946233190569,5407948860352526253}}
 			Uuid{u4{17916134847638674824,4703253678934170662}}
 			Uuid{u4{17384225318001545353,5227477445007237426}}
 			Uuid{u4{708898768029481098,4938697743114675639}}
 			Uuid{u4{7297025621824673175,5128084045248354593}}
-			Uuid{u4{7328059690339784345,4738945634639430923}}
 			Uuid{u4{11903842535506582183,5663797444101072840}}
+			Uuid{u4{13781163087338312558,11508290897225868043}}
+			Uuid{u4{11484150259617625341,16321986208283453582}}
+			Uuid{u4{788999641970722183,5105670193470923549}}
+			Uuid{u4{816162864964351130,4892135032991721137}}
+			Uuid{u4{14227048717094309043,5381582828149150046}}
+			Uuid{u4{12174536975232950912,5204573217644580729}}
 		}
 	}
 }
@@ -510,7 +484,6 @@ o
 	{
 		s %Name{"BaseTexture3"}
 		Vec2 %Node::Pos{f{0xB1CBA6C3,0xF2052B44}}
-		s %Texture{"{ fb0b5a83-6a8c-4f6e-84bd-2f453fea7ebf }"}
 	}
 }
 o
@@ -539,6 +512,17 @@ o
 }
 o
 {
+	Uuid %id{u4{13781163087338312558,11508290897225868043}}
+	s %t{"ShaderNode::Texture2D"}
+	u3 %v{1}
+	p
+	{
+		s %Name{"BaseTexture"}
+		Vec2 %Node::Pos{f{0x274056C1,0x19E88542}}
+	}
+}
+o
+{
 	Uuid %id{u4{17843711807620262925,14668475871531689657}}
 	s %t{"ShaderNode::Multiply"}
 	u3 %v{1}
@@ -549,19 +533,20 @@ o
 		f %b{0x0000803F}
 	}
 }
-}
-Types
-{
 o
 {
-	Uuid %id{u4{15357746534910351728,61252667692148556}}
-	s %t{"ezDefaultValueAttribute"}
+	Uuid %id{u4{11484150259617625341,16321986208283453582}}
+	s %t{"ShaderNode::Texture2D"}
 	u3 %v{1}
 	p
 	{
-		s %Value{"{ f14acee4-d5ca-4f9c-b6c2-cd71182cb2b6 }"}
+		s %Name{"RoughnessTexture"}
+		Vec2 %Node::Pos{f{0x2240D6C2,0xEE32CA43}}
 	}
 }
+}
+Types
+{
 o
 {
 	Uuid %id{u4{7248312238962839047,1390287640690872896}}
@@ -604,16 +589,6 @@ o
 }
 o
 {
-	Uuid %id{u4{1951690497621984943,1817946794355035925}}
-	s %t{"ezDefaultValueAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Value{"{ 22c4324d-84ba-4dcc-b756-bafe1d89d7bf }"}
-	}
-}
-o
-{
 	Uuid %id{u4{3036356971535258374,1872623346491738571}}
 	s %t{"ezAssetBrowserAttribute"}
 	u3 %v{1}
@@ -644,6 +619,7 @@ o
 			Uuid{u4{16393153594407016602,3744118329769567614}}
 			Uuid{u4{7757084663128585029,8011669779036733373}}
 			Uuid{u4{5650026407490086663,5768478847879086899}}
+			Uuid{u4{3687164412847300807,16605290275319987562}}
 		}
 		s %TypeName{"BLEND_MODE"}
 		u3 %TypeVersion{1}
@@ -686,16 +662,6 @@ o
 }
 o
 {
-	Uuid %id{u4{17270981834161743269,1997417624989165758}}
-	s %t{"ezDefaultValueAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Value{""}
-	}
-}
-o
-{
 	Uuid %id{u4{9182498974977327514,2041274447054354959}}
 	s %t{"ezReflectedPropertyDescriptor"}
 	u3 %v{2}
@@ -707,18 +673,6 @@ o
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::ReadOnly"}
 		s %Name{"SHADING_MODE::SHADING_MODE_LIT"}
 		s %Type{"ezInt32"}
-	}
-}
-o
-{
-	Uuid %id{u4{10169649258222508442,2102600582392461804}}
-	s %t{"ezAssetBrowserAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %DependencyFlags{""}
-		s %Filter{";CompatibleAsset_Texture_2D;"}
-		s %RequiredTag{""}
 	}
 }
 o
@@ -758,36 +712,6 @@ o
 }
 o
 {
-	Uuid %id{u4{2448046524903353332,2500447848043092313}}
-	s %t{"ezDefaultValueAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Value{"{ fb0b5a83-6a8c-4f6e-84bd-2f453fea7ebf }"}
-	}
-}
-o
-{
-	Uuid %id{u4{7497676083067615229,2528326346683056498}}
-	s %t{"ezReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
-		VarArray %Functions{}
-		s %ParentTypeName{"ezVisualShaderNodeBase"}
-		s %PluginName{"VisualShaderTypes"}
-		VarArray %Properties
-		{
-			Uuid{u4{5209672733705578675,16372237526820862863}}
-		}
-		s %TypeName{"ShaderNode::RoughnessTexture"}
-		u3 %TypeVersion{1}
-	}
-}
-o
-{
 	Uuid %id{u4{260507499805568021,2573483353260778285}}
 	s %t{"ezReflectedPropertyDescriptor"}
 	u3 %v{2}
@@ -797,7 +721,6 @@ o
 		{
 			Uuid{u4{10899325714381308281,3259131181984241700}}
 			Uuid{u4{6779835398996656688,5168742037806314534}}
-			Uuid{u4{1951690497621984943,1817946794355035925}}
 		}
 		s %Category{"ezPropertyCategory::Member"}
 		Invalid %ConstantValue{}
@@ -839,7 +762,6 @@ o
 		VarArray %Properties
 		{
 			Uuid{u4{1575573045492154548,13197194552899721336}}
-			Uuid{u4{4736972359144118335,5244096162907300111}}
 		}
 		s %TypeName{"ShaderNode::NormalTexture"}
 		u3 %TypeVersion{1}
@@ -896,28 +818,8 @@ o
 		s %Category{"ezPropertyCategory::Constant"}
 		i3 %ConstantValue{2}
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::ReadOnly"}
-		s %Name{"BLEND_MODE::BLEND_MODE_TRANSPARENT"}
+		s %Name{"BLEND_MODE::BLEND_MODE_DITHERED"}
 		s %Type{"ezInt32"}
-	}
-}
-o
-{
-	Uuid %id{u4{608912057499636366,3797903991191780750}}
-	s %t{"ezDefaultValueAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Value{"{ 8dc1cf30-83eb-45b0-bc65-c94bdd8f2024 }"}
-	}
-}
-o
-{
-	Uuid %id{u4{1187097818350157749,3916026496545596680}}
-	s %t{"ezDefaultValueAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Value{"RebeccaPurple.color"}
 	}
 }
 o
@@ -945,7 +847,7 @@ o
 	u3 %v{1}
 	p
 	{
-		s %Category{"Permutation"}
+		s %Category{"Constant"}
 	}
 }
 o
@@ -996,25 +898,6 @@ o
 		s %DependencyFlags{"ezDependencyFlags::Package|ezDependencyFlags::Thumbnail"}
 		s %Filter{";CompatibleAsset_Texture_2D;"}
 		s %RequiredTag{""}
-	}
-}
-o
-{
-	Uuid %id{u4{4736972359144118335,5244096162907300111}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes
-		{
-			Uuid{u4{10169649258222508442,2102600582392461804}}
-			Uuid{u4{17523931883222954915,11019633592439028378}}
-		}
-		s %Category{"ezPropertyCategory::Member"}
-		Invalid %ConstantValue{}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"Texture"}
-		s %Type{"ezString"}
 	}
 }
 o
@@ -1092,18 +975,6 @@ o
 }
 o
 {
-	Uuid %id{u4{12714164492891217967,5611009265493262825}}
-	s %t{"ezAssetBrowserAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %DependencyFlags{""}
-		s %Filter{";CompatibleAsset_Texture_2D;"}
-		s %RequiredTag{""}
-	}
-}
-o
-{
 	Uuid %id{u4{11381554768749103056,5747586724112780390}}
 	s %t{"ezReflectedPropertyDescriptor"}
 	u3 %v{2}
@@ -1131,7 +1002,7 @@ o
 		s %Category{"ezPropertyCategory::Constant"}
 		i3 %ConstantValue{4}
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::ReadOnly"}
-		s %Name{"BLEND_MODE::BLEND_MODE_MODULATE"}
+		s %Name{"BLEND_MODE::BLEND_MODE_ADDITIVE"}
 		s %Type{"ezInt32"}
 	}
 }
@@ -1151,16 +1022,6 @@ o
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
 		s %Name{"TWO_SIDED"}
 		s %Type{"bool"}
-	}
-}
-o
-{
-	Uuid %id{u4{221162057029671405,5878544739595603637}}
-	s %t{"ezDefaultValueAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Value{"{ 55d6b51d-24e0-419f-bb69-1ad5a4864eee }"}
 	}
 }
 o
@@ -1192,7 +1053,6 @@ o
 		{
 			Uuid{u4{6304284464882832004,3700504668355701127}}
 			Uuid{u4{3036356971535258374,1872623346491738571}}
-			Uuid{u4{15357746534910351728,61252667692148556}}
 		}
 		s %Category{"ezPropertyCategory::Member"}
 		Invalid %ConstantValue{}
@@ -1247,7 +1107,6 @@ o
 			Uuid{u4{13625089647231700149,2338137725189115092}}
 			Uuid{u4{467699119095997539,5805522343910379214}}
 			Uuid{u4{10763892946481325755,11439270201058307663}}
-			Uuid{u4{15159131225179337474,11791490392446425006}}
 		}
 		s %TypeName{"AssetCache/Common/Vegetation/Terrain.autogen.ezShader"}
 		u3 %TypeVersion{2}
@@ -1302,7 +1161,7 @@ o
 		s %Category{"ezPropertyCategory::Constant"}
 		i3 %ConstantValue{3}
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::ReadOnly"}
-		s %Name{"BLEND_MODE::BLEND_MODE_ADDITIVE"}
+		s %Name{"BLEND_MODE::BLEND_MODE_TRANSPARENT"}
 		s %Type{"ezInt32"}
 	}
 }
@@ -1319,18 +1178,6 @@ o
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::ReadOnly"}
 		s %Name{"BLEND_MODE::BLEND_MODE_OPAQUE"}
 		s %Type{"ezInt32"}
-	}
-}
-o
-{
-	Uuid %id{u4{7459890765068886472,8519731815634100607}}
-	s %t{"ezAssetBrowserAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %DependencyFlags{""}
-		s %Filter{";CompatibleAsset_Texture_2D;"}
-		s %RequiredTag{""}
 	}
 }
 o
@@ -1358,16 +1205,6 @@ o
 	p
 	{
 		f %Value{0}
-	}
-}
-o
-{
-	Uuid %id{u4{14549396385986579268,8768206121891854123}}
-	s %t{"ezDefaultValueAttribute"}
-	u3 %v{1}
-	p
-	{
-		d %Value{0x000000000000D03F}
 	}
 }
 o
@@ -1441,7 +1278,6 @@ o
 		{
 			Uuid{u4{1071484791385846963,3472448034948632751}}
 			Uuid{u4{14393560976763958185,10150829460742234926}}
-			Uuid{u4{2448046524903353332,2500447848043092313}}
 		}
 		s %Category{"ezPropertyCategory::Member"}
 		Invalid %ConstantValue{}
@@ -1458,25 +1294,6 @@ o
 	p
 	{
 		Vec3 %Value{f{0,0,0}}
-	}
-}
-o
-{
-	Uuid %id{u4{8907094334953621914,9741013989145803045}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes
-		{
-			Uuid{u4{12714164492891217967,5611009265493262825}}
-			Uuid{u4{1187097818350157749,3916026496545596680}}
-		}
-		s %Category{"ezPropertyCategory::Member"}
-		Invalid %ConstantValue{}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"Texture"}
-		s %Type{"ezString"}
 	}
 }
 o
@@ -1517,25 +1334,6 @@ o
 	p
 	{
 		s %Category{"Permutation"}
-	}
-}
-o
-{
-	Uuid %id{u4{4344819233162547995,10738562765453313395}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes
-		{
-			Uuid{u4{7459890765068886472,8519731815634100607}}
-			Uuid{u4{52217124552864853,17760141801257082511}}
-		}
-		s %Category{"ezPropertyCategory::Member"}
-		Invalid %ConstantValue{}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"Texture"}
-		s %Type{"ezString"}
 	}
 }
 o
@@ -1595,23 +1393,12 @@ o
 		{
 			Uuid{u4{7248312238962839047,1390287640690872896}}
 			Uuid{u4{18444291732681163092,17284730051006140436}}
-			Uuid{u4{608912057499636366,3797903991191780750}}
 		}
 		s %Category{"ezPropertyCategory::Member"}
 		Invalid %ConstantValue{}
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
 		s %Name{"NormalTexture"}
 		s %Type{"ezString"}
-	}
-}
-o
-{
-	Uuid %id{u4{17523931883222954915,11019633592439028378}}
-	s %t{"ezDefaultValueAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Value{"{ 4dc82890-39e3-4bfc-a97d-86a984d4d3db }"}
 	}
 }
 o
@@ -1664,12 +1451,13 @@ o
 		VarArray %Attributes
 		{
 			Uuid{u4{14822595875437278867,4048369782501450087}}
+			Uuid{u4{10528517382149685880,18392285327263637003}}
 		}
 		s %Category{"ezPropertyCategory::Member"}
 		Invalid %ConstantValue{}
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"VERTEX_SKINNING"}
-		s %Type{"bool"}
+		s %Name{"MaskThreshold"}
+		s %Type{"float"}
 	}
 }
 o
@@ -1680,25 +1468,6 @@ o
 	p
 	{
 		f %Value{0}
-	}
-}
-o
-{
-	Uuid %id{u4{15159131225179337474,11791490392446425006}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes
-		{
-			Uuid{u4{832496790414050982,17128372935593301766}}
-			Uuid{u4{14549396385986579268,8768206121891854123}}
-		}
-		s %Category{"ezPropertyCategory::Member"}
-		Invalid %ConstantValue{}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"MaskThreshold"}
-		s %Type{"float"}
 	}
 }
 o
@@ -1801,26 +1570,6 @@ o
 }
 o
 {
-	Uuid %id{u4{5084061046237204050,13385781945507335679}}
-	s %t{"ezReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
-		VarArray %Functions{}
-		s %ParentTypeName{"ezVisualShaderNodeBase"}
-		s %PluginName{"VisualShaderTypes"}
-		VarArray %Properties
-		{
-			Uuid{u4{8907094334953621914,9741013989145803045}}
-		}
-		s %TypeName{"ShaderNode::BaseTexture"}
-		u3 %TypeVersion{1}
-	}
-}
-o
-{
 	Uuid %id{u4{18411837506060015951,13397631608945770603}}
 	s %t{"ezReflectedPropertyDescriptor"}
 	u3 %v{2}
@@ -1859,28 +1608,6 @@ o
 }
 o
 {
-	Uuid %id{u4{12114040665455706043,14373702378017444156}}
-	s %t{"ezDefaultValueAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Value{"{ 2d7ec886-0455-4288-be84-e1c72eff6253 }"}
-	}
-}
-o
-{
-	Uuid %id{u4{12155033277374142283,14619132781736813338}}
-	s %t{"ezAssetBrowserAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %DependencyFlags{""}
-		s %Filter{";CompatibleAsset_Texture_2D;"}
-		s %RequiredTag{""}
-	}
-}
-o
-{
 	Uuid %id{u4{2531204913114908651,14636118749865147444}}
 	s %t{"ezDefaultValueAttribute"}
 	u3 %v{1}
@@ -1900,7 +1627,6 @@ o
 		{
 			Uuid{u4{3424590899467423272,5601188775210281841}}
 			Uuid{u4{6126009592045360618,5566016131893780042}}
-			Uuid{u4{12114040665455706043,14373702378017444156}}
 		}
 		s %Category{"ezPropertyCategory::Member"}
 		Invalid %ConstantValue{}
@@ -1951,7 +1677,6 @@ o
 		VarArray %Properties
 		{
 			Uuid{u4{7566946888615057369,10895726355449621559}}
-			Uuid{u4{4344819233162547995,10738562765453313395}}
 		}
 		s %TypeName{"ShaderNode::Texture2D"}
 		u3 %TypeVersion{1}
@@ -2017,25 +1742,6 @@ o
 }
 o
 {
-	Uuid %id{u4{5209672733705578675,16372237526820862863}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes
-		{
-			Uuid{u4{12155033277374142283,14619132781736813338}}
-			Uuid{u4{17270981834161743269,1997417624989165758}}
-		}
-		s %Category{"ezPropertyCategory::Member"}
-		Invalid %ConstantValue{}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"Texture"}
-		s %Type{"ezString"}
-	}
-}
-o
-{
 	Uuid %id{u4{12689300849278625136,16388205898017076391}}
 	s %t{"ezDefaultValueAttribute"}
 	u3 %v{1}
@@ -2056,12 +1762,17 @@ o
 }
 o
 {
-	Uuid %id{u4{832496790414050982,17128372935593301766}}
-	s %t{"ezCategoryAttribute"}
-	u3 %v{1}
+	Uuid %id{u4{3687164412847300807,16605290275319987562}}
+	s %t{"ezReflectedPropertyDescriptor"}
+	u3 %v{2}
 	p
 	{
-		s %Category{"Constant"}
+		VarArray %Attributes{}
+		s %Category{"ezPropertyCategory::Constant"}
+		i3 %ConstantValue{5}
+		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::ReadOnly"}
+		s %Name{"BLEND_MODE::BLEND_MODE_MODULATE"}
+		s %Type{"ezInt32"}
 	}
 }
 o
@@ -2112,16 +1823,6 @@ o
 }
 o
 {
-	Uuid %id{u4{52217124552864853,17760141801257082511}}
-	s %t{"ezDefaultValueAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Value{""}
-	}
-}
-o
-{
 	Uuid %id{u4{983387834180907111,17935407260904399048}}
 	s %t{"ezReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -2148,13 +1849,22 @@ o
 		{
 			Uuid{u4{9842652974654528643,14043427018276080202}}
 			Uuid{u4{14880333059577322644,11336334457715027371}}
-			Uuid{u4{221162057029671405,5878544739595603637}}
 		}
 		s %Category{"ezPropertyCategory::Member"}
 		Invalid %ConstantValue{}
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
 		s %Name{"BaseTexture2"}
 		s %Type{"ezString"}
+	}
+}
+o
+{
+	Uuid %id{u4{10528517382149685880,18392285327263637003}}
+	s %t{"ezDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		d %Value{0x000000000000D03F}
 	}
 }
 o
