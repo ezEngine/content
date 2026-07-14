@@ -41,9 +41,6 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{1bf82a1a-a118-46b4-a1b9-eca9721fe6cc}">
-		<property name="uiTrackHeight">
-			<value>28</value>
-		</property>
 		<relationship name="mixerGroup">
 			<destination>{3aa2590f-8e89-456a-972f-3f9904b45a30}</destination>
 		</relationship>
@@ -59,16 +56,25 @@
 			<destination>{d27aa56d-f451-44f7-a6e9-1241cf33dd2b}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{284a1eb8-0a6d-4c14-b3e2-572d63c1d815}" />
-	<object class="MarkerTrack" id="{bc70703e-7288-4e09-a92a-24da005ba2c9}">
-		<property name="uiTrackHeight">
+	<object class="EventAutomatableProperties" id="{284a1eb8-0a6d-4c14-b3e2-572d63c1d815}">
+		<property name="maxVoices">
+			<value>4</value>
+		</property>
+		<property name="voiceStealing">
+			<value>4</value>
+		</property>
+		<property name="dopplerEnabled">
+			<value>true</value>
+		</property>
+		<property name="minimumDistance">
+			<value>3.4000001</value>
+		</property>
+		<property name="maximumDistance">
 			<value>100</value>
 		</property>
 	</object>
+	<object class="MarkerTrack" id="{bc70703e-7288-4e09-a92a-24da005ba2c9}" />
 	<object class="GroupTrack" id="{69899b7b-db7b-4161-a9eb-cfcc94a35aab}">
-		<property name="uiTrackHeight">
-			<value>100</value>
-		</property>
 		<relationship name="modules">
 			<destination>{5b73ff54-c406-40de-8d0b-936879879f7e}</destination>
 		</relationship>
