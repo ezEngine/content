@@ -41,9 +41,6 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{5a88435e-f0a3-4203-ab3a-5599549687ff}">
-		<property name="uiTrackHeight">
-			<value>28</value>
-		</property>
 		<relationship name="mixerGroup">
 			<destination>{8e6122da-d85c-4af5-a770-f4a8ba9d7520}</destination>
 		</relationship>
@@ -56,7 +53,7 @@
 			<destination>{a2f825f3-05d1-49bb-8dab-51ffada8e64b}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{066aaaf6-f93e-46d1-9e8d-2388b475d5ff}</destination>
+			<destination>{d27aa56d-f451-44f7-a6e9-1241cf33dd2b}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{f83f9cbc-975d-4cf8-9437-f28b337d3903}">
@@ -70,15 +67,8 @@
 			<value>10</value>
 		</property>
 	</object>
-	<object class="MarkerTrack" id="{b2916793-2ae8-4503-a46f-e1c0ad21b476}">
-		<property name="uiTrackHeight">
-			<value>100</value>
-		</property>
-	</object>
+	<object class="MarkerTrack" id="{b2916793-2ae8-4503-a46f-e1c0ad21b476}" />
 	<object class="GroupTrack" id="{b0822862-2839-4f7e-9d0c-10172034a35e}">
-		<property name="uiTrackHeight">
-			<value>100</value>
-		</property>
 		<relationship name="modules">
 			<destination>{13af8701-fa31-456b-a34d-45e1b8ddc770}</destination>
 		</relationship>
